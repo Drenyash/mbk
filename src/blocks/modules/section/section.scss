@@ -1,0 +1,68 @@
+.section {
+    padding-top: rem(60px);
+    padding-bottom: rem(60px);
+    @include r(1200) {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+
+    &:last-of-type {
+        padding-bottom: rem(150px);
+        @include r(1200) {
+            padding-bottom: rem(100px);
+        }
+    }
+    &--dark {
+        background-color: #f7f9fa;
+        padding-top: rem(85px);
+        padding-bottom: rem(85px);
+        @include r(1200) {
+            padding-top: rem(60px);
+            padding-bottom: rem(60px);
+        }
+    }
+    &--blue {
+        color: #214254;
+    }
+    &--bg-cover {
+        background-position: center;
+        background-size: cover;
+    }
+    &--blue-intro {
+        background:  url('../img/intro-person.png'), radial-gradient(0% 100% at 0% 100%, #F4F9FB 0%, #E7F5FB 59.37%);
+        background-repeat: no-repeat;
+        background-position: left calc(50% + 450px) bottom, center center;
+        @include r(1200) {
+            background:  radial-gradient(0% 100% at 0% 100%, #F4F9FB 0%, #E7F5FB 59.37%);
+            background-position: center center;
+        }
+    }
+    &--red {
+        background-color: #E04E39;
+        padding-top: 5.3125rem;
+        padding-bottom: 5.3125rem;
+        color: #ffffff;
+    }
+    &--border-red {
+        border: 1px solid #E04E39;
+    }
+    &--half-bg {
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: left calc(100vw - 57%) center;
+    }
+    &__banner {
+        margin-bottom: rem(60px);
+    }
+}
+
+.body {
+    &--light {
+    }
+    &--dark {
+        .section {
+            border-bottom: 1px solid $light;
+            background-color: $black;
+        }
+    }
+}

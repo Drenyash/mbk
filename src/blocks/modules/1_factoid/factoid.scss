@@ -1,0 +1,112 @@
+.factoid {
+	background-color: #F7F9FA;
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top: rem(130px);
+	padding-bottom: rem(130px);
+	@include r(1200) {
+		padding-top: rem(75px);
+		padding-bottom: rem(75px);
+		background-size: cover;
+	}
+	&__container {
+		background-repeat: no-repeat;
+		background-position: 45% 24%;
+		@include r(1200) {
+			background-image: none !important;
+		}
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include r(1200) {
+			display: block;
+		}
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 5);
+			flex-shrink: 0;
+			@include r(1200) {
+				display: none;
+			}
+		}
+		&--right {
+			width: calc(100% / 12 * 5);
+			@include r(1200) {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+		}
+	}
+	&__thumb {
+		margin: 0 auto rem(18px);
+		width: 318px;
+		height: 318px;
+		border-radius: 500px;
+		overflow: hidden;
+	}
+	&__info {
+		font-weight: 500;
+		font-size: rem(18px);
+		line-height: rem(21px);
+		text-align: center;
+		color: #E04E39;
+	}
+	&__number {
+		margin-bottom: rem(9px);
+		font-weight: bold;
+		font-size: rem(120px);
+		line-height: rem(141px);
+		@include r(1200) {
+			font-size: rem(85px);
+			line-height: rem(100px);
+		}
+	}
+	&__discript {
+		font-weight: normal;
+		font-size: rem(30px);
+		line-height: rem(35px);
+		margin-bottom: rem(33px);
+		@include r(1200) {
+			font-size: rem(22px);
+		}
+	}
+	&__btn {
+		width: 230px;
+	}
+}
+
+.body {
+	&--light {
+		.factoid {
+			background-color: #F7f9FA;
+			color: $black;
+			&__number {
+				color: $red;
+			}
+			&__container {
+				background-image: url('../img/factoid-decor.svg');
+			}
+		}
+	}
+	&--dark {
+		.factoid {
+			background-color: $black;
+			color: $light;
+			background-image: none !important;
+			border-top: 1px solid $light;
+			border-bottom: 1px solid $light;
+			&__container {
+				background: none;
+			}
+			&__number {
+				color: $light;
+			}
+		}
+	}
+}

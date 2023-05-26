@@ -1,0 +1,27 @@
+.article-card-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: rem(140px);
+  background-repeat: no-repeat;
+  background-size: rem(64px) rem(64px);
+  background-position: left rem(28px) center;
+  padding: rem(40px) rem(54px) rem(40px) rem(117px);
+  background-color: #ffffff;
+  box-shadow: rem(10px) rem(10px) rem(20px) rgb(12 61 97 / 25%);
+  border-radius: rem(5px);
+  color: #333333;
+  text-decoration: none;
+  gap: rem(30px);
+
+  &__title {
+    flex-grow: 1;
+    font-weight: 500;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    padding-left: rem(35px);
+    padding-right: rem(35px);
+  }
+}

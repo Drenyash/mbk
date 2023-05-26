@@ -1,0 +1,44 @@
+.step-card {
+	display: flex;
+	align-items: center;
+	padding: rem(75px) rem(25px);
+	border-radius: rem(5px);
+	background-color: $light;
+	width: 100%;
+	margin-bottom: rem(20px);
+	@include r(1200) {
+		padding: rem(25px);
+	}
+	@include r(550) {
+		display: block;
+	}
+	&--6 {
+		width: calc(50% - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
+	}
+	&__text {
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&__icon {
+		flex-shrink: 0;
+		margin-right: rem(35px);
+		@include r(550) {
+			margin-right: 0;
+			margin-bottom: rem(20px);
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.step-card {
+			background-color: $black;
+		}
+	}
+}

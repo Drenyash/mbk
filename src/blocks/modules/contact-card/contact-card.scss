@@ -1,0 +1,70 @@
+.contact-card {
+	width: calc(100% / 3);
+	text-align: center;
+	margin-bottom: rem(60px);
+	@include r(750) {
+		width: 50%;
+	}
+	@include r(550) {
+		width: 100%;
+	}
+	&--clear {
+		opacity: 0;
+		visibility: hidden;
+		height: 0;
+		margin: 0;
+		padding: 0;
+	}
+	&--full {
+		width: 100%;
+	}
+	&__thumb {
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: rem(200px);
+		overflow: hidden;
+		width: rem(178px);
+		height: rem(178px);
+		margin-bottom: rem(20px);
+		img {
+			display: block;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__name {
+		font-weight: 500;
+		font-size: rem(20px);
+		margin-bottom: rem(12px);
+	}
+	&__links {
+		margin-bottom: rem(10px);
+	}
+	&__link {
+		display: block;
+		color: $black;
+		text-decoration: none;
+		font-weight: 300;
+		line-height: 1.5;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__discript {
+		color: #c39367;
+		font-weight: 300;
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.contact-card {
+			&__link {
+				color: $light;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+.header-m {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #D1D9DD;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		display: block;
+		margin-right: 59px;
+		img {
+			display: block;
+			width: 140px;
+			height: 72px;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+	}
+	&__link {
+		text-decoration: none;
+		color: $black;
+		font-size: 14px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&:hover {
+			color: $red;
+		}
+	}
+	&__btn  {
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+	&__mob-menu {
+		display: none;
+		@include r(1200) {
+			display: flex;
+			height: 26px;
+			width: 26px;
+			flex-direction: column;
+			justify-content: center;
+			svg {
+				display: block;
+				height: 22px;
+				width: 22px;
+			}
+		}
+	}
+}

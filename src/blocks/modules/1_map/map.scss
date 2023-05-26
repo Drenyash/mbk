@@ -1,0 +1,111 @@
+.map {
+	position: relative;
+	&__wrap {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $brown;
+	}
+	&__container {
+		padding-top: rem(20px);
+		padding-bottom: rem(20px);
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		align-items: center;
+		height: rem(700px);
+		pointer-events: none;
+		@include r(1200) {
+			height: rem(400px);
+		}
+	}
+	&__card {
+		width: 50%;
+		pointer-events: all;
+		padding: rem(96px);
+		background-repeat: no-repeat;
+		background-position: calc(100% - 20px) center;
+		&--desktop {
+			@include r(1200) {
+				display: none;
+				visibility: hidden;
+			}
+		}
+		@include r(1200) {
+			width: 100%;
+			padding: rem(40px) rem(25px);
+		}
+	}
+	&__title {
+		margin-bottom: rem(60px);
+		@include r(1200) {
+			margin-bottom: 0;
+		}
+	}
+	&__line {
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(24px);
+		&-icon {
+			width: rem(26px);
+			height: rem(26px);
+			margin-right: rem(20px);
+			flex-shrink: 0;
+			svg {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		&-text {
+			font-weight: 300;
+		}
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+
+.body {
+	&--light {
+		.map {
+			&__card {
+				background-color: $light;
+			}
+			&__line {
+				color: #58595B;
+			}
+		}
+	}
+	&--dark {
+		.map {
+			&__card {
+				background-image: none !important;
+				background-color: $black;
+				color: $light;
+			}
+			&__line {
+				color: $light;
+			}
+		}
+	}
+}
+
+.mob-contacts {
+	display: none;
+	background-color: #F7F9FA;
+	padding-top: rem(30px);
+	padding-bottom: rem(30px);
+	@include r(1200) {
+		display: block;
+	}
+	&__container {
+		height: auto;
+	}
+}

@@ -1,0 +1,82 @@
+.block-text {
+	margin-bottom: rem(50px);
+	&--centered {
+		max-width: rem(820px);
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		@include r(1200) {
+			display: block;
+		}
+	}
+	&__column {
+		width: calc(50% - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
+		&--4 {
+			width: calc(100% / 3 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
+		}
+	}
+	&__arrow {
+		background-size: 100% 100%;
+		width: calc(100% - 60px);
+		color: $light;
+		font-weight: 500;
+		padding: rem(20px) rem(40px);
+		background-color: $red;
+		margin-bottom: rem(30px);
+		margin-right: rem(50px);
+		position: relative;
+		min-height: rem(76px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@include r(1200) {
+			width: 100%;
+		}
+		&:after {
+			content: "";
+			left: 100%;
+			top: 0px;
+			bottom: 0px;
+			width: rem(50px);
+			position: absolute;
+			background-repeat: no-repeat;
+			background-image: url("../img/block-arrow.svg");
+			@include r(1200) {
+				display: none;
+			}
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@include r(1200) {
+		margin-bottom: rem(30px);
+	}
+	&--dark {
+		background-color: #f7f9fa;
+		padding: rem(60px) rem(52px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.block-text {
+			&--dark {
+				background-color: $black;
+				border: 1px solid $light;
+			}
+		}
+	}
+}

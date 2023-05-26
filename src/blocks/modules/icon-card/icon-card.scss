@@ -1,0 +1,21 @@
+.icon-card {
+	width: calc(50% - 10px);
+	margin-bottom: rem(36px);
+	@include r(750) {
+		width: 100%;
+	}
+	&__icon {
+		display: block;
+		height: 36px;
+		width: 36px;
+		display: block;
+		margin-bottom: rem(15px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

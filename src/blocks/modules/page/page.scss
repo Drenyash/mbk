@@ -1,0 +1,11 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&__content {
+		&--none {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+	}
+}

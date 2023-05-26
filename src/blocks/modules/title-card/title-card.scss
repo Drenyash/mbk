@@ -1,0 +1,107 @@
+.title-card {
+	overflow: hidden;
+	border-radius: rem(5px);
+	display: flex;
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: rem(60px);
+	width: 100%;
+	text-decoration: none;
+	color: inherit;
+	@include r(750) {
+		display: none;
+		visibility: hidden;
+	}
+	&--m {
+		@include r(750) {
+			display: flex;
+			visibility: visible;
+			background: none !important;
+		}
+	}
+	&--light {
+		.title-card__wrapper {
+			background: linear-gradient(90deg, #ffffff 62%, rgba(255, 255, 255, 0) 100%);
+		}
+	}
+	&--clean {
+		.title-card__wrapper {
+			background: none;
+		}
+	}
+	&__discript {
+		color: $gray;
+		margin-bottom: 1rem;
+		font-weight: 300;
+	}
+	&__wrapper {
+		min-height: rem(360px);
+		background: linear-gradient(90deg, #f7f9fa 62%, rgba(255, 255, 255, 0) 100%);
+		@include r(1200) {
+			height: auto;
+			min-height: 0px;
+		}
+	}
+	&__content {
+		width: calc(100% / 12 * 8);
+		padding: rem(50px);
+		@include r(1200) {
+			width: 100%;
+		}
+		@include r(750) {
+			padding: rem(30px);
+		}
+		&--m {
+			width: calc(100% / 12 * 6);
+			@include r(1200) {
+				width: 100%;
+			}
+		}
+	}
+	&__title {
+		font-weight: 500;
+		font-size: rem(24px);
+		margin-bottom: rem(35px);
+		@include r(1200) {
+			font-size: rem(20px);
+			margin-bottom: rem(25px);
+		}
+	}
+	&__text {
+		color: #58595b;
+		line-height: 1.5;
+		font-weight: 300;
+		& :last-child {
+			margin-bottom: 0;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+		strong {
+			font-weight: 600;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.title-card {
+			border: 1px solid $light;
+			background-image: none !important;
+			&--light {
+				.title-card__wrapper {
+					background: none;
+				}
+			}
+			&__wrapper {
+				background: none;
+			}
+			&__text {
+				color: $light;
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>17. Полезное видео</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body body--light">
+	<div class="page">
+		@@include("../blocks/modules/panel/panel.html")
+		@@include("../blocks/modules/header/header.html")
+		<main class="content page__content">
+			<section class="section">
+				<div class="container ui__container">
+					<nav class="breadcrumbs">
+						<a href="/" class="breadcrumbs__link">
+							Главная
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Полезное
+						</span>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Полезное видео
+						</span>
+					</nav>
+					<h2 class="title title--line">
+						<span class="title__text">Полезное видео</span>
+					</h2>
+					<article class="title-card hide-bg" style="background-image: url('http://placehold.it/1200x900');">
+						<div class="title-card__wrapper">
+							<div class="title-card__content">
+								<h3 class="title-card__title">
+									Видео, которые вдохновят вас на создание своего бизнеса
+								</h3>
+								<div class="title-card__text text">
+									<p>
+										Описание
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="video-article">
+								<h3 class="video-article__title">
+									Видеомаркетинг для бизнеса: с чего начать
+								</h3>
+								<div class="video-article__columns">
+									<div class="video-article__video">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/JDyOo1vIUk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div class="video-article__text text">
+										<p>
+											Исследования, посвященные видеомаркетингу, раз за разом демонстрируют выгодность вложений в видео: речь идет о росте узнаваемости бренда, доверия, трафика и конверсии. Но съемка видео неразрывно связана с расходами времени и денег. Поэтому важно четко понимать, что снимать, с какой целью, и нужно ли это вообще.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="video-article">
+								<h3 class="video-article__title">
+									Как улучшить продвижение на YouTube: 5 способов избежать ошибок в видеомаркетинге
+								</h3>
+								<div class="video-article__columns">
+									<div class="video-article__video">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/JDyOo1vIUk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div class="video-article__text text">
+										<p>
+											Самая частая ошибка — начинать работу на YouTube без четкого понимания целей и задач. Причем касается это как раскрутки собственного канала, так и продвижения через других ютуберов.
+										</p>
+									</div>
+								</div>
+							</article>	
+							<article class="video-article">
+								<h3 class="video-article__title">
+									10 проверенных способов повысить посещаемость сайта без лишних затрат
+								</h3>
+								<div class="video-article__columns">
+									<div class="video-article__video">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/JDyOo1vIUk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div class="video-article__text text">
+										<p>
+											Как привлечь трафик без лишних затрат: 10 способов повысить посещаемость сайта, доказавших свою эффективность.
+										</p>
+									</div>
+								</div>
+							</article>	
+						</div>
+						<div class="articles__control">
+							<!-- Пока идет подгрузка новостей добавляем класс articles__btn--loading -->
+							<a href="" class="articles__btn articles__btn--loading btn btn--60">
+								<span>Еще видео</span>
+								<svg class="icon-svg articles__icon--loading none-image">
+									<use xlink:href="img/sprites/sprite.svg#load"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+	</div>
+
+	@@include("../blocks/modules/m-menu/m-menu.html")
+
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+</html>

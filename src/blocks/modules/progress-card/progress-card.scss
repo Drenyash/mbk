@@ -1,0 +1,47 @@
+.progress-card {
+	width: 100%;
+	background: #f7f9fa;
+	border-radius: rem(5px);
+	padding: rem(20px) 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: rem(20px);
+	@include r(750) {
+		display: block;
+	}
+	&__title {
+		flex-grow: 1;
+		min-width: 0px;
+		padding: rem(30px) rem(50px);
+		@include r(750) {
+			padding: rem(25px);
+			padding-bottom: rem(10px);
+		}
+	}
+	&__result {
+		width: rem(170px);
+		flex-shrink: 0;
+		color: $accent;
+		padding: rem(30px) rem(50px);
+		border-left: 1px solid $accent;
+		@include r(750) {
+			width: 100%;
+			padding-bottom: rem(10px);
+			padding: rem(25px);
+			font-size: rem(36px);
+			font-weight: bold;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.progress-card {
+			background-color: $black;
+			border: 1px solid $light;
+		}
+	}
+}

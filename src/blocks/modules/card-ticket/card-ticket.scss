@@ -1,0 +1,142 @@
+.card-ticket {
+    border-radius: rem(12px);
+    display: block;
+    transition: 0.3s all;
+    text-decoration: none;
+    color: inherit;
+    padding: rem(40px) rem(40px) rem(27px) rem(40px);
+    display: flex;
+    flex-direction: column;
+    min-height: rem(295px);
+    justify-content: space-between;
+    height: 100%;
+    @include r(1200) {
+        min-height: rem(0px);
+        gap: rem(20px);
+        padding: rem(25px);
+    }
+    &:hover {
+        box-shadow: rem(15px) rem(15px) rem(20px) rgba(124, 142, 139, 0.15);
+        .card-ticket {
+            &__color {
+                &--hover-red {
+                    fill: $red;
+                }
+                &--hover-light {
+                    fill: $light;
+                }
+            }
+        }
+    }
+    &--light {
+        background-color: $light;
+    }
+    &__title {
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: rem(15px);
+    }
+    &__tag {
+        font-size: rem(10px);
+        color: #738d9a;
+        text-transform: uppercase;
+        border-radius: rem(15px);
+        padding: rem(9px) rem(15px);
+        background-color: #f7f9fa;
+        display: inline-block;
+        width: fit-content;
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btn-text {
+        font-weight: 400;
+        font-size: rem(14px);
+        color: $red;
+    }
+    &__btn-icon {
+        display: block;
+        width: rem(25px);
+        height: rem(25px);
+    }
+    &__color {
+        transition: 0.3s all;
+        &--light {
+            fill: $light;
+        }
+        &--red {
+            fill: $red;
+        }
+    }
+    &__main {
+        color: #58595b;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-top: rem(45px);
+        padding-bottom: rem(45px);
+    }
+    &__info {
+        font-weight: 300;
+        font-size: rem(12px);
+        margin-bottom: rem(5px);
+    }
+    &__time {
+        font-weight: 500;
+        font-size: rem(16px);
+    }
+}
+
+.body {
+    &--light {
+    }
+    &--dark {
+        .card-ticket {
+            background-color: $black;
+            border: 1px solid $light;
+            &:hover {
+                opacity: 0.4;
+                .card-ticket {
+                    &__color {
+                        &--hover-red {
+                            fill: $black;
+                        }
+                        &--hover-light {
+                            fill: $light;
+                        }
+                    }
+                }
+            }
+            &--light {
+                background-color: $black;
+            }
+            &__title {
+            }
+            &__footer {
+            }
+            &__btn-text {
+                color: $light;
+            }
+            &__btn-icon {
+            }
+            &__color {
+                &--light {
+                    fill: $black;
+                }
+                &--red {
+                    fill: $light;
+                }
+            }
+            &__main {
+                color: $light;
+            }
+            &__info {
+            }
+            &__time {
+            }
+        }
+    }
+}

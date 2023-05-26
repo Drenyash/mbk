@@ -1,0 +1,21 @@
+.program-card {
+	padding-bottom: rem(10px);
+	margin-bottom: rem(35px);
+	border-bottom: 1px solid #d1d9dd;
+	&:last-child {
+		border: 0;
+	}
+	&__info {
+		color: $accent;
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.program-card {
+			border-bottom: 1px solid $light;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.panel {
+	max-height: 0px;
+	overflow: hidden;
+	transition: 0.3s all;
+	border: none;
+	&__container {
+		padding-top: rem(10px);
+		padding-bottom: rem(10px);
+	}
+	&__btn {
+		margin-right: 10px;
+	}
+	&--open {
+		max-height: 500px;
+		border-bottom: 1px solid $light;
+	}
+}
+
+.hide-bg {
+	&--active {
+		background-image: none !important;
+	}
+}
+
+.hide-image {
+	&--active {
+		visibility: hidden !important;
+	}
+}
+
+.none-image {
+	&--active {
+		display: none !important;
+	}
+}
+
+.body {
+	&--light {
+		
+	}
+	&--dark {
+		
+	}
+}

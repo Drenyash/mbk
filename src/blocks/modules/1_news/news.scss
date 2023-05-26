@@ -1,0 +1,36 @@
+.front-news {
+	padding-top: rem(100px);
+	background-position: left rem(100px) ;
+	background-repeat: no-repeat;
+	@include r(1200) {
+		padding-top: rem(55px);
+		padding-bottom: rem(55px);
+	}
+	&__container {
+		padding-bottom: rem(100px);
+	}
+	&__control {
+		text-align: center;
+	}
+	&__btn {
+		width: rem(230px);
+	}
+}
+
+.body {
+	&--light {
+		.front-news {
+			&__container {
+				border-bottom: 1px solid #E0E0E0;
+			}
+		}
+	}
+	&--dark {
+		.front-news {
+			background: none !important;
+			&__container {
+				border-bottom: 1px solid $light;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    @include r(1200) {
+        flex-direction: column;
+    }
+    &--gap {
+        gap: rem(20px);
+    }
+    &--buttons {
+        gap: 18px;
+        @include r(1200) {
+            gap: 10px;
+        }
+    }
+    &--end {
+        justify-content: flex-end;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--between {
+        justify-content: space-between;
+        @include r(1200) {
+            display: block;
+        }
+    }
+    &--mob-center {
+       @include r(1200) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        } 
+    }
+    &__text {
+        h3 {
+            padding-bottom: rem(5px);
+        }
+    }
+    &__btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        @include r(1200) {
+            width: 100%;
+        }
+    }
+}

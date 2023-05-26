@@ -1,0 +1,28 @@
+.slider-intro {
+  margin-bottom: 3.125rem;
+  margin-top: 30px;
+
+  &__picture {
+    display: block;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    height: 24.125rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+      margin: auto;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    margin-top: 2.5rem;
+  }
+}

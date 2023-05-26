@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>0.Компоненты</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body body--light">
+	<div class="page">
+		@@include("../blocks/modules/panel/panel.html")
+		@@include("../blocks/modules/header/header.html")
+		<main class="content page__content">
+			@@include("../blocks/modules/ui-library/ui-library.html")
+			@@include("../blocks/modules/form/form.html")
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+	</div>
+
+	@@include("../blocks/modules/m-menu/m-menu.html")
+
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+</html>

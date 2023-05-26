@@ -1,0 +1,42 @@
+.icon-list {
+	margin-bottom: rem(50px);
+	&__li {
+		margin-bottom: rem(26px);
+		display: flex;
+		align-items: center;
+		@include r(1200) {
+			align-items: flex-start;
+		}
+		@include r(750) {
+			display: block;
+		}
+	}
+	&__icon {
+		flex-shrink: 0;
+		width: rem(45px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: rem(45px);
+		font-weight: 500;
+		font-size: rem(18px);
+		background-image: url("../img/li-bg.svg");
+		margin-right: rem(33px);
+		@include r(750) {
+			margin-right: 0;
+			margin-bottom: rem(15px);
+		}
+	}
+	&__text {
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

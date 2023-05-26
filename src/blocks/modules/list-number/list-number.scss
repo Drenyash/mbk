@@ -1,0 +1,35 @@
+.list-number {
+    list-style: decimal-leading-zero;
+    margin-bottom: 2rem;
+    // list-style-position: inside;
+    @include r(1200) {
+        // list-style-position: inside;
+    }
+    &__li {
+        padding: rem(25px) 0 rem(5px) 0;
+        border-bottom: 1px solid #738d9a;
+        position: relative;
+        display: flex;
+        @include r(1200) {
+            padding: rem(20px) 0 rem(5px) rem(0px);
+        }
+        &:first-of-type {
+            border-top: 1px solid #738d9a;
+        }
+    }
+    &__number {
+        width: rem(52px);
+        flex-shrink: 0;
+        font-weight: 500;
+        font-size: rem(24px);
+        position: relative;
+        //top: rem(5px);
+    }
+    &__content {
+    }
+    &__title {
+        font-size: rem(24px);
+        font-weight: 500;
+        margin-bottom: rem(30px);
+    }
+}

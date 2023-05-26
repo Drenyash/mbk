@@ -1,0 +1,100 @@
+.card-accent {
+    background-color: $red;
+    color: $light;
+    background-image: url('../img/card-accent-thumb.svg'), url('../img/card-accent-bg.svg'), url('../img/card-accent-bg-2.svg');
+    background-position: right 10% center, left bottom, right top;
+    background-repeat: no-repeat;
+    background-size: auto 80%, auto, auto;
+    border-radius: rem(5px);
+    @include r(1200) {
+        background-image: url('../img/card-accent-bg.svg'), url('../img/card-accent-bg-2.svg');
+        background-position: left bottom, right top;
+        background-size: auto;
+    }
+    &__content {
+        padding: rem(50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: rem(500px);
+        width: 60%;
+        @include r(1200) {
+            min-height: 0;
+			width: 100%;
+            padding: rem(25px);
+		}
+    }
+    &__header {
+        position: relative;
+        padding-bottom: rem(20px);
+        &:after {
+            content: "";
+            height: rem(4px);
+            background-color: #FBFBFB;
+            width: rem(126px);
+            position: absolute;
+            top: 100%;
+        }
+    }
+    &__title {
+        font-size: rem(48px);
+        font-weight: 500;
+        @include r(1200) {
+			font-size: rem(24px);
+		}
+    }
+    &__title-description {
+        font-weight: 500;
+        font-size: rem(20px);
+    }
+    &__main {
+        padding-top: rem(30px);
+        padding-bottom: rem(30px);
+    }
+    &__footer {
+        display: flex;
+        gap: rem(35px);
+        align-items: center;
+        @include r(1200) {
+			flex-direction: column;
+		}
+    }
+    &__btn {
+        flex-shrink: 0;
+    }
+}
+
+.body {
+    &--light {
+    }
+    &--dark {
+        .card-accent {
+            background-color: $black;
+            border: 1px solid $light;
+            color: $light;
+            background-image: none;
+            &__content {
+            }
+            &__header {
+                &:after {
+                    background-color: #FBFBFB;
+                }
+            }
+            &__title {
+                
+            }
+            &__title-description {
+                
+            }
+            &__main {
+                
+            }
+            &__footer {
+                
+            }
+            &__btn {
+                
+            }
+        }
+    }
+}

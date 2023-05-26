@@ -1,0 +1,123 @@
+<div class="form-section">
+	<div class="container form-section__container">
+		<form action="post" class="form">
+			<h4 class="form__head-text">
+				Обращение на предоставление льгот для развития промышленности
+			</h4>
+			<div class="form__radios" role="radiogroup">
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" checked value="Юр.лицо или ИП" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Юр.лицо или ИП
+					</p>
+				</label>
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" value="Физическое лицо" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Физическое лицо
+					</p>
+				</label>
+			</div>
+			<div class="form__fields">
+
+				<label class="input">
+					<p class="input__title">
+						Услуги
+					</p>
+					<select id="" class="select inputselect">
+						<option value="1">Один</option>
+						<option value="2">Два</option>
+						<option value="3">Три</option>
+					</select>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--valid">
+					<p class="input__title">
+						Имя/Фамилия*
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--error">
+					<p class="input__title">
+						Email
+					</p>
+					<input type="email" class="input__field">
+					<div class="input__message">
+						Сообщение поля
+					</div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Ваш комментарий
+					</p>
+					<input type="text" class="input__field" readonly>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Название организации
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Телефон
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="file" tabindex="0">
+					<p class="file__title">
+						Документы
+					</p>
+					<div class="file__wrapper" >
+						<div class="file__text">
+							png, jpg, pdf
+						</div>
+						<div class="file__icon">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#file-icon"></use>
+							</svg>
+						</div>
+					</div>
+					<input class="file__field" type="file" name="photo" required multiple title="Загрузите один или несколько документов">
+					<div class="file__message"></div>
+				</label>
+			</div>
+			<div class="form__control">
+				<button class="form__btn btn btn--60">
+					<span>Отправить</span>
+				</button>
+
+				<label class="checkbox form__accept" tabindex="0">
+					<input type="checkbox" class="checkbox__field" checked>
+					<div class="checkbox__icon"><div class="checkbox__icon-circle"></div></div>
+					<p class="checkbox__text">
+						Я соглашаюсь с условиями и даю согласие на <a href="/privacy.html">обработку персональных данных</a>
+					</p>
+				</label>
+			</div>
+			<div class="form__message">
+				<svg class="icon-svg form__message-icon">
+					<use xlink:href="img/sprites/sprite.svg#check"></use>
+				</svg>
+				<p class="form__message-title">
+					Ваша заявка отправлена
+				</p>
+				<p class="form__message-discript">
+					Мы свяжемся с вами в ближайшее время
+				</p>
+			</div>
+		</form>
+	</div>
+</div>

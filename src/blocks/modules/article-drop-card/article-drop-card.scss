@@ -1,0 +1,41 @@
+.article-drop-card {
+  margin-bottom: rem(20px);
+  width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(40px) rem(50px);
+    border: 1px solid #d1d9dd;
+    box-sizing: border-box;
+    border-radius: rem(5px);
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: rem(18px);
+  }
+
+  &__icon {
+    transform: rotate(-180deg);
+    margin-left: rem(30px);
+    flex-shrink: 0;
+    fill: #000000;
+    stroke: #000000;
+  }
+
+  &__main {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+    visibility: hidden;
+  }
+
+  &__content {
+    padding-top: rem(35px);
+    padding-bottom: rem(40px);
+  }
+}

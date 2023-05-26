@@ -1,0 +1,26 @@
+.article-factoid-image {
+    display: flex;
+    @include r(680) {
+        display: block;
+    }
+    &__thumb {
+        flex-shrink: 0;
+        width: rem(102px);
+        height: rem(102px);
+        @include r(1200) {
+            width: rem(80px);
+            height: rem(80px);
+        }
+        img {
+            display: block;
+        }
+    }
+    &__content {
+        flex-wrap: 1;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: rem(20px);
+        margin-bottom: rem(15px);
+    }
+}

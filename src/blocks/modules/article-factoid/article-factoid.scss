@@ -1,0 +1,14 @@
+.article-factoid {
+    display: flex;
+    align-items: center;
+    &__icon {
+        width: rem(80px);
+        height: rem(80px);
+        box-shadow: rem(4px) rem(4px) rem(30px) rgba(80, 133, 120, 0.35);
+        margin-right: rem(20px);
+        border-radius: rem(12px);
+    }
+    &__title {
+        
+    }
+}

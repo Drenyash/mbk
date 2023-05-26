@@ -1,0 +1,83 @@
+.books {
+	&--cards {
+		.book-card {
+			background-color: #f7f9fa;
+			width: calc(100% / 3 - 10px);
+			display: block;
+			padding: rem(25px);
+			text-decoration: none;
+			color: $black;
+			margin-bottom: rem(20px);
+			@include r(980) {
+				width: calc(50%);
+			}
+			@include r(550) {
+				width: calc(100%);
+			}
+			&--clear {
+				width: calc(100% / 3 - 10px);
+				@include r(980) {
+					width: calc(50%);
+				}
+				@include r(550) {
+					width: calc(100%);
+				}
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+			&__column-thumb {
+				padding-left: rem(25px);
+				padding-right: rem(25px);
+				padding-bottom: rem(25px);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				max-width: 100%;
+				position: relative;
+				height: rem(350px);
+				@include r(550) {
+					height: auto;
+				}
+				img {
+					object-fit: contain;
+					height: 100%;
+					width: 100%;
+					@include r(550) {
+						height: auto;
+					}
+				}
+			}
+			&__column-content {
+				padding-left: 0;
+				padding-right: 0;
+			}
+			&__tag {
+				position: absolute;
+				z-index: 2;
+				top: rem(22px);
+				left: 0;
+				background-color: $red;
+				color: $light;
+				font-weight: normal;
+				padding: rem(12px) rem(32px);
+			}
+			&__title {
+				font-size: rem(18px);
+				text-align: center;
+			}
+			&__text {
+				max-height: 0;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

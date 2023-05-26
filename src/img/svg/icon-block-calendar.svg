@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50" id="icon-block-calendar">
+    <path d="M0 10C0 4.477 4.477 0 10 0h30c5.523 0 10 4.477 10 10v30c0 5.523-4.477 10-10 10H10C4.477 50 0 45.523 0 40V10z"
+          fill="#F7F9FA"/>
+    <path d="M27.667 15h2.11v2H34v18H15V17h4.222v-2h2.111v2h6.334v-2zm-6.334 4h-4.222v2H31.89v-2H21.333zm-4.222 4v10H31.89V23H17.11zm2.111 2h2.111v2h-2.11v-2zm6.334 0h-2.112v2h2.112v-2zm2.11 0h2.112v2h-2.111v-2zm-6.333 4h-2.11v2h2.11v-2zm2.111 0h2.112v2h-2.112v-2zm6.334 0h-2.111v2h2.11v-2z"
+          fill="#C9D1D1"/>
+</svg>

@@ -1,0 +1,14 @@
+.text-discription {
+	margin-bottom: rem(54px);
+	&__discription {
+		font-weight: 300;
+		color: #58595b;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: rem(24px);
+		&--red {
+			color: $red;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.block-diagram {
+    display: block;
+    &__header {
+        margin-bottom: rem(30px);
+        text-align: center;
+        @include r(1200) {
+            margin-bottom: rem(15px);
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: rem(24px);
+        color: $red;
+        @include r(1200) {
+            font-size: rem(18px);
+        }
+    }
+    &__main {
+        picture {
+            display: block;
+        }
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: 100%;
+        }
+    }
+    &__toolbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: rem(40px);
+        @include r(1200) {
+            margin-top: rem(20px);
+        }
+    }
+    &__btn {
+        padding-left: rem(18px);
+        padding-right: rem(18px);
+    }
+}

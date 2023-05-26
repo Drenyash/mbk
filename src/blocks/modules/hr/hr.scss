@@ -1,0 +1,14 @@
+.hr {
+	margin-bottom: 1rem;
+	background-color: #d1d9dd;
+	height: 1px;
+	width: 100%;
+	display: block;
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

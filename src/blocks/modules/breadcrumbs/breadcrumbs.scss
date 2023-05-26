@@ -1,0 +1,44 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(50px);
+	@include r(750) {
+		display: none;
+		visibility: hidden;
+	}
+	&__link {
+		text-decoration: none;
+		color: $black;
+		white-space: nowrap;
+		&:hover {
+			opacity: 0.7;
+		}
+		&--static {
+			color: #738d9a;
+			font-weight: 300;
+			pointer-events: none;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+	&__arrow {
+		flex-shrink: 0;
+		display: block;
+		height: rem(8px);
+		width: rem(8px);
+		margin-left: rem(10px);
+		margin-right: rem(10px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.breadcrumbs {
+			&__link {
+				color: $light;
+			}
+		}
+	}
+}

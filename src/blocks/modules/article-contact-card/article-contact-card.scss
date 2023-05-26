@@ -1,0 +1,43 @@
+.article-contact-card {
+  text-align: center;
+
+  &__thumb {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: rem(200px);
+    overflow: hidden;
+    width: rem(178px);
+    height: rem(178px);
+    margin-bottom: rem(20px);
+
+    img {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: rem(20px);
+    margin-bottom: rem(12px);
+  }
+
+  &__links {
+    margin-bottom: rem(10px);
+  }
+
+  &__link {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  &__discript {
+    color: #c39367;
+    font-weight: 300;
+  }
+}

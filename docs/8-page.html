@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>8. Консультация и обучение</title>
+    	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="body body--light">
+<div class="page">
+    <section class="panel">
+	<div class="container panel__container">
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-image"><span>Выключить изображения</span></button>
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-theme"><span>Контрастный режим</span></button>
+	</div>
+</section>
+    <header class="header">
+	<div class="header__topline">
+		<div class="container header__topline-container">
+			<div class="header__topline-left">
+				<a href="" class="header__link open-panel">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#eye"></use>
+					</svg>
+					<span>
+						Режим для слабовидящих
+					</span>
+				</a>
+				<a href="tel:+74012994588" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#call"></use>
+					</svg>
+					<span>
+						+7 (4012) 994 588
+					</span>
+				</a>
+				<a href="mailto:info@mbkaliningrad.ru" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#mail"></use>
+					</svg>
+					<span>
+						info@mbkaliningrad.ru
+					</span>
+				</a>
+			</div>
+			<div class="header__topline-right">
+				<form action="" class="search header__search mobile-hide">
+					<input type="text" class="search__input" placeholder="Поиск по сайту">
+					<button class="search__btn">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<form class="language-swap">
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_RUS" checked>
+						<span class="language-swap__text">Рус</span>
+					</label>
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_ENG">
+						<span class="language-swap__text">Eng</span>
+					</label>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div class="header__downline">
+		<div class="container header__downline-container">
+			<a class="header__logo" href="/">
+				<img src="img/logo.svg"  alt="Логотип фирмы">
+			</a>
+			<nav class="header__menu mobile-hide">
+				<a href="/" class="header__menu-link header__menu-link--active">
+					Новости
+				</a>
+				<a href="/" class="header__menu-link">
+					Мероприятия
+				</a>
+			</nav>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-1">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#break-menu"></use>
+				</svg>
+				<span>Меры поддержки</span>
+			</a>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-2">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#lattice"></use>
+				</svg>
+				<span>Полезное</span>
+			</a>
+			<a href="#mmenu" class="header__mob-menu">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--support">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-1"></use>
+							</svg>
+						</div>
+						<p class="drop-nav__text">
+							Микрокредитование
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-2"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Фонд развития промышленности
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-3"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Консультации и обучение
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-4"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка экспорта
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-5"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Кластерное развитие
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-6"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка инноваций
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-7"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Предоставление поручительства
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-8"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Социальное предпринимательство
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-9"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Сельское хозяйство
+						</p>
+					</a>
+					<!-- <a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-10"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа "Восток"
+						</p>
+					</a> -->
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-11"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Повышение производительности труда
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-19"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Центр креативных индустрий
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-20"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа на поддержание рынка труда
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--help">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-12"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные видеоматериалы
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Онлайн курсы
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-13"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-14"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Налоги"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-15"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"120 секунд" (14-17 лет)
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-16"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные книги
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Спецпроекты
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-17"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт" (создание тренировочных фирм)
+						</p>
+					</a>
+
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-18"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Клуб ВЭД
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <main class="content page__content">
+        <section class="section">
+            <div class="container ui__container">
+                <nav class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                    <svg class="icon-svg breadcrumbs__arrow">
+                        <use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+							Меры поддержки
+						</span>
+                    <svg class="icon-svg breadcrumbs__arrow">
+                        <use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+							Консультации и обучение
+						</span>
+                </nav>
+                <h2 class="title title--line">
+                    <span class="title__text">Консультации, обучение и иные услуги</span>
+                    <a href="" class="btn btn--60 btn--doc title__btn">
+						<span>
+							Нормативные документы
+						</span>
+                    </a>
+                </h2>
+                <article class="title-card hide-bg" style="background-image: url('http://placehold.it/1200x900');">
+                    <div class="title-card__wrapper">
+                        <div class="title-card__content">
+                            <h3 class="title-card__title">
+                                О Центре поддержки малого и среднего предпринимательства
+                            </h3>
+                            <div class="title-card__text">
+                                <p>
+                                    Центр поддержки малого и среднего предпринимательства (далее - Центр поддержки
+                                    предпринимательства) оказывает комплекс информационно-консультационных и
+                                    образовательных услуг для развития малого и среднего бизнеса и самозанятых граждан,
+                                    а также формирует единую информационную среду, объединяющую основные направления
+                                    поддержки бизнеса.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="container">
+                <div class="block-text text">
+                    <h3>
+                        Услуги Центра поддержки предпринимательства
+                    </h3>
+                    <h4>
+                        Центр поддержки предпринимательства оказывает целый комплекс услуг для предпринимателей:
+                    </h4>
+                </div>
+                <div class="columns mb-100 mbm-70">
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-1"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам начала ведения собственного дела;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-3"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам финансового планирования;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-9"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам маркетингового сопровождения деятельности и
+                                бизнес-планирования;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-10"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам патентно-лицензионного сопровождения деятельности;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-11"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам правового обеспечения деятельности;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-12"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по вопросам информационного сопровождения деятельности;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#consult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-13"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Консультационные услуги по подбору персонала, по вопросам применения трудового
+                                законодательства;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#anyconsult" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-14"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Иные консультационные услуги в целях содействия развитию деятельности субъектов малого и
+                                среднего предпринимательства, а также физических лиц, применяющих специальный налоговый
+                                режим "Налог на профессиональный доход";
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#learn" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-15"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Проведение семинаров, конференций, форумов, круглых столов, издание пособий, брошюр,
+                                методических материалов;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#learn" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-16"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Организация и (или) реализация специальных программ обучения с целью повышения квалификации;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <!--<div class="columns__col columns__col--4">
+                        <a href="#mission" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="/img/sprites/sprite.svg#icon-card-17"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Организация участия в межрегиональных бизнес-миссиях;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                                <span class="link-card-icon__footer-text">
+                                    Подробнее
+                                </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light"
+                                          d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"/>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red"
+                                          d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"/>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red"
+                                          d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>-->
+                    <div class="columns__col columns__col--4">
+                        <a href="#organize" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-18"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Обеспечение участия в выставочно-ярмарочных и конгрессных мероприятиях на территории
+                                Российской Федерации;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#certif" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-10"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Услуги по организации сертификации товаров, работ и услуг субъектов малого и среднего
+                                предпринимательства (в том числе международной), а также сертификация субъектов малого и
+                                среднего предпринимательства по системе менеджмента качества в соответствии с международными
+                                стандартами;
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#electronic" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-19"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Содействие в размещении на электронных торговых площадках
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="columns__col columns__col--4">
+                        <a href="#anyplan" class="link-card-icon">
+                            <svg class="link-card-icon__icon" viewBox="0 0 60 60">
+                                <use xlink:href="./img/sprites/sprite.svg#icon-card-13"></use>
+                            </svg>
+                            <h5 class="link-card-icon__title">
+                                Иные виды деятельности в рамках реализации государственных программ (подпрограмм) субъектов
+                                Российской Федерации и муниципальных программ (в том числе популяризация продукции (товаров,
+                                работ, услуг), разработка дизайна, регистрация товарного знака, разработка бизнес-плана,
+                                «Цифровой
+                                аудит», «Цифровизация бизнеса»
+                            </h5>
+                            <div class="link-card-icon__footer">
+                        <span class="link-card-icon__footer-text">
+                            Подробнее
+                        </span>
+                                <svg class="link-card-icon__footer-icon" viewBox="0 0 35 35">
+                                    <path class="link-card-icon__path link-card-icon__path--hover-light" d="M35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M10 17.75C10 17.3358 10.3358 17 10.75 17L23.8929 17C24.3071 17 24.6429 17.3358 24.6429 17.75C24.6429 18.1642 24.3071 18.5 23.8929 18.5L10.75 18.5C10.3358 18.5 10 18.1642 10 17.75Z"></path>
+                                    <path class="link-card-icon__path link-card-icon__path--hover-red" d="M19.3626 13.2197C19.6554 12.9268 20.1303 12.9268 20.4232 13.2197L24.4232 17.2197C24.7161 17.5126 24.7161 17.9874 24.4232 18.2803L20.4232 22.2803C20.1303 22.5732 19.6554 22.5732 19.3626 22.2803C19.0697 21.9874 19.0697 21.5126 19.3626 21.2197L22.8322 17.75L19.3626 14.2803C19.0697 13.9874 19.0697 13.5126 19.3626 13.2197Z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <article class="ill-card">
+                    <div class="ill-card__content text">
+                        <h4>
+                            Условия предоставления услуг:
+                        </h4>
+                        <ul>
+                            <li>
+                                Центр поддержки предпринимательства оказывает услуги как самостоятельно, так и с
+                                привлечением в качестве Исполнителей сторонних организаций. Все услуги предоставляться
+                                по запросу заявителя.
+
+                            </li>
+                            <li>
+                                Центр поддержки предпринимательства информирует заявителя о возможности или
+                                невозможности предоставления услуги (с указанием причин, по которым услуга не может быть
+                                предоставлена) в срок не более 5 (пяти) рабочих дней с момента поступления запроса.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="image ill-card__thumb">
+                        <img class="image__pict image__pict--contain" src="img/ill-4.svg" alt="Декоративная картинка">
+                        <figcaption class="image__discript" aria-hidden="true">
+                            Декоративная картинка
+                        </figcaption>
+                    </div>
+                </article>
+                <div class="block-text block-text--dark text">
+                    <h4>
+                        Услуги Центр поддержки предпринимательства не могут оказываться СМСП:
+                    </h4>
+                    <ul>
+                        <li>
+                            Являющимся кредитными организациями, страховыми организациями (за исключением
+                            потребительских кооперативов), инвестиционными фондами, негосударственными пенсионными
+                            фондами, профессиональными участниками рынка ценных бумаг, ломбардами;
+                        </li>
+                        <li>
+                            Являющимся участниками соглашений о разделе продукции;
+                        </li>
+                        <li>
+                            Осуществляющим предпринимательскую деятельность в сфере игорного бизнеса;
+                        </li>
+                        <li>
+                            Осуществляющим производство и (или) реализацию подакцизных товаров, добычу и (или)
+                            реализацию полезных ископаемых, за исключением общераспространенных полезных ископаемых;
+                        </li>
+                        <li>
+                            Являющимся в порядке, установленном законодательством Российской Федерации о валютном
+                            регулировании и валютном контроле, нерезидентами Российской Федерации, за исключением
+                            случаев, предусмотренных международными договорами Российской Федерации.
+                        </li>
+                    </ul>
+                </div>
+                <div class="articles">
+                    <div class="articles__content">
+                        <a href="" class="link-block hide-image">
+                            <div class="link-block__thumb none-image">
+                                <svg class="icon-svg">
+                                    <use xlink:href="img/sprites/sprite.svg#link-card"></use>
+                                </svg>
+                            </div>
+                            <p class="link-block__title">
+                                Нормативные документы
+                            </p>
+                            <div class="link-block__btn btn btn--60">
+									<span>
+										Перейти
+									</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="block-text text">
+                    <h3>
+                        Консультационная поддержка
+                    </h3>
+                </div>
+                <div class="block-text text">
+                    <p class="accent-text">
+                        Дни оказания консультаций анонсируются в разделе "Мероприятия" (
+                        <a target="_blank" href="https://mbkaliningrad.ru/events/">https://mbkaliningrad.ru/events/
+                        </a>
+                        ).
+                        Вы можете подать заявку на оказание консультации, пройдя регистрацию, выбрав удобный для вас день в
+                        соответствии с расписанием работы специалистов.
+                    </p>
+
+                </div>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Маркетинговое сопровождение деятельности
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Центр поддержки предпринимательства обеспечивает предоставление субъектам малого и
+                                среднего предпринимательства консультативных услуг. Основанием для оказания поддержки
+                                является устное и/или письменное обращение субъекта малого и среднего
+                                предпринимательства и физического лица, заинтересованного в начале осуществления
+                                предпринимательской деятельности, поступившее по электронной почте, телефону и (или)
+                                способом личного обращения на основании запроса заявителя.
+                            </p>
+                            <p>
+                                Организации, оказывающие консалтинговые услуги на безвозмездной основе субъектам малого
+                                и среднего предпринимательства Калининградской области по вопросам маркетингового
+                                сопровождения деятельности и бизнес планирования субъектов малого и среднего
+                                предпринимательства Калининградской области:
+                            </p>
+                            <a href="" class="btn btn--60">
+									<span>
+										Подать заявку на услугу
+									</span>
+                            </a>
+                        </div>
+                        <div class="articles">
+                            <div class="articles__content">
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <div class="adress-card adress-card--clear"></div>
+                                <div class="adress-card adress-card--clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Маркетинговое сопровождение деятельности
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Какой-то текст
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Правовое обеспечение деятельности
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Какой-то текст
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Сопровождение по трудовому законодательству
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Какой-то текст
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Финансовое планирование
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Какой-то текст
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Патентно-лицензионное сопровождение деятельности
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <p>
+                                Какой-то текст
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="drop-card drop-card--dark">
+                    <div class="drop-card__header" tabindex="0">
+                        <p class="drop-card__title">
+                            Уполномоченный по защите прав предпринимателей в Калининградской области
+                        </p>
+                        <svg class="icon-svg drop-card__icon">
+                            <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="drop-card__main">
+                        <div class="drop-card__content text">
+                            <h4>
+                                Уполномоченный по защите прав предпринимателей в Калининградской области
+                            </h4>
+                        </div>
+                        <div class="articles">
+                            <div class="articles__content">
+                                <article class="adress-card">
+                                    <p class="adress-card__title">
+                                        Наименование
+                                    </p>
+                                    <p class="adress-card__text">
+                                        Фонд «Центр поддержки предпринимательства Гусевского городского округа»
+                                    </p>
+                                    <div class="adress-card__hr"></div>
+                                    <p class="adress-card__title">
+                                        Адрес
+                                    </p>
+                                    <p class="adress-card__text">
+                                        238055, Калининградская обл., г. Гусев, ул. Ульяновых, д.10
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Телефон
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="tel:+79005662356">+7-900-566-23-56</a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        E-mail
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="mailto:baltiyskbusiness@mail.ru">
+                                            baltiyskbusiness@mail.ru
+                                        </a>
+                                    </p>
+                                    <p class="adress-card__title">
+                                        Сайт
+                                    </p>
+                                    <p class="adress-card__text">
+                                        <a href="siteadress.com">
+                                            siteadress.com
+                                        </a>
+                                    </p>
+                                </article>
+                                <div class="adress-card adress-card--clear"></div>
+                                <div class="adress-card adress-card--clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section section--dark">
+            <div class="container">
+                <div class="block-text text" id="anyplan">
+                    <h3>
+                        Иные услуги
+                    </h3>
+                </div>
+                <div class="mb-70 mbm-50">
+                    <div class="title-card__text text">
+                        <div>
+                            Прием заявок в 2023 году на иные услуги будет осуществляться в том числе через Цифровую платформу
+                            <a class="link" href="http://мсп.рф/">МСП
+                            </a>
+                            Дата открытия приема заявок будет размещена
+                            дополнительно в разделе
+                            <a class="link" href="/news/">Новости
+                            </a>
+                            , а также объявлена в
+                            разделе «Региональные меры поддержки» в Цифровой платформе.
+                        </div>
+                    </div>
+                </div>
+                <div class="articles">
+                    <div class="articles__content">
+                        <article class="drop-card">
+                            <div class="drop-card__header" tabindex="0">
+                                <p class="drop-card__title">
+                                    Обучение
+                                </p>
+                                <svg class="icon-svg drop-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="drop-card__main">
+                                <div class="drop-card__content">
+                                    <div class="block-text text">
+                                        <h4>
+                                            Обучение
+                                        </h4>
+                                        <p>
+                                            Основной целью Центра является реализация мероприятий, направленных на
+                                            содействие развитию субъектов малого и среднего предпринимательства, на
+                                            популяризацию предпринимательства и начала собственного дела на территории
+                                            Калининградской области.
+                                        </p>
+                                    </div>
+                                    <div class="info-block info-block--light text">
+                                        <h4>
+                                            Центр оказывает поддержку:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                Юридическим лицам и индивидуальным предпринимателям, относящимся к
+                                                субъектам малого и среднего предпринимательства в соответствии с
+                                                критериями и условиями, указанными в Федеральном законе от 24.07.2007 №
+                                                209-ФЗ «О развитии малого и среднего предпринимательства в Российской
+                                                Федерации», зарегистрированным в установленном порядке и осуществляющим
+                                                свою деятельность на территории Калининградской области и физическим
+                                                лицам, заинтересованным в начале осуществления предпринимательской
+                                                деятельности;
+                                            </li>
+                                            <li>
+                                                Бесплатно;
+                                            </li>
+                                            <li>
+                                                Предоставление услуги на основе заявки и предварительной регистрации на
+                                                мероприятии.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <article class="ill-card">
+                                        <div class="ill-card__content text">
+                                            <h4>
+                                                Центр поддержки предпринимательства организует проведение семинаров,
+                                                тренингов, круглых столов, мастер-классов, конференций, форумов, деловых
+                                                игр для СМСП по различным тематикам:
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                    Меры государственной поддержки, реализуемые на территории
+                                                    Калининградской области;
+                                                </li>
+                                                <li>
+                                                    Финансовая грамотность в деятельности СМСП, финансовый контроллинг,
+                                                    управление издержками;
+                                                </li>
+                                                <li>
+                                                    Юридическая грамотность и юридическое сопровождение деятельности
+                                                    СМСП;
+                                                </li>
+                                                <li>
+                                                    Маркетинговое сопровождение деятельности СМСП, брендирование,
+                                                    создание потребительской ценности;
+                                                </li>
+                                                <li>
+                                                    Актуальные вопросы государственной поддержки в условиях кризиса;
+                                                </li>
+                                                <li>
+                                                    Налоговые льготы и преференции для малого и среднего бизнеса,
+                                                    налоговый и кадровый учёт;
+                                                </li>
+                                                <li>
+                                                    Обеспечение доступности финансовых ресурсов для малого бизнеса;
+                                                </li>
+                                                <li>
+                                                    Антикризисное управление предприятием;
+                                                </li>
+                                                <li>
+                                                    Вопросы поддержки производственных и инновационных предприятий.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="image ill-card__thumb">
+                                            <img class="image__pict image__pict--contain" src="img/ill-12.svg"
+                                                 alt="Декоративная картинка">
+                                            <figcaption class="image__discript" aria-hidden="true">
+                                                Декоративная картинка
+                                            </figcaption>
+                                        </div>
+                                    </article>
+                                    <div class="block-text text">
+                                        <h4>
+                                            Обучение совместно с АО “Корпорация МСП”
+                                        </h4>
+                                    </div>
+                                    <div class="info-block info-block--light text">
+                                        <h4>
+                                            Центр поддержки предпринимательства совместно с АО «Корпорация «МСП»
+                                            проводит обучение по следующим программам:
+                                        </h4>
+                                        <div class="program-card">
+                                            <p class="program-card__title">
+                                                <strong>Программа «Азбука предпринимателя»</strong> нацелена на обучение
+                                                потенциальных и начинающих предпринимателей разработке бизнес-плана
+                                                целью дальнейшей реализации, разработанного бизнес-проекта и запуску
+                                                нового дела.
+                                            </p>
+                                            <p class="program-card__info">
+                                                Длительность обучения - 5 дней.
+                                            </p>
+                                        </div>
+                                        <div class="program-card">
+                                            <p class="program-card__title">
+                                                <strong>Модуль «Имущественная поддержка»</strong> направлен на
+                                                информирование участников о существующих мерах, основных условиях и
+                                                принципах получения имущественной поддержки.
+                                            </p>
+                                            <p class="program-card__info">
+                                                Длительность обучения - 1 день.
+                                            </p>
+                                        </div>
+                                        <div class="program-card">
+                                            <p class="program-card__title">
+                                                <strong>Модуль «Инновационно-производственная поддержка»</strong>
+                                                направлен на информирование участников о существующих мерах, основных
+                                                условиях и принципах получения инновационно-производственной поддержки.
+                                            </p>
+                                            <p class="program-card__info">
+                                                Длительность обучения - 1 день.
+                                            </p>
+                                        </div>
+                                        <div class="program-card">
+                                            <p class="program-card__title">
+                                                <strong>Модуль «Юридические аспекты предпринимательства и система
+                                                    налогообложения»</strong> направлен на формирование знаний и навыков
+                                                выбора формы бизнеса (ООО/ИП) и системы налогообложения.
+                                            </p>
+                                            <p class="program-card__info">
+                                                Длительность обучения - 1 день.
+                                            </p>
+                                        </div>
+                                        <div class="program-card">
+                                            <p class="program-card__title">
+                                                <strong>Модуль «Финансовая поддержка»</strong> направлен на
+                                                информирование участников тренинга о существующих мерах финансовой
+                                                поддержки и об основных условиях и принципах ее получения.
+                                            </p>
+                                            <p class="program-card__info">
+                                                Длительность обучения - 1 день.
+                                            </p>
+                                        </div>
+                                        <a href="" class="btn btn--60">
+												<span>
+													Подробнее на АО «Корпорация»
+												</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="drop-card">
+                            <div class="drop-card__header" tabindex="0">
+                                <p class="drop-card__title">
+                                    Популяризация
+                                </p>
+                                <svg class="icon-svg drop-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="drop-card__main">
+                                <div class="drop-card__content">
+                                    <div class="block-text text">
+                                        <p>
+                                            Текст
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="drop-card">
+                            <div class="drop-card__header" tabindex="0">
+                                <p class="drop-card__title">
+                                    Патентные исследования
+                                </p>
+                                <svg class="icon-svg drop-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="drop-card__main">
+                                <div class="drop-card__content">
+                                    <div class="block-text text">
+                                        <p>
+                                            Текст
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="drop-card">
+                            <div class="drop-card__header" tabindex="0">
+                                <p class="drop-card__title">
+                                    Бизнес-миссии
+                                </p>
+                                <svg class="icon-svg drop-card__icon">
+                                    <use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="drop-card__main">
+                                <div class="drop-card__content">
+                                    <div class="block-text text">
+                                        <p>
+                                            Текст
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">
+                    <span class="title__text">Контакты</span>
+                </h2>
+                <div class="contacts">
+
+                    <article class="contact-card">
+                        <div class="image contact-card__thumb">
+                            <img class="image__pict image__pict--contain" src="http://placehold.it/200x900"
+                                 alt="Имя Фамилия">
+                            <figcaption class="image__discript" aria-hidden="true">
+                                Буров Роман Владимирович
+                            </figcaption>
+                        </div>
+                        <h4 class="contact-card__name">
+                            Буров <br> Роман Владимирович
+                        </h4>
+                        <div class="contact-card__links">
+                            <a href="tel:+74012994588" class="contact-card__link">
+                                +7 (4012) 994-588 (доб. 923)
+                            </a>
+                            <a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+                                burov@mbkaliningrad.ru
+                            </a>
+                        </div>
+                        <p class="contact-card__discript">
+                            Начальник отдела <br> "Центр микрофинансирования"
+                        </p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="image contact-card__thumb">
+                            <img class="image__pict image__pict--contain" src="http://placehold.it/200x900"
+                                 alt="Имя Фамилия">
+                            <figcaption class="image__discript" aria-hidden="true">
+                                Буров Роман Владимирович
+                            </figcaption>
+                        </div>
+                        <h4 class="contact-card__name">
+                            Буров <br> Роман Владимирович
+                        </h4>
+                        <div class="contact-card__links">
+                            <a href="tel:+74012994588" class="contact-card__link">
+                                +7 (4012) 994-588 (доб. 923)
+                            </a>
+                            <a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+                                burov@mbkaliningrad.ru
+                            </a>
+                        </div>
+                        <p class="contact-card__discript">
+                            Начальник отдела <br> "Центр микрофинансирования"
+                        </p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="image contact-card__thumb">
+                            <img class="image__pict image__pict--contain" src="http://placehold.it/200x900"
+                                 alt="Имя Фамилия">
+                            <figcaption class="image__discript" aria-hidden="true">
+                                Буров Роман Владимирович
+                            </figcaption>
+                        </div>
+                        <h4 class="contact-card__name">
+                            Буров <br> Роман Владимирович
+                        </h4>
+                        <div class="contact-card__links">
+                            <a href="tel:+74012994588" class="contact-card__link">
+                                +7 (4012) 994-588 (доб. 923)
+                            </a>
+                            <a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+                                burov@mbkaliningrad.ru
+                            </a>
+                        </div>
+                        <p class="contact-card__discript">
+                            Начальник отдела <br> "Центр микрофинансирования"
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+	<div class="footer__top">
+		<div class="container footer__container-top">
+			<button class="footer__to-top">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#to-top"></use>
+				</svg>
+			</button>
+			<div class="footer__top-columns">
+				<div class="footer__column footer__column--1">
+					<div class="footer__nav-column">
+						<div class="footer__links-column footer__links-column--1">
+							<h5 class="footer__title footer__title--small">
+								Меню
+							</h5>
+							<div class="footer__nav">
+								<a href="" class="footer__link">
+									Главная
+								</a>
+								<a href="" class="footer__link">
+									О нас
+								</a>
+								<a href="" class="footer__link">
+									Мероприятия
+								</a>
+								<a href="" class="footer__link">
+									Новости
+								</a>
+								<a href="" class="footer__link">
+									Меры поддержки
+								</a>
+							</div>
+						</div>
+						<div class="footer__links-column footer__links-column--2">
+							<h5 class="footer__title footer__title--big">
+								Меры поддержки
+							</h5>
+							<div class="footer__nav-flex">
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Льготное финансирование
+									</a>
+									<a href="" class="footer__link">
+										Консультации и обучение
+									</a>
+									<a href="" class="footer__link">
+										Поддержка экспорта
+									</a>
+									<a href="" class="footer__link">
+										Кластерное развитие
+									</a>
+									<a href="" class="footer__link">
+										Поддержка инноваций
+									</a>
+								</div>
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Предоставление поручительства
+									</a>
+									<a href="" class="footer__link">
+										Социальное предпринимательство
+									</a>
+									<a href="" class="footer__link">
+										Сельское хозяйство
+									</a>
+									<a href="" class="footer__link">
+										Программа "Восток"
+									</a>
+									<a href="" class="footer__link">
+										Повышение производительности труда
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__info none-image">
+						<div class="footer__info-column footer__info-column--66">
+							<div class="footer__logos">
+								<a href="/" class="footer__logo footer__logo--1">
+									<img src="img/logo-light.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+							</div>
+						</div>
+<!--						<div class="footer__info-column footer__info-column&#45;&#45;2">-->
+<!--							<a href="/" class="footer__logo-2">-->
+<!--								<img src="img/logo-light-2.svg" alt="Логотип">-->
+<!--							</a>-->
+<!--						</div>-->
+						<div class="footer__info-column footer__info-column--3">
+							<p class="footer__discript">
+								© Фонд Поддержки. Все права защищены  2013-2020
+								<br>
+								<br>
+								Разработано <a target="_blank" href="https://diez.io/">#diez technologies</a>
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="footer__column footer__column--2">
+					<h5 class="footer__title footer__title--big">
+						Соц.сети:
+					</h5>
+					<div class="footer__socials">
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#inst"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</div>
+					<form action="" class="search footer__search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<a href="" class="btn btn--60 footer__btn-profile">
+						<span>
+							Личный кабинет
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Блок DEMO полностью удали на проекте -->
+	<div class="demo">
+		<div class="container demo__container">
+			<div class="demo__column">
+				<a href="/0_ui-library.html" class="demo__link">
+					0.UI-kit
+				</a>
+				<a href="/" class="demo__link">
+					1.Главная
+				</a>
+				<a href="/2-page.html" class="demo__link">
+					2. О нас
+				</a>
+				<a href="/3-page.html" class="demo__link">
+					3. Мероприятия
+				</a>
+				<a href="/4-page.html" class="demo__link">
+					4. Новости
+				</a>
+				<a href="/4-1-page.html" class="demo__link">
+					4.1 Новость
+				</a>
+				<a href="/5-page.html" class="demo__link">
+					5. Документы фонда
+				</a>
+				<a href="/6-page.html" class="demo__link">
+					6. Микрокредитование
+				</a>
+				<a href="/6-1-page.html" class="demo__link">
+					6-1. Начни свое дело
+				</a>
+				<a href="/6-2-page.html" class="demo__link">
+					6-2. Социальное предприятие - Старт
+				</a>
+				<a href="/6-3-page.html" class="demo__link">
+					6-3. Социальное предприятие - Развитие
+				</a>
+				<a href="/6-4-page.html" class="demo__link">
+					6-4. Моногород
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-5. Стандарт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-6. Доверие
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-7. Старт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-8. Развитие
+				</a>
+				<a href="/7-page.html" class="demo__link">
+					7. Фонд развития промышленности
+				</a>
+				<a href="/8-page.html" class="demo__link">
+					8. Консультация и обучение
+				</a>
+				<a href="/8-1-page.html" class="demo__link">
+					8.1 Нормативные документы
+				</a>
+				<a href="/9-page.html" class="demo__link">
+					9. Центр поддержки экспорта
+				</a>
+				<a href="/9-1-page.html" class="demo__link">
+					9.1 Нормативно-правовые акты
+				</a>
+				<a href="/9-2-page.html" class="demo__link">
+					9.2 Путеводители для экспортеров
+				</a>
+				<a href="/10-page.html" class="demo__link">
+					10. Кластерное развитие
+				</a>
+				<a href="/11-page.html" class="demo__link">
+					11. Поддержка инноваций
+				</a>
+				<a href="/12-page.html" class="demo__link">
+					12. Предоставление поручительства
+				</a>
+				<a href="/12-1-page.html" class="demo__link">
+					12.1 Нормативные документы
+				</a>
+				<a href="/12-2-page.html" class="demo__link">
+					12.2 Лимиты поручительств
+				</a>
+				<a href="/12-3-page.html" class="demo__link">
+					12.3. Программа предосчтавления поручительства
+				</a>
+				<a href="/12-4-page.html" class="demo__link">
+					12.4 Отчетность
+				</a>
+				<a href="/13-page.html" class="demo__link">
+					13. Социальное предпринимательство
+				</a>
+				<a href="/14-page.html" class="demo__link">
+					14. Сельское хозяйство
+				</a>
+				<a href="/15-page.html" class="demo__link">
+					15. Программа Восток
+				</a>
+				<a href="/16-page.html" class="demo__link">
+					16. Повышение производительности труда
+				</a>
+				<a href="/17-page.html" class="demo__link">
+					17. Полезное видео
+				</a>
+				<a href="/18-page.html" class="demo__link">
+					18. Полезные книги
+				</a>
+				<a href="/none-page.html" class="demo__link">
+					18. 404
+				</a>
+				<a href="/19-page.html" class="demo__link">
+					19. Поиск
+				</a>
+			</div>
+			<div class="demo__column">
+				<a href="/20-01-page.html" class="demo__link">
+					20.01. Документы
+				</a>
+				<a href="/20-02-page.html" class="demo__link">
+					20.02. Цель центра
+				</a>
+				<a href="/20-03-page.html" class="demo__link">
+					20.03. Услуги центра
+				</a>
+				<a href="/20-04-page.html" class="demo__link">
+					20.04. Функции центра
+				</a>
+				<a href="/20-05-page.html" class="demo__link">
+					20.05. Ювелирная площадка «Элеватор»
+				</a>
+				<a href="/20-06-page.html" class="demo__link">
+					20.06. Башня Врангеля
+				</a>
+				<a href="/20-07-page.html" class="demo__link">
+					20.07. Кластер янтарной промышленности
+				</a>
+				<a href="/20-08-page.html" class="demo__link">
+					20.08. Создание индустриального парка
+				</a>
+				<a href="/20-09-page.html" class="demo__link">
+					20.09. Хаусбот, Ушаковские верфи
+				</a>
+				<a href="/20-10-page.html" class="demo__link">
+					20.10. Кластер судостроения
+				</a>
+				<a href="/20-11-page.html" class="demo__link">
+					20.11. Металлообрабатывающий кластер
+				</a>
+				<a href="/20-12-page.html" class="demo__link">
+					20.12. Умная среда
+				</a>
+				<a href="/20-13-page.html" class="demo__link">
+					20.13. Трубный завод
+				</a>
+				<a href="/20-14-page.html" class="demo__link">
+					20.14. Завод металлоконструкций
+				</a>
+				<a href="/20-15-page.html" class="demo__link">
+					20.15. Кластерное развитие
+				</a>
+				<a href="/21-page.html" class="demo__link">
+					21. Социальное предпринимательство
+				</a>
+				<a href="/24-page-index.html" class="demo__link">
+					24. Главная-Микрокредитование
+				</a>
+				<a href="/24-1-page.html" class="demo__link">
+					24-1. Для самозанятых
+				</a>
+				<a href="/24-2-page.html" class="demo__link">
+					24-2. Для субъектов МСП
+				</a>
+				<a href="/24-3-page.html" class="demo__link">
+					24-3. Для СМСП
+				</a>
+				<a href="/24-4-page.html" class="demo__link">
+					24-4. Полезная информация
+				</a>
+				<a href="/24-5-page.html" class="demo__link">
+					24-5. Контакты
+				</a>
+				<a href="/24-6-page.html" class="demo__link">
+					24-6. Начни свое дело
+				</a>
+				<a href="/24-7-page.html" class="demo__link">
+					24-7. Старт
+				</a>
+				<a href="/24-8-page.html" class="demo__link">
+					24-8. Развитие
+				</a>
+				<a href="/24-9-page.html" class="demo__link">
+					24-9. Моногород
+				</a>
+				<a href="/24-10-page.html" class="demo__link">
+					24-10. Стандарт
+				</a>
+				<a href="/24-11-page.html" class="demo__link">
+					24-11. Доверие
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-12. "Старт" еще раз
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-13. "Развитие" еще раз
+				</a>
+				<a href="/25-page.html" class="demo__link">
+					25. Услуги для самозанятых граждан
+				</a>
+				<a href="/26-page.html" class="demo__link">
+					26. Фонд развития промышленности
+				</a>
+				<a href="/27-page.html" class="demo__link">
+					27. Услуги 3D прототипирования и 3D печати
+				</a>
+				<div class="hr"></div>
+				<a href="/28-injiniring-main.html" class="demo__link">
+					Инжиниринг главная
+				</a>
+				<a href="/29-questions.html" class="demo__link">
+					Опросник
+				</a>
+				<a href="/30-grants.html" class="demo__link">
+					Гранты
+				</a>
+				<a href="/31-companies.html" class="demo__link">
+					Компании
+				</a>
+				<a href="/32-financial-help.html" class="demo__link">
+					Финансовая поддержка
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Окно мероприятия -->
+<div class="modal mfp-hide">
+	<div class="modal__content text">
+		<h4>
+			Онлайн-тренинг «Возможности маркетплейсов для малого бизнеса: на примере торговой платформы Wildberries»
+		</h4>
+		<a href="" class="btn btn--60">
+			<span>Страница мероприятия</span>
+		</a>
+		<p>
+			В кризисной ситуации, когда розничные точки закрылись практически в один день, компании почти полностью переместили свою деятельность в Интернет. И для малого бизнеса этот путь стал единственным способом выжить Однако одномоментно сделать собственный продающий сайт и привлечь туда клиентов очень сложно. Выходом для малого и среднего бизнеса стало сотрудничество с маркетплейсами. В число крупнейших из них входит торговая платформа Wildberries.
+		</p>
+		<p>
+			<b>
+				На вебинаре разберём вопросы:
+			</b>
+		</p>
+		<ul>
+			<li>
+				могут ли маркетплейсы решить проблемы, вызванные кризисом?
+			</li>
+			<li>
+				сотрудничество с Wildberries: как стать партнером крупнейшего продавца Рунета?
+			</li>
+			<li>
+				возможности торговой платформы Wildberries для управления поставками и продажами.
+			</li>
+			<li>
+				какие инструменты важно использовать для успешных продаж в онлайн-магазине?
+			</li>
+			<li>
+				на какую поддержку могут рассчитывать предприниматели.
+			</li>
+		</ul>
+		<p>
+			Ответы на эти и другие вопросы о работе с маркетплейсом Wildberries вы сможете найти, став участником онлайн-тренинга, организованного совместно с АО «Корпорацией МСП» и Wildberries. Вы сможете рассмотреть ситуацию со всех сторон. В числе спикеров будут и представитель Wildberries, и предприниматель, который с ними успешно сотрудничает, и представители инфраструктуры поддержки предпринимателей.
+		</p>
+	</div>
+</div>
+</div>
+
+<script>
+	// Вынес сюда ссылки для мобильного меню, чтобы было проще. Если ссылки нет, то не выводи ее
+	let mobileLinks = [
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#fb"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#inst"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#vk"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#youtube"></use></svg></a>'
+	];
+
+	let mobileContacts = [
+	'<p class="mmenu__contact-lines"><a href="tel:+74012994588">+7 (4012) 994 588</a></p>',
+	'<p class="mmenu__contact-lines"><a href="mailto:info@mbkaliningrad.ru">info@mbkaliningrad.ru</a></p>'
+	];
+</script>
+<nav id="mmenu">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="/2-page.html">О нас</a></li>
+		<li><a href="/3-page.html">Мероприятия</a></li>
+		<li><a href="/4-page.html">Новости</a></li>
+		<li><span>Меры поддержки</span>
+			<ul>
+				<li><a href="/6-page.html">Микрокредитование</a></li>
+				<li><a href="/7-page.html">Фонд развития промышленности</a></li>
+				<li><span>Консультации и обучение</span>
+					<ul>
+						<li><a href="/8-1-page.html">Нормативые документы</a></li>
+					</ul>
+				</li>
+				<li><span>Поддержка экспорта</span>
+					<ul>
+						<li><a href="/9-1-page.html">Нормативно-правовые акты</a></li>
+						<li><a href="/9-2-page.html">Путеводители для экспорта</a></li>
+					</ul>
+				</li>
+				<li><a href="/10-page.html">Кластерное развитие</a></li>
+				<li><a href="/11-page.html">Поддержка инноваций</a></li>
+				<li><a href="/12-page.html">Предоставление поручительства</a>
+					<ul>
+						<li><a href="/12-1-page.html">Нормативые документы</a></li>
+						<li><a href="/12-2-page.html">Лимиты поручительств</a></li>
+						<li><a href="/12-3-page.html">Программа предоставления поручительства</a></li>
+						<li><a href="/12-4-page.html">Отчётность</a></li>
+					</ul>
+				</li>
+				<li><a href="/13-page.html">Социальное предпринимательство</a></li>
+				<li><a href="/14-page.html">Сельское хозяйство</a></li>
+				<li><a href="/15-page.html">Программа "Восток"</a></li>
+				<li><a href="/16-page.html">Повышение производительности труда</a></li>
+			</ul>
+		</li>
+		<li><span>Полезное</span>
+			<ul>
+				<li><a href="/17-page.html">Полезные видеоматериалы</a></li>
+				<li><a href="/18-page.html">Полезные книги</a></li>
+				<li><span>Онлайн-курсы</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт"</a></li>
+						<li><a href="/">"Мой бизнес. Налоги"</a></li>
+						<li><a href="/">"120 секунд" (14-17 лет)</a></li>
+					</ul>
+				</li>
+				<li><span>Спецпроекты</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт" (создание тренировочных фирм)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav id="mmenu-m">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="24-1-page.html">Программы для самозанятых</a>
+			<ul>
+				<li><a href="24-12-page.html">Программа "Старт"</a></li>
+				<li><a href="24-13-page.html">Программа "Развитие"</a></li>
+			</ul>
+		</li>
+		<li><a href="24-2-page.html">Для субъектов МСП</a>
+			<ul>
+				<li><a href="24-6-page.html">Начни свое дело</a></li>
+				<li><a href="24-7-page.html">Социальное предприятие-Старт</a></li>
+				<li><a href="24-8-page.html">Социальное предприятие-Развитие</a></li>
+				<li><a href="24-9-page.html">Моногород</a></li>
+				<li><a href="24-10-page.html">Стандарт</a></li>
+				<li><a href="24-11-page.html">Доверие</a></li>
+			</ul>
+		</li>
+		<li><a href="24-3-page.html">Программы для СМСП</a></span></li>
+		<li><a href="24-4-page.html">Полезная информация</a></li>
+		<li><a href="24-5-page.html">Контакты</a></li>
+	</ul>
+</nav>
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

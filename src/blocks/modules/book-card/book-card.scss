@@ -1,0 +1,72 @@
+.book-card {
+	width: 100%;
+	background-color: #f7f9fa;
+	display: flex;
+	padding: rem(50px);
+	text-decoration: none;
+	color: $black;
+	margin-bottom: rem(20px);
+	border-radius: rem(5px);
+	@include r(1200) {
+		padding: rem(25px);
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+	&__column-thumb {
+		padding-left: rem(25px);
+		padding-right: rem(25px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: rem(380px);
+		max-width: 100%;
+		flex-shrink: 0;
+		position: relative;
+		margin-bottom: rem(20px);
+		@include r(1200) {
+			display: none;
+			visibility: hidden;
+		}
+		img {
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__column-content {
+		padding-left: rem(25px);
+		padding-right: rem(25px);
+		@include r(1200) {
+			padding: 0;
+		}
+	}
+	&__tag {
+		position: absolute;
+		z-index: 2;
+		top: rem(22px);
+		left: 0;
+		background-color: $red;
+		color: $light;
+		font-weight: normal;
+		padding: rem(12px) rem(32px);
+	}
+	&__title {
+		font-weight: bold;
+		font-size: rem(24px);
+		margin-bottom: rem(20px);
+	}
+	&__text {
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.book-card {
+			background-color: $black;
+			color: $light;
+		}
+	}
+}

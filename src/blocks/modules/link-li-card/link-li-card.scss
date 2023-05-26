@@ -1,0 +1,138 @@
+.link-li-card {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
+    transition: 0.3s opacity;
+    color: #58595b;
+    border-top: 1px solid #d1d9dd;
+    @include r(1200) {
+        padding-top: rem(25px);
+        padding-bottom: rem(25px);
+        flex-direction: column;
+        gap: rem(0px);
+    }
+    &:hover,
+    &:focus {
+        .link-li-card {
+            &__path {
+                &--focus-red {
+                    fill: $red;
+                }
+                &--focus-light {
+                    fill: $light;
+                }
+            }
+        }
+    }
+    &__column {
+        @include r(1200) {
+            width: 100%;
+        }
+        &--number {
+            width: 15%;
+            //padding-left: rem(56px);
+            //@include r(1200) {
+            //    padding-left: 0;
+            //}
+        }
+        &--title {
+            width: 30%;
+            @include r(1200) {
+                margin-bottom: rem(0px);
+            }
+        }
+        &--text {
+            width: 52%;
+            padding-top: rem(5px);
+            @include r(1200) {
+                margin-bottom: rem(10px);
+            }
+        }
+        &--icon {
+            width: 8%;
+            padding-top: rem(5px);
+        }
+    }
+    &__number {
+        font-weight: 500;
+        font-size: rem(36px);
+        line-height: 1.5;
+        //margin-bottom: rem(7px);
+        color: $black;
+        @include r(1200) {
+            font-size: rem(22px);
+            font-weight: 300;
+        }
+    }
+    &__title {
+        color: $black;
+        font-weight: 500;
+        font-size: rem(36px);
+        line-height: 1.5;
+        //margin-bottom: rem(7px);
+    }
+    &__description {
+        font-size: rem(14px);
+    }
+    &__icon {
+        fill: $red;
+        display: block;
+        width: rem(40px);
+        height: rem(40px);
+    }
+    &__path {
+        transition: 0.3s all;
+        &--red {
+            fill: $red;
+            color: #E04E39;
+        }
+    }
+}
+
+.body {
+	&--light {
+
+	}
+	&--dark {
+        .link-li-card {
+            color: $light;
+            border-color: $light;
+            &:hover,
+            &:focus {
+                .link-li-card {
+                    &__path {
+                        &--focus-red {
+                            fill: $black;
+                        }
+                        &--focus-light {
+                            fill: $light;
+                        }
+                    }
+                }
+            }
+            &__number {
+            }
+            &__title {
+                color: $light;
+            }
+            &__description {
+                
+            }
+            &__icon {
+                fill: $red;
+
+            }
+            &__path {
+                &--focus-red {
+                    fill: $black;
+                }
+                &--red {
+                    fill: $red;
+                }
+            }
+        }
+	}
+}

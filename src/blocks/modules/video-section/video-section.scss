@@ -1,0 +1,23 @@
+.video-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@include r(750) {
+		display: block;
+	}
+	&__content {
+		width: calc(50% - 10px);
+		@include r(750) {
+			width: 100%;
+			margin-bottom: rem(30px);
+		}
+	}
+	&__video {
+		display: block;
+		width: calc(50% - 10px);
+		height: rem(360px);
+		@include r(750) {
+			width: 100%;
+		}
+	}
+}

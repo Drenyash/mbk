@@ -1,0 +1,16 @@
+.block-form-submitted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: rem(500px);
+    &__icon {
+        width: rem(78px);
+        height: rem(78px);
+        margin-bottom: rem(60px);
+    }
+    &__text {
+        font-size: rem(24px);
+        font-weight: 400;
+    }
+}

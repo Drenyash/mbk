@@ -1,0 +1,158 @@
+// Layout
+@import "modules/page/page";
+@import "modules/body/body";
+@import "modules/content/content";
+@import "modules/container/container";
+@import "modules/section/section";
+@import "modules/columns/columns";
+
+// UI
+@import "modules/card-marker/card-marker";
+@import "modules/link-card-icon/link-card-icon";
+@import "modules/block-question/block-question";
+@import "modules/form-search/form-search";
+@import "modules/card-ticket/card-ticket";
+@import "modules/card-accent/card-accent";
+@import "modules/block-agreement/block-agreement";
+@import "modules/block-form-submitted/block-form-submitted";
+@import "modules/article-factoid/article-factoid";
+@import "modules/article-video/article-video";
+@import "modules/article-partner/article-partner";
+@import "modules/article-card-link/article-card-link";
+@import "modules/article-factoid-image/article-factoid-image";
+@import "modules/article-contact-card/article-contact-card";
+@import "modules/block-text/block-text";
+@import "modules/block-card/block-card";
+@import "modules/btn/btn";
+@import "modules/articles/articles";
+@import "modules/marked-block/marked-block";
+@import "modules/breadcrumbs/breadcrumbs";
+@import "modules/title/title";
+@import "modules/h3/h3";
+@import "modules/title-card/title-card";
+@import "modules/title-card-thumb/title-card-thumb";
+@import "modules/accent-text/accent-text";
+@import "modules/link-card/link-card";
+@import "modules/link-li-card/link-li-card";
+@import "modules/link-block/link-block";
+@import "modules/factoid-card/factoid-card";
+@import "modules/progress-card/progress-card";
+@import "modules/factoid-column/factoid-column";
+@import "modules/contacts/contacts";
+@import "modules/contact-card/contact-card";
+@import "modules/video-block/video-block";
+@import "modules/video-article/video-article";
+@import "modules/drop-card/drop-card";
+@import "modules/ill-card/ill-card";
+@import "modules/info-card/info-card";
+@import "modules/info-block/info-block";
+@import "modules/adress-card/adress-card";
+@import "modules/circle-card/circle-card";
+@import "modules/icon-card/icon-card";
+@import "modules/search/search";
+@import "modules/image/image";
+@import "modules/program-card/program-card";
+@import "modules/step-card/step-card";
+@import "modules/tabs/tabs";
+@import "modules/tab-btns/tab-btns";
+@import "modules/dropdown/dropdown";
+@import "modules/books/books";
+@import "modules/book-card/book-card";
+@import "modules/news-tabs/news-tabs";
+@import "modules/hr/hr";
+@import "modules/time/time";
+@import "modules/share/share";
+@import "modules/units/units";
+@import "modules/icon-list/icon-list";
+@import "modules/step-link/step-link";
+@import "modules/pagination/pagination";
+@import "modules/result-toolbar/result-toolbar";
+@import "modules/result/result";
+@import "modules/page-nav/page-nav";
+@import "modules/accordeon/accordeon";
+@import "modules/adress-line/adress-line";
+@import "modules/video-section/video-section";
+@import "modules/gallery/gallery";
+@import "modules/contest-block/contest-block";
+@import "modules/download-block/download-block";
+@import "modules/table-flex/table-flex";
+@import "modules/link-grid/link-grid";
+@import "modules/item-progress/item-progress";
+@import "modules/icon-fact/icon-fact";
+@import "modules/text-discription/text-discription";
+@import "modules/item-prof/item-prof";
+@import "modules/link-line/link-line";
+@import "modules/card-download/card-download";
+@import "modules/accent-block/accent-block";
+@import "modules/block-map/block-map";
+@import "modules/list-number/list-number";
+@import "modules/link-card/link-card";
+@import "modules/questionare/questionare";
+@import "modules/pagination-points/pagination-points";
+@import "modules/link-contact/link-contact";
+@import "modules/button-toolbar/button-toolbar";
+@import "modules/block-item-company/block-item-company";
+@import "modules/block-line-content/block-line-content";
+@import "modules/block-socials/block-socials";
+@import "modules/slider-thumbs/slider-thumbs";
+@import "modules/slider-intro/slider-intro";
+@import "modules/article-drop-card/article-drop-card";
+@import "modules/accent-title/accent-title";
+@import "modules/language-swap/language-swap";
+@import "modules/article-news/article-news";
+@import "modules/article-calendar/article-calendar";
+
+@import "modules/ui-library/circle";
+@import "modules/panel/panel";
+@import "modules/header/header";
+@import "modules/header-m/header-m";
+@import "modules/footer/footer";
+@import "modules/footer-m/footer-m";
+@import "modules/form/form";
+@import "modules/m-menu/m-menu";
+@import "modules/sliders/sliders";
+@import "modules/event/event";
+@import "modules/none/none";
+
+@import "modules/block_article/article";
+@import "modules/intro-m/intro-m";
+@import "modules/title-card-m/title-card-m";
+
+@import "modules/1_intro/intro";
+@import "modules/1_stories/stories";
+@import "modules/1_factoid/factoid";
+@import "modules/1_news/news";
+@import "modules/1_events/events";
+@import "modules/1_partners/partners";
+@import "modules/1_slider/slider";
+@import "modules/1_map/map";
+@import "modules/modal/modal";
+
+// Дальше по БЭМ, отдельный блок - отдельный файл
+@import "modules/sidebar/sidebar";
+@import "modules/link-aside/link-aside";
+@import "modules/select-aside/select-aside";
+@import "modules/block-wrapper/block-wrapper";
+@import "modules/block-frk/block-frk";
+@import "modules/block-diagram/block-diagram";
+@import "modules/toolbar/toolbar";
+@import "modules/slider-news/slider-news";
+// Плагины
+
+@include r(1200) {
+	
+}
+@include r(750) {
+	
+}
+
+
+// Шаблон для переключения тем
+.body {
+	&--light {
+		
+	}
+	&--dark {
+		
+	}
+}

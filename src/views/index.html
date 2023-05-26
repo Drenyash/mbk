@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>1.Главная</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body body--light">
+<div class="page">
+	@@include("../blocks/modules/panel/panel.html")
+	@@include("../blocks/modules/header/header.html")
+	<main class="content">
+		@@include("../blocks/modules/1_intro/intro.html")
+		<section class="front-news hide-bg">
+			<div class="container front-news__container">
+				<h2 class="title title--line stories__title">
+					<span class="title__text">Новости</span>
+				</h2>
+				<div class="slider-news">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="article-news article-news--bg"
+									 style="background-image: url('./img/news-1.jpg')">
+								<div class="article-news__info">
+									<time class="article-news__date">
+										<span>19:18</span>
+										|
+										<span>15 февраля</span>
+									</time>
+									<h3 class="article-news__title">Открыт прием заявок на конкурс
+										РФРИТ среди проектов в сфере IT</h3>
+									<p class="article-news__text">
+										Российский фонд развития информационных технологий объявляет о начале приема
+										заявок на участие в конкурсном отборе на ...
+									</p>
+								</div>
+								<div class="article-news__icon">
+									<svg>
+										<use xlink:href="./img/sprites/sprite.svg#hot"></use>
+									</svg>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="article-news article-news--bg"
+									 style="background-image: url('./img/news-1.jpg')">
+								<div class="article-news__info">
+									<time class="article-news__date">
+										<span>19:18</span>
+										|
+										<span>15 февраля</span>
+									</time>
+									<h3 class="article-news__title">Открыт прием заявок на конкурс
+										РФРИТ среди проектов в сфере IT</h3>
+									<p class="article-news__text">
+										Российский фонд развития информационных технологий объявляет о начале приема
+										заявок на участие в конкурсном отборе на ...
+									</p>
+								</div>
+								<div class="article-news__icon">
+									<svg>
+										<use xlink:href="./img/sprites/sprite.svg#hot"></use>
+									</svg>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="article-news article-news--bg"
+									 style="background-image: url('./img/news-1.jpg')">
+								<div class="article-news__info">
+									<time class="article-news__date">
+										<span>19:18</span>
+										|
+										<span>15 февраля</span>
+									</time>
+									<h3 class="article-news__title">Открыт прием заявок на конкурс
+										РФРИТ среди проектов в сфере IT</h3>
+									<p class="article-news__text">
+										Российский фонд развития информационных технологий объявляет о начале приема
+										заявок на участие в конкурсном отборе на ...
+									</p>
+								</div>
+								<div class="article-news__icon">
+									<svg>
+										<use xlink:href="./img/sprites/sprite.svg#hot"></use>
+									</svg>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="slider-news__toolbar">
+					<a href="/news/" class="btn btn--60 btn--dark slider-news__btn">
+						<span class="btn__text">Все новости</span>
+					</a>
+					<div class="slider-news__control">
+						<button
+							class="slider-news__slide-btn slider-news__slide-btn--prev slider-news__slide-btn--disabled"
+							tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true">
+							<svg>
+								<use xlink:href="./img/sprites/sprite.svg#slider-news-arrow-prev"></use>
+							</svg>
+						</button>
+						<div class="slider-news__pagination"></div>
+						<button class="slider-news__slide-btn slider-news__slide-btn--next" tabindex="0"
+								role="button" aria-label="Next slide" aria-disabled="false">
+							<svg>
+								<use xlink:href="./img/sprites/sprite.svg#slider-news-arrow-next"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include("../blocks/modules/1_factoid/factoid.html")
+		<section class="front-events">
+			<div class="container front-events__container">
+				<h2 class="title title--line front-events__title">
+					<span class="title__text">Мероприятия</span>
+				</h2>
+				@@include("../blocks/modules/1_events/events.html")
+			</div>
+		</section>
+		@@include("../blocks/modules/1_partners/partners.html")
+		@@include("../blocks/modules/1_map/map.html")
+	</main>
+	@@include("../blocks/modules/footer/footer.html")
+</div>
+
+@@include("../blocks/modules/m-menu/m-menu.html")
+
+
+<script src="./js/main.js" type="text/javascript"></script>
+<script src="./js/vendor.js" type="text/javascript"></script>
+</body>
+</html>

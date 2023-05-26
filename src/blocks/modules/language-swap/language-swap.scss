@@ -1,0 +1,39 @@
+.language-swap {
+  display: flex;
+  align-items: center;
+  column-gap: rem(10px);
+
+  &__item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      color: #E04E39;
+    }
+    &:first-child::before {
+      position: absolute;
+      top: 0;
+      right: -5px;
+      content: '';
+      display: flex;
+      width: 1px;
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: rem(14px);
+    transition: .2s linear;
+  }
+
+  input {
+    display: none;
+  }
+}
+.language-swap input:checked ~ .language-swap__text {
+  color: #E04E39;
+}

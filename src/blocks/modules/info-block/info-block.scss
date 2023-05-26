@@ -1,0 +1,76 @@
+.info-block {
+	padding: rem(40px) rem(45px) rem(20px) rem(45px);
+	background: #f7f9fa;
+	border-radius: rem(5px);
+	margin-bottom: rem(20px);
+	width: 100%;
+	@include r(1200) {
+		padding: rem(25px);
+	}
+	strong,
+	b {
+		color: $red;
+	}
+	&--accent {
+		background-color: rgba(224, 78, 57, 0.1);
+		background-image: url("../img/info-block-accent.svg");
+		background-repeat: no-repeat;
+		background-position: 90% center;
+	}
+	&--warning {
+		background-color: rgba(224, 78, 57, 0.2);
+		background-image: url("../img/info-block-warning.svg");
+		background-repeat: no-repeat;
+		background-position: 90% center;
+	}
+	&--grey {
+		background-color: #F5F5F5;
+		@include r(1200) {
+			padding: rem(0);
+			background-color: inherit;
+		}
+	}
+	&--6 {
+		width: calc(50% - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
+		&-clear {
+			height: 0;
+			padding: 0;
+			visibility: hidden;
+			@include r(1200) {
+				display: none;
+			}
+		}
+	}
+	&--4 {
+		width: calc(100% / 3 - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
+		&-clear {
+			height: 0;
+			padding: 0;
+			visibility: hidden;
+			@include r(1200) {
+				display: none;
+			}
+		}
+	}
+	&--light {
+		background-color: $light;
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.info-block {
+			border: 1px solid $light;
+			background-color: $black;
+			background: none !important;
+		}
+	}
+}

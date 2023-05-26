@@ -1,0 +1,22 @@
+.units {
+	border: 1px solid red;
+	&__header {}
+	&__main {
+		padding-top: rem(60px);
+	}
+	&__block {
+		visibility: hidden;
+		display: none;
+		&--active {
+			display: block;
+			visibility: visible;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

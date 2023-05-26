@@ -1,0 +1,42 @@
+.pt {
+    &-40 {
+        padding-top: rem(40px);
+    }
+    &-60 {
+        padding-top: rem(60px);
+    }
+    &-85 {
+        padding-top: rem(85px);
+    }
+}
+
+.pb {
+    &-0 {
+        padding-bottom: rem(0px);
+    }
+    &-40 {
+        padding-bottom: rem(40px);
+    }
+    &-85 {
+        padding-bottom: rem(85px);
+    }
+    &-100 {
+        padding-bottom: rem(100px);
+    }
+}
+
+.ptm {
+    &-25 {
+        @include r(1200) {
+            padding-top: rem(25px);
+        }
+    }
+}
+
+.pbm {
+    &-25 {
+        @include r(1200) {
+            padding-bottom: rem(25px);
+        }
+    }
+}

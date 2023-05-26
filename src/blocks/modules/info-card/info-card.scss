@@ -1,0 +1,58 @@
+.info-card {
+	padding: rem(95px) rem(50px);
+	display: flex;
+	justify-content: space-between;
+	background-color: #f7f9fa;
+	border-radius: rem(5px);
+	margin-bottom: rem(80px);
+	@include r(1200) {
+		display: block;
+	}
+	@include r(750) {
+		padding: rem(25px);
+		margin-bottom: rem(50px);
+	}
+	&__left {
+		width: calc(100% / 12 * 7 - 25px);
+		@include r(1200) {
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+	&__right {
+		width: calc(100% / 12 * 5 - 25px);
+		@include r(1200) {
+			width: 100%;
+		}
+	}
+	&__thumb {
+		margin-bottom: 2rem;
+		@include r(1200) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	&__text {
+		margin-bottom: 1rem;
+		strong {
+			font-weight: bold;
+		}
+		&--strong {
+			font-weight: bold;
+			strong {
+				color: $accent;
+			}
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.info-card {
+			background-color: $black;
+			border: 1px solid $light;
+		}
+	}
+}

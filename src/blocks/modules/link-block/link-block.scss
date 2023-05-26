@@ -1,0 +1,68 @@
+.link-block {
+	margin-bottom: rem(20px);
+	background: #ffffff;
+	border: 1px solid #d1d9dd;
+	box-sizing: border-box;
+	border-radius: rem(5px);
+	padding: rem(20px) rem(55px) rem(20px) rem(30px);
+	display: block;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url("../img/dots-bg.svg");
+	background-size: rem(306px) auto;
+	background-repeat: no-repeat;
+	background-position: right;
+	color: $black;
+	text-decoration: none;
+	@include r(1200) {
+		display: block;
+		background: none !important;
+		text-align: center;
+		padding: rem(20px);
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+	&__thumb {
+		display: block;
+		width: rem(34px);
+		height: 34px;
+		flex-shrink: 0;
+		margin-right: rem(18px);
+		flex-shrink: 0;
+		@include r(1200) {
+			display: none;
+			visibility: hidden;
+		}
+		svg {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__title {
+		font-size: rem(18px);
+		flex-grow: 1;
+		@include r(1200) {
+			margin-bottom: rem(20px);
+		}
+	}
+	&__btn {
+		flex-shrink: 0;
+		padding-left: rem(60px);
+		padding-right: rem(60px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.link-block {
+			background-color: $black;
+			color: $light;
+		}
+	}
+}

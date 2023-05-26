@@ -1,0 +1,22 @@
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	padding-left: rem(140px);
+	padding-right: rem(140px);
+	flex-wrap: wrap;
+	@include r(1200) {
+		padding-left: rem(50px);
+		padding-right: rem(50px);
+	}
+	@include r(750) {
+		padding-right: rem(25px);
+		padding-left: rem(25px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

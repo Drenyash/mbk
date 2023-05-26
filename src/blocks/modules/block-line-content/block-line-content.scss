@@ -1,0 +1,55 @@
+.block-line-content {
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    display: flex;
+    border-bottom: 1px solid #D1D9DD;
+    padding-left: rem(5px);
+    padding-right: rem(5px);
+    @include r(1200) {
+        padding-top: rem(5px);
+        padding-bottom: rem(5px);
+        display: block;
+        border: none;
+    }
+    &:first-of-type {
+        padding-top: 0;
+    }
+    &:last-of-type {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+    &--invert {
+        border-color: #ffffff;
+    }
+    &__title {
+        width: 30%;
+        font-size: rem(14px);
+        color: #929292;
+        flex-shrink: 0;
+        @include r(1200) {
+            width: 100%;
+            margin-bottom: rem(5px);
+        }
+    }
+    &__content {
+        width: 70%;
+        font-weight: 500;
+        color: #556269;
+        @include r(1200) {
+            width: 100%;
+        }
+        & :last-child {
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+}

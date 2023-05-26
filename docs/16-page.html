@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>16. Повышение производительности труда</title>
+		<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="body body--light">
+	<div class="page">
+		<section class="panel">
+	<div class="container panel__container">
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-image"><span>Выключить изображения</span></button>
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-theme"><span>Контрастный режим</span></button>
+	</div>
+</section>
+		<header class="header">
+	<div class="header__topline">
+		<div class="container header__topline-container">
+			<div class="header__topline-left">
+				<a href="" class="header__link open-panel">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#eye"></use>
+					</svg>
+					<span>
+						Режим для слабовидящих
+					</span>
+				</a>
+				<a href="tel:+74012994588" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#call"></use>
+					</svg>
+					<span>
+						+7 (4012) 994 588
+					</span>
+				</a>
+				<a href="mailto:info@mbkaliningrad.ru" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#mail"></use>
+					</svg>
+					<span>
+						info@mbkaliningrad.ru
+					</span>
+				</a>
+			</div>
+			<div class="header__topline-right">
+				<form action="" class="search header__search mobile-hide">
+					<input type="text" class="search__input" placeholder="Поиск по сайту">
+					<button class="search__btn">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<form class="language-swap">
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_RUS" checked>
+						<span class="language-swap__text">Рус</span>
+					</label>
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_ENG">
+						<span class="language-swap__text">Eng</span>
+					</label>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div class="header__downline">
+		<div class="container header__downline-container">
+			<a class="header__logo" href="/">
+				<img src="img/logo.svg"  alt="Логотип фирмы">
+			</a>
+			<nav class="header__menu mobile-hide">
+				<a href="/" class="header__menu-link header__menu-link--active">
+					Новости
+				</a>
+				<a href="/" class="header__menu-link">
+					Мероприятия
+				</a>
+			</nav>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-1">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#break-menu"></use>
+				</svg>
+				<span>Меры поддержки</span>
+			</a>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-2">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#lattice"></use>
+				</svg>
+				<span>Полезное</span>
+			</a>
+			<a href="#mmenu" class="header__mob-menu">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--support">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-1"></use>
+							</svg>
+						</div>
+						<p class="drop-nav__text">
+							Микрокредитование
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-2"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Фонд развития промышленности
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-3"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Консультации и обучение
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-4"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка экспорта
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-5"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Кластерное развитие
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-6"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка инноваций
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-7"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Предоставление поручительства
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-8"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Социальное предпринимательство
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-9"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Сельское хозяйство
+						</p>
+					</a>
+					<!-- <a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-10"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа "Восток"
+						</p>
+					</a> -->
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-11"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Повышение производительности труда
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-19"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Центр креативных индустрий
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-20"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа на поддержание рынка труда
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--help">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-12"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные видеоматериалы
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Онлайн курсы
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-13"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-14"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Налоги"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-15"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"120 секунд" (14-17 лет)
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-16"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные книги
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Спецпроекты
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-17"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт" (создание тренировочных фирм)
+						</p>
+					</a>
+
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-18"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Клуб ВЭД
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="content page__content">
+			<section class="section">
+				<div class="container ui__container">
+					<nav class="breadcrumbs">
+						<a href="/" class="breadcrumbs__link">
+							Главная
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Меры поддержки
+						</span>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Повышение производительности труда
+						</span>
+					</nav>
+					<h2 class="title title--line">
+						<span class="title__text">Повышение производительности труда</span>
+						<a href="" class="btn btn--60 btn--doc title__btn">
+							<span>
+								Документы Фонда
+							</span>
+						</a>
+					</h2>
+					<article class="title-card hide-bg" style="background-image: url('http://placehold.it/1200x900');">
+						<div class="title-card__wrapper">
+							<div class="title-card__content">
+								<h3 class="title-card__title">
+									Региональный центр компетенций в сфере производительности труда
+								</h3>
+								<div class="title-card__text text">
+									<p>
+										В рамках реализации региональной программы «Повышение производительности труда и поддержка занятости населения» в Калининградской области в структуре Фонда «Центр поддержки предпринимательства Калининградской области (микрокредитная компания)» создан Региональный центр компетенций в сфере производительности труда. Сотрудники РЦК обеспечивают квалифицированную помощь экспертов по повышению эффективности производственных процессов непосредственно на предприятиях-участниках национального проекта и обучение сотрудников предприятий-участников под региональным управлением методам повышения производительности труда.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="block-text text">
+						<h3>
+							Функции РЦК в сфере производительности труда: 
+						</h3>
+						<ul>
+							<li>
+								Содействие разработке эффективных стратегий поддержки производительности труда и занятости населения, формированию условий и предпосылок и выявлению потенциала для достижения устойчивого качественного роста производительности труда и показателей занятости населения в Калининградской области;
+							</li>
+							<li>
+								Агрегирование лучших международных практик в сфере повышения производительности труда и поддержки занятости, оценка перспектив их применения в Калининградской области, а также подготовка предложений по их внедрению на территории Калининградской области с учетом национальной (региональной, отраслевой (в том числе межрегиональной, межотраслевой) специфики;
+							</li>
+							<li>
+								Выявление и распространение на все предприятия передовых практик повышения производительности труда и поддержки занятости, оптимизации производственных и хозяйственных процессов и технологий проектного управления и пр.;
+							</li>
+							<li>
+								Разработка рекомендаций и предложений, организация консультационной поддержки по вопросам повышения управленческой и операционной эффективности предприятий и иных хозяйствующих субъектов, формирования инновационной и творческой культуры на производстве и в организациях непроизводственной сферы;
+							</li>
+							<li>
+								Организация и проведение конференций, выставок, семинаров, публичных слушаний, круглых столов, конкурсов и других мероприятий, в том числе международных, по вопросам, относящимся к сфере деятельности РЦК
+							</li>
+							<li>
+								Взаимодействие с экспертным сообществом, создание и организация функционирования рабочих групп (иных временных коллективов) экспертов, ученых, аналитиков, специалистов по вопросам, относящимся к сфере деятельности РЦК;
+							</li>
+							<li>
+								Деятельность по проведению обучения, осуществляемая в рамках реализации РЦК по основным программам профессионального обучения (программам профессиональной подготовки, программам переподготовки, программам повышения квалификации) и дополнительным профессиональным программам (программам повышения квалификации, программам профессиональной переподготовки).
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section section--dark">
+				<div class="container">
+					<article class="ill-card">
+						<div class="ill-card__content text">
+							<h4>
+								Цель РЦК в сфере производительности труда
+							</h4>
+							<p>
+								Целью деятельности РЦК является содействие в реализации на территории Калининградской области региональной программы «Повышение производительности труда и поддержка занятости».
+							</p>
+							<a href="" class="btn btn--50">
+								<span>
+									Подать заявку на услугу
+								</span>
+							</a>
+						</div>
+						<div class="image ill-card__thumb">
+							<img class="image__pict image__pict--contain" src="img/ill-3.svg" alt="Декоративная картинка">
+							<figcaption class="image__discript" aria-hidden="true">
+								Декоративная картинка
+							</figcaption>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="block-text text">
+						<h4>
+							Основные задачи РЦК в сфере производительности труда:
+						</h4>
+						<ul>
+							<li>
+								Реализация мероприятий региональной программы Калининградской области «Повышение производительности труда и поддержка занятости» в соответствии с требованиями паспорта федерального проекта «Производительность труда и поддержка занятости»» и методическими рекомендациями АНО «Федеральный центр компетенций», относящихся к сфере деятельности РЦК;
+							</li>
+							<li>
+								Реализация мероприятий по повышению производительности труда непосредственно на предприятиях-участниках региональной программы;
+
+							</li>
+							<li>
+								Организация обмена опытом в области повышения производительности труда между предприятиями-участниками региональной программы в Калининградской области;
+
+							</li>
+							<li>
+								Организация и проведение обучения сотрудников предприятий-участников региональной программы методам повышения производительности труда с использованием инструментов бережливого производства;
+
+							</li>
+							<li>
+								Мониторинг и анализ достижения целей предприятиями-участниками региональной программы;
+							</li>
+						</ul>
+						<h4>
+							Услуги, которые оказывает РЦК
+						</h4>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="text info-block text info-block--6">
+								<p>Внедрение и адаптация процесса целеполагания и мотивации сотрудников на достижение целей;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Подготовка руководителей и сотрудников к трансформации производственной культуры.</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Оптимизация производственных и офисных процессов с помощью инструментов бережливого производства с целью создания потоков-образцов;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Внедрение и адаптация процесса целеполагания и мотивации сотрудников на достижение целей;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Формирование системы проектного управления и создание инфраструктуры для внедрения культуры постоянных улучшений;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Оптимизация производственных и офисных процессов с помощью инструментов бережливого производства с целью создания потоков-образцов;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Обучение сотрудников на производственной площадке и воспитание тренеров для последующей передачи знаний;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Формирование системы проектного управления и создание инфраструктуры для внедрения культуры постоянных улучшений;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Обучение сотрудников на производственной площадке и воспитание тренеров для последующей передачи знаний;</p>
+							</article>
+							<article class="text info-block text info-block--6">
+								<p>Подготовка руководителей и сотрудников к трансформации производственной культуры.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="section section--dark">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							Условия участия в национальном проекте:
+						</h3>
+					</div>
+					<ol class="icon-list">
+						<li class="icon-list__li">
+							<div class="icon-list__icon none-image">
+								1
+							</div>
+							<div class="icon-list__text text">
+								<p>
+									Выручка предприятия от 400 млн рублей до 30 млрд рублей
+									за предыдущий год;
+								</p>
+							</div>
+						</li>
+						<li class="icon-list__li">
+							<div class="icon-list__icon none-image">
+								2
+							</div>
+							<div class="icon-list__text text">
+								<p>
+									Предприятие входит в приоритетные отрасли;
+								</p>
+								<ul>
+									<li>
+										обрабатывающее производство (за исключением группировок «Производство кокса и нефтепродуктов» (класс 19), «Производство табака» (класс 12), «Производство напитков, кроме производства безалкогольных напитков» (группы 11.01, 11.02, 11.03, 11.04, 11.05, 11.06).
+									</li>
+									<li>
+										сельское, лесное хозяйство, охота, рыболовство и рыбоводство (раздел A), (за исключением группировки «Выращивание табака и махорки» (группа 01.15).
+									</li>
+									<li>
+										транспортировка и хранение (раздел H), (за исключением группировок «Хранение и складирование нефти и продуктов ее переработки»(вид 52.10.21), «Хранение и складирование газа и продуктов его переработки» (вид 52.10.22) и «Деятельность трубопроводного транспорта» (подкласс 49.5)
+									</li>
+									<li>
+										строительство (раздел F).
+									</li>
+									<li>
+										жилищно-коммунальное хозяйство.
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="icon-list__li">
+							<div class="icon-list__icon none-image">
+								3
+							</div>
+							<div class="icon-list__text text">
+								<p>
+									Доля участия налоговых резидентов иностранных государств
+									в уставном (складном) капитале юридического лица не выше 25%;
+								</p>
+							</div>
+						</li>
+						<li class="icon-list__li">
+							<div class="icon-list__icon none-image">
+								4
+							</div>
+							<div class="icon-list__text text">
+								<p>
+									Принадлежность к выбранному субъекту Российской Федерации (юридическая регистрация предприятия на территории субъекта Российской Федерации).
+								</p>
+							</div>
+						</li>
+						<li class="icon-list__li">
+							<div class="icon-list__icon none-image">
+								5
+							</div>
+							<div class="icon-list__text text">
+								<p>
+									Предприятия, имеющие организационно-правовую форму Федеральное государственное унитарное предприятие (ФГУП), муниципальное унитарное предприятие (МУП), участвуют в национальном проекте без ограничений по видам деятельности и по выручке.
+								</p>
+							</div>
+						</li>
+					</ol>
+					<div class="articles">
+						<div class="articles__content">
+							<a href="" target="_blank" class="link-card link-card--light link-card--12">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Инструкция по подаче заявки
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							Документы
+						</h3>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<a href="" target="_blank" class="link-card link-card--12">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Паспорт регионального проекта Адресная поддержка повышения производительности труда
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+
+							<a href="" target="_blank" class="link-card link-card--12">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										БРОШЮРА производительность труда
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--dark">
+				<div class="container">
+					<h2 class="title title--center">
+						<span class="title__text">Контакты</span>
+					</h2>
+					<div class="contacts">
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="partners">
+					<div class="container partners__container">
+						<div class="block-text text">
+							<h3>
+								Партнеры
+							</h3>
+						</div>
+						<div class="partners__articles">
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/1900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x1600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x900" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/300x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<div class="partners__article partners__article--clear"></div>
+							<div class="partners__article partners__article--clear"></div>
+							<div class="partners__article partners__article--clear"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section--dark">
+				<div class="form-section">
+	<div class="container form-section__container">
+		<form action="post" class="form">
+			<h4 class="form__head-text">
+				Обращение на предоставление льгот для развития промышленности
+			</h4>
+			<div class="form__radios" role="radiogroup">
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" checked value="Юр.лицо или ИП" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Юр.лицо или ИП
+					</p>
+				</label>
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" value="Физическое лицо" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Физическое лицо
+					</p>
+				</label>
+			</div>
+			<div class="form__fields">
+
+				<label class="input">
+					<p class="input__title">
+						Услуги
+					</p>
+					<select id="" class="select inputselect">
+						<option value="1">Один</option>
+						<option value="2">Два</option>
+						<option value="3">Три</option>
+					</select>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--valid">
+					<p class="input__title">
+						Имя/Фамилия*
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--error">
+					<p class="input__title">
+						Email
+					</p>
+					<input type="email" class="input__field">
+					<div class="input__message">
+						Сообщение поля
+					</div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Ваш комментарий
+					</p>
+					<input type="text" class="input__field" readonly>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Название организации
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Телефон
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="file" tabindex="0">
+					<p class="file__title">
+						Документы
+					</p>
+					<div class="file__wrapper" >
+						<div class="file__text">
+							png, jpg, pdf
+						</div>
+						<div class="file__icon">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#file-icon"></use>
+							</svg>
+						</div>
+					</div>
+					<input class="file__field" type="file" name="photo" required multiple title="Загрузите один или несколько документов">
+					<div class="file__message"></div>
+				</label>
+			</div>
+			<div class="form__control">
+				<button class="form__btn btn btn--60">
+					<span>Отправить</span>
+				</button>
+
+				<label class="checkbox form__accept" tabindex="0">
+					<input type="checkbox" class="checkbox__field" checked>
+					<div class="checkbox__icon"><div class="checkbox__icon-circle"></div></div>
+					<p class="checkbox__text">
+						Я соглашаюсь с условиями и даю согласие на <a href="/privacy.html">обработку персональных данных</a>
+					</p>
+				</label>
+			</div>
+			<div class="form__message">
+				<svg class="icon-svg form__message-icon">
+					<use xlink:href="img/sprites/sprite.svg#check"></use>
+				</svg>
+				<p class="form__message-title">
+					Ваша заявка отправлена
+				</p>
+				<p class="form__message-discript">
+					Мы свяжемся с вами в ближайшее время
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="container footer__container-top">
+			<button class="footer__to-top">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#to-top"></use>
+				</svg>
+			</button>
+			<div class="footer__top-columns">
+				<div class="footer__column footer__column--1">
+					<div class="footer__nav-column">
+						<div class="footer__links-column footer__links-column--1">
+							<h5 class="footer__title footer__title--small">
+								Меню
+							</h5>
+							<div class="footer__nav">
+								<a href="" class="footer__link">
+									Главная
+								</a>
+								<a href="" class="footer__link">
+									О нас
+								</a>
+								<a href="" class="footer__link">
+									Мероприятия
+								</a>
+								<a href="" class="footer__link">
+									Новости
+								</a>
+								<a href="" class="footer__link">
+									Меры поддержки
+								</a>
+							</div>
+						</div>
+						<div class="footer__links-column footer__links-column--2">
+							<h5 class="footer__title footer__title--big">
+								Меры поддержки
+							</h5>
+							<div class="footer__nav-flex">
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Льготное финансирование
+									</a>
+									<a href="" class="footer__link">
+										Консультации и обучение
+									</a>
+									<a href="" class="footer__link">
+										Поддержка экспорта
+									</a>
+									<a href="" class="footer__link">
+										Кластерное развитие
+									</a>
+									<a href="" class="footer__link">
+										Поддержка инноваций
+									</a>
+								</div>
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Предоставление поручительства
+									</a>
+									<a href="" class="footer__link">
+										Социальное предпринимательство
+									</a>
+									<a href="" class="footer__link">
+										Сельское хозяйство
+									</a>
+									<a href="" class="footer__link">
+										Программа "Восток"
+									</a>
+									<a href="" class="footer__link">
+										Повышение производительности труда
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__info none-image">
+						<div class="footer__info-column footer__info-column--66">
+							<div class="footer__logos">
+								<a href="/" class="footer__logo footer__logo--1">
+									<img src="img/logo-light.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+							</div>
+						</div>
+<!--						<div class="footer__info-column footer__info-column&#45;&#45;2">-->
+<!--							<a href="/" class="footer__logo-2">-->
+<!--								<img src="img/logo-light-2.svg" alt="Логотип">-->
+<!--							</a>-->
+<!--						</div>-->
+						<div class="footer__info-column footer__info-column--3">
+							<p class="footer__discript">
+								© Фонд Поддержки. Все права защищены  2013-2020
+								<br>
+								<br>
+								Разработано <a target="_blank" href="https://diez.io/">#diez technologies</a>
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="footer__column footer__column--2">
+					<h5 class="footer__title footer__title--big">
+						Соц.сети:
+					</h5>
+					<div class="footer__socials">
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#inst"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</div>
+					<form action="" class="search footer__search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<a href="" class="btn btn--60 footer__btn-profile">
+						<span>
+							Личный кабинет
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Блок DEMO полностью удали на проекте -->
+	<div class="demo">
+		<div class="container demo__container">
+			<div class="demo__column">
+				<a href="/0_ui-library.html" class="demo__link">
+					0.UI-kit
+				</a>
+				<a href="/" class="demo__link">
+					1.Главная
+				</a>
+				<a href="/2-page.html" class="demo__link">
+					2. О нас
+				</a>
+				<a href="/3-page.html" class="demo__link">
+					3. Мероприятия
+				</a>
+				<a href="/4-page.html" class="demo__link">
+					4. Новости
+				</a>
+				<a href="/4-1-page.html" class="demo__link">
+					4.1 Новость
+				</a>
+				<a href="/5-page.html" class="demo__link">
+					5. Документы фонда
+				</a>
+				<a href="/6-page.html" class="demo__link">
+					6. Микрокредитование
+				</a>
+				<a href="/6-1-page.html" class="demo__link">
+					6-1. Начни свое дело
+				</a>
+				<a href="/6-2-page.html" class="demo__link">
+					6-2. Социальное предприятие - Старт
+				</a>
+				<a href="/6-3-page.html" class="demo__link">
+					6-3. Социальное предприятие - Развитие
+				</a>
+				<a href="/6-4-page.html" class="demo__link">
+					6-4. Моногород
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-5. Стандарт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-6. Доверие
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-7. Старт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-8. Развитие
+				</a>
+				<a href="/7-page.html" class="demo__link">
+					7. Фонд развития промышленности
+				</a>
+				<a href="/8-page.html" class="demo__link">
+					8. Консультация и обучение
+				</a>
+				<a href="/8-1-page.html" class="demo__link">
+					8.1 Нормативные документы
+				</a>
+				<a href="/9-page.html" class="demo__link">
+					9. Центр поддержки экспорта
+				</a>
+				<a href="/9-1-page.html" class="demo__link">
+					9.1 Нормативно-правовые акты
+				</a>
+				<a href="/9-2-page.html" class="demo__link">
+					9.2 Путеводители для экспортеров
+				</a>
+				<a href="/10-page.html" class="demo__link">
+					10. Кластерное развитие
+				</a>
+				<a href="/11-page.html" class="demo__link">
+					11. Поддержка инноваций
+				</a>
+				<a href="/12-page.html" class="demo__link">
+					12. Предоставление поручительства
+				</a>
+				<a href="/12-1-page.html" class="demo__link">
+					12.1 Нормативные документы
+				</a>
+				<a href="/12-2-page.html" class="demo__link">
+					12.2 Лимиты поручительств
+				</a>
+				<a href="/12-3-page.html" class="demo__link">
+					12.3. Программа предосчтавления поручительства
+				</a>
+				<a href="/12-4-page.html" class="demo__link">
+					12.4 Отчетность
+				</a>
+				<a href="/13-page.html" class="demo__link">
+					13. Социальное предпринимательство
+				</a>
+				<a href="/14-page.html" class="demo__link">
+					14. Сельское хозяйство
+				</a>
+				<a href="/15-page.html" class="demo__link">
+					15. Программа Восток
+				</a>
+				<a href="/16-page.html" class="demo__link">
+					16. Повышение производительности труда
+				</a>
+				<a href="/17-page.html" class="demo__link">
+					17. Полезное видео
+				</a>
+				<a href="/18-page.html" class="demo__link">
+					18. Полезные книги
+				</a>
+				<a href="/none-page.html" class="demo__link">
+					18. 404
+				</a>
+				<a href="/19-page.html" class="demo__link">
+					19. Поиск
+				</a>
+			</div>
+			<div class="demo__column">
+				<a href="/20-01-page.html" class="demo__link">
+					20.01. Документы
+				</a>
+				<a href="/20-02-page.html" class="demo__link">
+					20.02. Цель центра
+				</a>
+				<a href="/20-03-page.html" class="demo__link">
+					20.03. Услуги центра
+				</a>
+				<a href="/20-04-page.html" class="demo__link">
+					20.04. Функции центра
+				</a>
+				<a href="/20-05-page.html" class="demo__link">
+					20.05. Ювелирная площадка «Элеватор»
+				</a>
+				<a href="/20-06-page.html" class="demo__link">
+					20.06. Башня Врангеля
+				</a>
+				<a href="/20-07-page.html" class="demo__link">
+					20.07. Кластер янтарной промышленности
+				</a>
+				<a href="/20-08-page.html" class="demo__link">
+					20.08. Создание индустриального парка
+				</a>
+				<a href="/20-09-page.html" class="demo__link">
+					20.09. Хаусбот, Ушаковские верфи
+				</a>
+				<a href="/20-10-page.html" class="demo__link">
+					20.10. Кластер судостроения
+				</a>
+				<a href="/20-11-page.html" class="demo__link">
+					20.11. Металлообрабатывающий кластер
+				</a>
+				<a href="/20-12-page.html" class="demo__link">
+					20.12. Умная среда
+				</a>
+				<a href="/20-13-page.html" class="demo__link">
+					20.13. Трубный завод
+				</a>
+				<a href="/20-14-page.html" class="demo__link">
+					20.14. Завод металлоконструкций
+				</a>
+				<a href="/20-15-page.html" class="demo__link">
+					20.15. Кластерное развитие
+				</a>
+				<a href="/21-page.html" class="demo__link">
+					21. Социальное предпринимательство
+				</a>
+				<a href="/24-page-index.html" class="demo__link">
+					24. Главная-Микрокредитование
+				</a>
+				<a href="/24-1-page.html" class="demo__link">
+					24-1. Для самозанятых
+				</a>
+				<a href="/24-2-page.html" class="demo__link">
+					24-2. Для субъектов МСП
+				</a>
+				<a href="/24-3-page.html" class="demo__link">
+					24-3. Для СМСП
+				</a>
+				<a href="/24-4-page.html" class="demo__link">
+					24-4. Полезная информация
+				</a>
+				<a href="/24-5-page.html" class="demo__link">
+					24-5. Контакты
+				</a>
+				<a href="/24-6-page.html" class="demo__link">
+					24-6. Начни свое дело
+				</a>
+				<a href="/24-7-page.html" class="demo__link">
+					24-7. Старт
+				</a>
+				<a href="/24-8-page.html" class="demo__link">
+					24-8. Развитие
+				</a>
+				<a href="/24-9-page.html" class="demo__link">
+					24-9. Моногород
+				</a>
+				<a href="/24-10-page.html" class="demo__link">
+					24-10. Стандарт
+				</a>
+				<a href="/24-11-page.html" class="demo__link">
+					24-11. Доверие
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-12. "Старт" еще раз
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-13. "Развитие" еще раз
+				</a>
+				<a href="/25-page.html" class="demo__link">
+					25. Услуги для самозанятых граждан
+				</a>
+				<a href="/26-page.html" class="demo__link">
+					26. Фонд развития промышленности
+				</a>
+				<a href="/27-page.html" class="demo__link">
+					27. Услуги 3D прототипирования и 3D печати
+				</a>
+				<div class="hr"></div>
+				<a href="/28-injiniring-main.html" class="demo__link">
+					Инжиниринг главная
+				</a>
+				<a href="/29-questions.html" class="demo__link">
+					Опросник
+				</a>
+				<a href="/30-grants.html" class="demo__link">
+					Гранты
+				</a>
+				<a href="/31-companies.html" class="demo__link">
+					Компании
+				</a>
+				<a href="/32-financial-help.html" class="demo__link">
+					Финансовая поддержка
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Окно мероприятия -->
+<div class="modal mfp-hide">
+	<div class="modal__content text">
+		<h4>
+			Онлайн-тренинг «Возможности маркетплейсов для малого бизнеса: на примере торговой платформы Wildberries»
+		</h4>
+		<a href="" class="btn btn--60">
+			<span>Страница мероприятия</span>
+		</a>
+		<p>
+			В кризисной ситуации, когда розничные точки закрылись практически в один день, компании почти полностью переместили свою деятельность в Интернет. И для малого бизнеса этот путь стал единственным способом выжить Однако одномоментно сделать собственный продающий сайт и привлечь туда клиентов очень сложно. Выходом для малого и среднего бизнеса стало сотрудничество с маркетплейсами. В число крупнейших из них входит торговая платформа Wildberries.
+		</p>
+		<p>
+			<b>
+				На вебинаре разберём вопросы:
+			</b>
+		</p>
+		<ul>
+			<li>
+				могут ли маркетплейсы решить проблемы, вызванные кризисом?
+			</li>
+			<li>
+				сотрудничество с Wildberries: как стать партнером крупнейшего продавца Рунета?
+			</li>
+			<li>
+				возможности торговой платформы Wildberries для управления поставками и продажами.
+			</li>
+			<li>
+				какие инструменты важно использовать для успешных продаж в онлайн-магазине?
+			</li>
+			<li>
+				на какую поддержку могут рассчитывать предприниматели.
+			</li>
+		</ul>
+		<p>
+			Ответы на эти и другие вопросы о работе с маркетплейсом Wildberries вы сможете найти, став участником онлайн-тренинга, организованного совместно с АО «Корпорацией МСП» и Wildberries. Вы сможете рассмотреть ситуацию со всех сторон. В числе спикеров будут и представитель Wildberries, и предприниматель, который с ними успешно сотрудничает, и представители инфраструктуры поддержки предпринимателей.
+		</p>
+	</div>
+</div>
+	</div>
+
+	<script>
+	// Вынес сюда ссылки для мобильного меню, чтобы было проще. Если ссылки нет, то не выводи ее
+	let mobileLinks = [
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#fb"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#inst"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#vk"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#youtube"></use></svg></a>'
+	];
+
+	let mobileContacts = [
+	'<p class="mmenu__contact-lines"><a href="tel:+74012994588">+7 (4012) 994 588</a></p>',
+	'<p class="mmenu__contact-lines"><a href="mailto:info@mbkaliningrad.ru">info@mbkaliningrad.ru</a></p>'
+	];
+</script>
+<nav id="mmenu">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="/2-page.html">О нас</a></li>
+		<li><a href="/3-page.html">Мероприятия</a></li>
+		<li><a href="/4-page.html">Новости</a></li>
+		<li><span>Меры поддержки</span>
+			<ul>
+				<li><a href="/6-page.html">Микрокредитование</a></li>
+				<li><a href="/7-page.html">Фонд развития промышленности</a></li>
+				<li><span>Консультации и обучение</span>
+					<ul>
+						<li><a href="/8-1-page.html">Нормативые документы</a></li>
+					</ul>
+				</li>
+				<li><span>Поддержка экспорта</span>
+					<ul>
+						<li><a href="/9-1-page.html">Нормативно-правовые акты</a></li>
+						<li><a href="/9-2-page.html">Путеводители для экспорта</a></li>
+					</ul>
+				</li>
+				<li><a href="/10-page.html">Кластерное развитие</a></li>
+				<li><a href="/11-page.html">Поддержка инноваций</a></li>
+				<li><a href="/12-page.html">Предоставление поручительства</a>
+					<ul>
+						<li><a href="/12-1-page.html">Нормативые документы</a></li>
+						<li><a href="/12-2-page.html">Лимиты поручительств</a></li>
+						<li><a href="/12-3-page.html">Программа предоставления поручительства</a></li>
+						<li><a href="/12-4-page.html">Отчётность</a></li>
+					</ul>
+				</li>
+				<li><a href="/13-page.html">Социальное предпринимательство</a></li>
+				<li><a href="/14-page.html">Сельское хозяйство</a></li>
+				<li><a href="/15-page.html">Программа "Восток"</a></li>
+				<li><a href="/16-page.html">Повышение производительности труда</a></li>
+			</ul>
+		</li>
+		<li><span>Полезное</span>
+			<ul>
+				<li><a href="/17-page.html">Полезные видеоматериалы</a></li>
+				<li><a href="/18-page.html">Полезные книги</a></li>
+				<li><span>Онлайн-курсы</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт"</a></li>
+						<li><a href="/">"Мой бизнес. Налоги"</a></li>
+						<li><a href="/">"120 секунд" (14-17 лет)</a></li>
+					</ul>
+				</li>
+				<li><span>Спецпроекты</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт" (создание тренировочных фирм)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav id="mmenu-m">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="24-1-page.html">Программы для самозанятых</a>
+			<ul>
+				<li><a href="24-12-page.html">Программа "Старт"</a></li>
+				<li><a href="24-13-page.html">Программа "Развитие"</a></li>
+			</ul>
+		</li>
+		<li><a href="24-2-page.html">Для субъектов МСП</a>
+			<ul>
+				<li><a href="24-6-page.html">Начни свое дело</a></li>
+				<li><a href="24-7-page.html">Социальное предприятие-Старт</a></li>
+				<li><a href="24-8-page.html">Социальное предприятие-Развитие</a></li>
+				<li><a href="24-9-page.html">Моногород</a></li>
+				<li><a href="24-10-page.html">Стандарт</a></li>
+				<li><a href="24-11-page.html">Доверие</a></li>
+			</ul>
+		</li>
+		<li><a href="24-3-page.html">Программы для СМСП</a></span></li>
+		<li><a href="24-4-page.html">Полезная информация</a></li>
+		<li><a href="24-5-page.html">Контакты</a></li>
+	</ul>
+</nav>
+
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+</html>

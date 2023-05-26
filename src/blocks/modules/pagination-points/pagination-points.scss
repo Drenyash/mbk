@@ -1,0 +1,70 @@
+.pagination-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(25px);
+    background: #ffffff;
+    box-shadow: rem(20px) rem(20px) rem(100px) rgba(124, 142, 139, 0.15);
+    border-radius: rem(12px);
+    background-image: url("../img/line-dashed.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    @include r(1200) {
+        background-image: none;
+    }
+    &__marker {
+        height: rem(20px);
+        width: rem(20px);
+        border-radius: rem(30px);
+        background-color: #d1d9dd;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s opacity;
+        @include r(1200) {
+            flex-grow: 1;
+            border-radius: rem(0px);
+            &:first-of-type {
+                border-top-left-radius: rem(30px);
+                border-bottom-left-radius: rem(30px);
+            }
+            &:last-of-type {
+                border-top-right-radius: rem(30px);
+                border-bottom-right-radius: rem(30px);
+            }
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+        &--checked {
+            background-image: url("../img/icon-marker-checked.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: rem(7px) rem(10px);
+            background-color: $red;
+            @include r(1200) {
+                background-image: none;
+            }
+        }
+        &--active {
+            pointer-events: none;
+            background-color: #ef9486;
+            height: rem(30px);
+            width: rem(30px);
+            @include r(1200) {
+                height: rem(20px);
+                width: rem(20px);
+            }
+        }
+    }
+}
+
+.body {
+    &--light {
+    }
+    &--dark {
+        .pagination-points {
+            border: 1px solid $light;
+            background-color: $black;
+        }
+    }
+}

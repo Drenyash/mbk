@@ -1,0 +1,32 @@
+.icon-fact {
+	display: flex;
+	margin-bottom: rem(30px);
+	@include r(1200) {
+		width: 100%;
+	}
+	@include r(580) {
+		display: block;
+	}
+	&__icon {
+		width: rem(50px);
+		height: rem(50px);
+		display: block;
+		flex-shrink: 0;
+		margin-right: rem(30px);
+		margin-bottom: rem(30px);
+	}
+	&__title {
+		font-weight: 500;
+		font-size: rem(24px);
+		margin-bottom: rem(10px);
+		sup {
+			color: $red;
+			vertical-align: super;
+			font-size: rem(14px);
+			font-weight: 400;
+		}
+	}
+	&__text {
+		width: 80%;
+	}
+}

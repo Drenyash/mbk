@@ -1,0 +1,72 @@
+.event {
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+		@include r(1200) {
+			flex-direction: column;
+		}
+	}
+	&__column {
+		margin-bottom: 30px;
+		&--7 {
+			width: calc(100% / 12 * 7 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
+		}
+		&--5 {
+			width: calc(100% / 12 * 5 - 10px);
+			@include r(1200) {
+				order: -1;
+				width: 100%;
+			}
+		}
+	}
+	&__thumb {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;	
+	}
+	&__info {
+		padding: 55px 35px;
+		background: #F7F9FA;
+		margin-bottom: 30px;
+	}
+	&__info-line {
+		margin-bottom: 1rem;
+		font-weight: 500;
+		font-size: 18px;
+		color: $red;
+		&:last-of-type {
+			margin-bottom: 2rem;
+		}
+		span {
+			font-size: 16px;
+			color: $black;
+			display: inline-block;
+			margin-right: 10px;
+			width: 90px;
+			@include r(1200) {
+				display: block;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+.event-share {
+	display: flex;
+	align-items: center;
+	border-top: 4px solid $red;
+	padding-top: 30px;
+	width: fit-content;
+	&__title {
+		font-weight: 300;
+		margin-right: 26px;
+	}
+}
+
+.datepicker--day-name {
+	color: $red !important;
+}

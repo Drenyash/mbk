@@ -1,0 +1,118 @@
+.card-download {
+	background-image: url("../img/cd-ill-right.svg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-bottom: rem(30px);
+	&:nth-child(2n) {
+		background-image: url("../img/cd-ill-left.svg");
+		background-position: left top;
+		.card-download__main {
+			background-position: right 17% center;
+			padding-left: calc(100% / 12 * 2 - 10px);
+			@include r(1200) {
+				padding-left: rem(35px);
+			}
+		}
+	}
+	&--grey {
+		background-color: #f7f9fa;
+		border-radius: rem(5px);
+	}
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: rem(450px);
+		padding-left: calc(100% / 12 * 7 - 10px);
+		padding-right: rem(55px);
+		background-repeat: no-repeat;
+		background-position: left 17% center;
+		@include r(1200) {
+			display: block;
+			padding: rem(50px) rem(35px);
+			min-height: 0;
+			background-image: none !important;
+		}
+		@include r(600) {
+			text-align: center;
+			br {
+				display: none;
+			}
+		}
+	}
+	&__content {
+		&--logo {
+			background-size: rem(139px) rem(145px);
+			padding-left: rem(169px);
+			background-position: left center;
+			background-repeat: no-repeat;
+			@include r(1200) {
+				padding-left: 0;
+				background-image: none !important;
+			}
+		}
+	}
+	&__info {
+		margin-bottom: rem(5px);
+	}
+	&__title {
+		font-weight: 500;
+		font-size: rem(24px);
+		margin-bottom: rem(30px);
+	}
+	&__toolbar {
+		display: flex;
+		@include r(600) {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+	&__btn {
+		padding-left: rem(38px);
+		padding-right: rem(38px);
+		margin-right: rem(20px);
+		&:last-of-type {
+			margin-right: 0;
+		}
+		@include r(600) {
+			margin-right: 0;
+		}
+	}
+	&__btn-app {
+		display: inline-block;
+		margin-right: rem(20px);
+		height: rem(55px);
+		transition: 0.3s all;
+		@include r(600) {
+			display: block;
+			margin-right: 0;
+			margin-bottom: rem(20px);
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+		img {
+			display: block;
+			height: 100%;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.card-download {
+			background-color: $black;
+			color: $light;
+			background-image: none !important;
+			border: 2px solid $light;
+			&__main {
+				background-image: none !important;
+			}
+		}
+	}
+}

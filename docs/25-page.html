@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>25. Услуги для самозанятых граждан</title>
+		<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="body body--light">
+	<div class="page">
+		<section class="panel">
+	<div class="container panel__container">
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-image"><span>Выключить изображения</span></button>
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-theme"><span>Контрастный режим</span></button>
+	</div>
+</section>
+		<header class="header">
+	<div class="header__topline">
+		<div class="container header__topline-container">
+			<div class="header__topline-left">
+				<a href="" class="header__link open-panel">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#eye"></use>
+					</svg>
+					<span>
+						Режим для слабовидящих
+					</span>
+				</a>
+				<a href="tel:+74012994588" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#call"></use>
+					</svg>
+					<span>
+						+7 (4012) 994 588
+					</span>
+				</a>
+				<a href="mailto:info@mbkaliningrad.ru" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#mail"></use>
+					</svg>
+					<span>
+						info@mbkaliningrad.ru
+					</span>
+				</a>
+			</div>
+			<div class="header__topline-right">
+				<form action="" class="search header__search mobile-hide">
+					<input type="text" class="search__input" placeholder="Поиск по сайту">
+					<button class="search__btn">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<form class="language-swap">
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_RUS" checked>
+						<span class="language-swap__text">Рус</span>
+					</label>
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_ENG">
+						<span class="language-swap__text">Eng</span>
+					</label>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div class="header__downline">
+		<div class="container header__downline-container">
+			<a class="header__logo" href="/">
+				<img src="img/logo.svg"  alt="Логотип фирмы">
+			</a>
+			<nav class="header__menu mobile-hide">
+				<a href="/" class="header__menu-link header__menu-link--active">
+					Новости
+				</a>
+				<a href="/" class="header__menu-link">
+					Мероприятия
+				</a>
+			</nav>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-1">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#break-menu"></use>
+				</svg>
+				<span>Меры поддержки</span>
+			</a>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-2">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#lattice"></use>
+				</svg>
+				<span>Полезное</span>
+			</a>
+			<a href="#mmenu" class="header__mob-menu">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--support">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-1"></use>
+							</svg>
+						</div>
+						<p class="drop-nav__text">
+							Микрокредитование
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-2"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Фонд развития промышленности
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-3"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Консультации и обучение
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-4"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка экспорта
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-5"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Кластерное развитие
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-6"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка инноваций
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-7"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Предоставление поручительства
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-8"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Социальное предпринимательство
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-9"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Сельское хозяйство
+						</p>
+					</a>
+					<!-- <a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-10"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа "Восток"
+						</p>
+					</a> -->
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-11"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Повышение производительности труда
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-19"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Центр креативных индустрий
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-20"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа на поддержание рынка труда
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--help">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-12"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные видеоматериалы
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Онлайн курсы
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-13"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-14"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Налоги"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-15"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"120 секунд" (14-17 лет)
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-16"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные книги
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Спецпроекты
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-17"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт" (создание тренировочных фирм)
+						</p>
+					</a>
+
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-18"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Клуб ВЭД
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="content page__content">
+			<section class="section">
+				<div class="container ui__container">
+					<nav class="breadcrumbs"><a class="breadcrumbs__link" href="/" title="Главная">Главная</a><svg class="icon-svg breadcrumbs__arrow"><use xlink:href="./img/sprites/sprite.svg#breadcrumbs__arrow"></use></svg><span class="breadcrumbs__link breadcrumbs__link--static">Услуги для самозанятых граждан</span></nav>        <h2 class="title title--line">
+					<span class="title__text">Услуги для самозанятых граждан</span>
+				</h2>
+					<div class="section__banner">
+						<div class="accent-title">
+							<picture class="accent-title__icon">
+								<img src="./img/artis-logo.svg" alt="логотип Артис">
+							</picture>
+							<p class="accent-title__text">Региональный маркетплейс для самозанятых</p>
+							<a class="btn accent-title__btn" href="https://artisone.ru/">Перейти</a>
+						</div>
+					</div>
+					<article class="title-card title-card--clean hide-bg" style="background-image: url('./img/card-self-emploeed.jpg');">
+						<div class="title-card__wrapper">
+							<div class="title-card__content">
+								<div class="title-card__text">
+									<p>
+										С 2020 года в Калининградской области введен новый налоговый режим – налог на
+										профессиональный доход, больше известный
+										как налог для самозанятых. Эта инициатива является частью национального проекта
+										«Малое и среднее предпринимательство» и
+										регламентируется Федеральным законом «О проведении эксперимента по установлению
+										специального налогового режима «Налог на
+										профессиональный доход» от 27.11.2018 N 422-ФЗ.
+									</p>
+									<p>
+										<strong>
+											Самозанятые граждане – физические лица и индивидуальные предприниматели,
+											получающие доходы от деятельности, при которой
+											они не имеют работодателя и не привлекают наемных работников. При этом, в
+											соответствии с законом доход самозанятого не
+											должен превышать 2,4 млн рублей в год.
+										</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="block-text text">
+						<h3>
+							Кто может стать самозанятым?
+						</h3>
+						<h5>Вы можете зарегистрироваться в качестве самозанятого, если:</h5>
+						<ul>
+							<li>
+								Ваш заработок составляет менее 2,4 млн. рублей в год
+							</li>
+							<li>
+								Вы работаете сами, без привлечения наёмных работников
+							</li>
+							<li>
+								Вы занимаетесь разрешённой для этого режима деятельностью
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							Каким профессиям и услугам это подходит?
+						</h3>
+					</div>
+					<article class="drop-card">
+						<div class="drop-card__header" tabindex="0">
+							<p class="drop-card__title">
+								Профессии
+							</p>
+							<svg class="icon-svg drop-card__icon">
+								<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+							</svg>
+						</div>
+						<div class="drop-card__main">
+							<div class="drop-card__content">
+								<div class="articles">
+									<div class="articles__content">
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M17.375 4.16675C17.375 5.54746 13.8492 6.66675 9.5 6.66675C5.15076 6.66675 1.625 5.54746 1.625 4.16675M17.375 4.16675C17.375 2.78604 13.8492 1.66675 9.5 1.66675C5.15076 1.66675 1.625 2.78604 1.625 4.16675M17.375 4.16675V15.8334C17.375 17.2167 13.875 18.3334 9.5 18.3334C5.125 18.3334 1.625 17.2167 1.625 15.8334V4.16675M17.375 10.0001C17.375 11.3834 13.875 12.5001 9.5 12.5001C5.125 12.5001 1.625 11.3834 1.625 10.0001" stroke="#E04E39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+											<p class="item-prof__title">
+												Бухгалтеры
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-12"></use>
+											</svg>
+											<p class="item-prof__title">
+												Репетиторы
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<mask id="path-1-inside-1" fill="white">
+													<rect width="20" height="20" rx="1"></rect>
+												</mask>
+												<rect width="20" height="20" rx="1" stroke="#E04E39" stroke-width="4" stroke-linejoin="round" mask="url(#path-1-inside-1)"></rect>
+												<line x1="1" y1="7" x2="19" y2="7" stroke="#E04E39" stroke-width="2"></line>
+												<path d="M14 11L16 13L14 15" stroke="#E04E39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M6 11L4 13L6 15" stroke="#E04E39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M9.45597 15L10.5469 11" stroke="#E04E39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<circle cx="4" cy="4" r="1" fill="#E04E39"></circle>
+												<circle cx="7" cy="4" r="1" fill="#E04E39"></circle>
+												<circle cx="10" cy="4" r="1" fill="#E04E39"></circle>
+											</svg>
+											
+											<p class="item-prof__title">
+												Программисты
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.98734 17.777C6.81558 17.777 3.93959 15.8081 2.75647 12.8198C2.65578 12.5713 2.5488 12.4375 2.25931 12.3802C1.03843 12.138 0.20773 11.0676 0.220316 9.81238C0.232902 8.59539 1.11395 7.55044 2.33483 7.32743C2.55509 7.2892 2.65578 7.18725 2.725 6.98973C2.92009 6.44176 3.1907 5.93203 3.51795 5.44778C3.59346 5.33946 3.61234 5.25663 3.54941 5.12283C2.74388 3.56176 2.90121 2.07079 3.92071 0.662649C4.00252 0.547959 4.10321 0.43964 4.17873 0.32495C4.27942 0.165658 4.36123 0.197517 4.46192 0.331322C4.84581 0.860171 5.26116 1.35716 5.78349 1.75221C6.17367 2.0453 6.60161 2.25557 7.0673 2.39575C7.20575 2.43398 7.33791 2.42761 7.48265 2.383C10.3083 1.47822 12.8696 2.0007 15.1415 3.91858C16.1295 4.75327 16.828 5.8046 17.2811 7.01521C17.363 7.23185 17.4888 7.29557 17.6902 7.3338C18.93 7.56955 19.7921 8.63999 19.7795 9.90796C19.7607 11.1504 18.8356 12.2336 17.621 12.412C17.4511 12.4375 17.363 12.5012 17.3 12.6605C16.4127 14.9288 14.8394 16.4835 12.5738 17.3246C11.7431 17.6368 10.8747 17.777 9.98734 17.777ZM10.2705 16.7575C10.8055 16.7511 11.5984 16.6237 12.3599 16.3242C14.4681 15.4959 15.8463 13.9667 16.526 11.7876C16.6518 11.3926 16.6518 11.3862 17.0672 11.4117C17.5958 11.4499 18.0489 11.2842 18.395 10.8765C18.8104 10.3858 18.8796 9.70406 18.5964 9.1561C18.2881 8.56353 17.6965 8.23858 16.9791 8.33415C16.6078 8.37876 16.6267 8.30229 16.5511 8.02194C16.2365 6.89415 15.6953 5.88743 14.8709 5.07822C12.7941 3.03291 10.3586 2.51044 7.60852 3.42796C7.4386 3.4853 7.28127 3.50442 7.10506 3.46619C6.11074 3.24955 5.27374 2.75893 4.56261 2.03893C4.36753 1.84141 4.36123 1.84141 4.26054 2.10265C3.87036 3.17946 4.0214 4.16707 4.71994 5.06548C4.8521 5.23114 4.86469 5.33946 4.72624 5.5115C4.1158 6.26336 3.67528 7.11716 3.42984 8.06017C3.3732 8.28318 3.2851 8.35964 3.03966 8.32778C1.82508 8.17486 0.937739 9.2007 1.27757 10.3349C1.49154 11.0485 2.10198 11.4308 2.97044 11.3989C3.38579 11.3862 3.31656 11.3097 3.44243 11.7366C4.36753 14.7696 6.94144 16.7448 10.2705 16.7575Z" fill="#E04E39"></path>
+												<path d="M9.98742 18C8.38895 18 6.83453 17.5158 5.50667 16.6046C4.17251 15.6934 3.15301 14.4127 2.55516 12.9027C2.47964 12.7115 2.42301 12.6414 2.22162 12.6032C0.900054 12.3419 -0.0124578 11.195 0.000128595 9.81239C0.012715 8.48708 0.981866 7.35292 2.29714 7.1108C2.4293 7.08531 2.47335 7.05345 2.5174 6.91327C2.71249 6.37168 2.98939 5.83646 3.33552 5.32035C3.36069 5.28212 3.36698 5.26301 3.36698 5.26301C3.36698 5.26301 3.36698 5.25027 3.3544 5.22478C2.5237 3.61911 2.65585 2.03894 3.74457 0.541593C3.78233 0.490619 3.82009 0.439646 3.86415 0.388673C3.91449 0.324956 3.95854 0.267611 4.00259 0.210265C4.02777 0.159292 4.12846 0.00637168 4.30467 0C4.48088 0 4.59415 0.146549 4.63821 0.203894C5.08502 0.821947 5.4752 1.24885 5.91572 1.58018C6.27444 1.85416 6.68349 2.05805 7.13031 2.18549C7.21841 2.21097 7.30652 2.21097 7.4135 2.17274C10.3021 1.24885 12.9452 1.78407 15.28 3.75292C16.2617 4.58124 17.0043 5.65168 17.4826 6.94513C17.5267 7.05982 17.5707 7.09168 17.728 7.12354C19.0811 7.37841 20.0125 8.53168 19.9999 9.92071C19.9873 11.2779 18.9804 12.4439 17.6588 12.6414C17.5581 12.6542 17.5455 12.6733 17.5078 12.7561C16.6016 15.0754 14.9716 16.6874 12.6557 17.5476C11.8376 17.8407 10.9377 18 9.98742 18ZM9.98742 17.554C10.8873 17.554 11.7306 17.4074 12.4984 17.1207C14.6947 16.3051 16.2365 14.7823 17.0924 12.5841C17.1868 12.3483 17.3316 12.2336 17.5833 12.1954C18.6909 12.0297 19.5342 11.0485 19.5468 9.91434C19.5594 8.74195 18.7727 7.77345 17.6399 7.55681C17.426 7.51858 17.1868 7.42938 17.0672 7.09805C16.6141 5.88106 15.9156 4.87434 14.9905 4.09062C12.7879 2.23009 10.2832 1.72673 7.54566 2.59965C7.35057 2.66336 7.18065 2.66336 7.00445 2.61239C6.50728 2.46584 6.05417 2.23646 5.65141 1.93699C5.19201 1.58655 4.77666 1.1469 4.31725 0.516106C4.2795 0.573451 4.24174 0.624425 4.20398 0.669026C4.16622 0.713628 4.13475 0.75823 4.10329 0.802832C3.10896 2.17274 2.98939 3.5554 3.75087 5.02726C3.87673 5.27575 3.78863 5.46053 3.70682 5.58159C3.37957 6.06584 3.12155 6.5692 2.93905 7.07257C2.83836 7.35929 2.66844 7.49947 2.37895 7.55681C1.26506 7.75434 0.453238 8.71009 0.440652 9.81876C0.428065 10.9784 1.19583 11.9469 2.30343 12.1635C2.69361 12.24 2.85094 12.4503 2.96422 12.737C4.10329 15.617 6.92263 17.554 9.98742 17.554ZM10.2706 16.9805C6.89117 16.9678 4.19768 14.9926 3.24112 11.8131C3.22853 11.7685 3.21595 11.7239 3.20336 11.692C3.19707 11.6665 3.19077 11.6474 3.18448 11.6219C3.17819 11.6219 3.1656 11.6219 3.15931 11.6219C3.11526 11.6283 3.05862 11.6283 2.9831 11.6283C2.01395 11.6602 1.3154 11.2142 1.06997 10.405C0.887468 9.80602 1.00075 9.20071 1.38463 8.74195C1.7811 8.26407 2.41042 8.02832 3.0712 8.11115C3.15931 8.12389 3.18448 8.11115 3.18448 8.11115C3.18448 8.11115 3.20336 8.09204 3.22224 8.0092C3.46767 7.05345 3.91449 6.16779 4.56269 5.3777C4.60674 5.32035 4.61303 5.30124 4.61303 5.30124C4.61303 5.30124 4.60674 5.27575 4.5564 5.20566C3.80751 4.24991 3.64388 3.17947 4.05923 2.02619C4.11587 1.8669 4.17251 1.71398 4.32984 1.68212C4.48717 1.65027 4.59415 1.75858 4.72002 1.87965C5.42486 2.59965 6.22409 3.04566 7.14919 3.24319C7.27505 3.26867 7.40092 3.2623 7.53937 3.21133C10.3902 2.25558 12.9075 2.82903 15.022 4.91257C15.8401 5.7154 16.4191 6.74124 16.7589 7.95823C16.7652 7.99009 16.7715 8.01557 16.7841 8.04106C16.7904 8.06655 16.7966 8.09841 16.8029 8.11752C16.8281 8.11752 16.8722 8.11752 16.9477 8.10478C17.7406 8.00283 18.4266 8.35964 18.7853 9.04779C19.1188 9.68495 19.0307 10.4623 18.5587 11.0166C18.1811 11.469 17.6714 11.6729 17.0484 11.6283C16.9791 11.6219 16.8596 11.6156 16.8155 11.6219C16.7966 11.6602 16.7652 11.7494 16.74 11.845V11.8513C16.0352 14.1069 14.5877 15.6807 12.4418 16.5281C11.6236 16.8531 10.7866 16.9742 10.2706 16.9805ZM3.21595 11.1696C3.47397 11.1696 3.54319 11.2715 3.625 11.5582C3.63759 11.5901 3.64388 11.6347 3.66276 11.6793C4.56269 14.6612 7.09884 16.5218 10.2706 16.5281C10.7426 16.5218 11.5167 16.4135 12.2844 16.1076C14.2982 15.3111 15.6576 13.8329 16.3247 11.7111V11.7048C16.4757 11.2142 16.5764 11.1441 17.0861 11.1823C17.5644 11.2142 17.942 11.0676 18.2315 10.7235C18.5839 10.303 18.6531 9.72956 18.4014 9.25168C18.1245 8.7292 17.6211 8.47434 17.0043 8.5508C16.5575 8.60814 16.4379 8.46796 16.3561 8.15575C16.3498 8.13027 16.3435 8.10478 16.3372 8.07929C16.0226 6.93876 15.4751 5.98301 14.7136 5.23115C12.7312 3.27504 10.365 2.73982 7.67782 3.63186C7.45755 3.70195 7.26247 3.72106 7.05479 3.67646C6.07305 3.46619 5.19201 2.98195 4.44312 2.23646C4.10329 3.22407 4.24803 4.10336 4.88993 4.93168C5.02838 5.10372 5.14795 5.34584 4.89623 5.65805C4.29208 6.40354 3.87044 7.23186 3.64388 8.12389C3.55578 8.46796 3.36069 8.60177 3.01456 8.55717C2.49223 8.49345 2.02024 8.66549 1.71817 9.03504C1.43497 9.37274 1.35316 9.8315 1.49161 10.2775C1.67412 10.8892 2.20274 11.2142 2.97051 11.1887C3.03344 11.1887 3.08379 11.1823 3.12784 11.1823C3.15931 11.1759 3.19077 11.1696 3.21595 11.1696Z" fill="#E04E39"></path>
+												<path d="M9.98644 14.3936C8.56418 14.3427 7.4377 13.7373 6.65105 12.5204C6.44338 12.1954 6.47484 11.9023 6.73916 11.7239C6.99718 11.5519 7.28667 11.6347 7.49434 11.9596C8.09849 12.8835 8.94807 13.3742 10.0494 13.3614C11.0248 13.3487 11.7989 12.9154 12.3841 12.1253C12.4408 12.0488 12.4848 11.966 12.5415 11.8896C12.7303 11.6219 13.0135 11.5519 13.2589 11.7111C13.498 11.8704 13.561 12.1508 13.3973 12.4248C12.9379 13.2021 12.296 13.7692 11.4653 14.1005C10.9934 14.2917 10.5025 14.4 9.98644 14.3936Z" fill="#E04E39"></path>
+												<path d="M10.0623 14.6166C10.0372 14.6166 10.012 14.6166 9.98052 14.6166H9.97422C8.45757 14.5593 7.27445 13.8966 6.46263 12.6414C6.18573 12.2145 6.24866 11.7812 6.61366 11.5391C6.97867 11.297 7.39402 11.4117 7.67092 11.8386C8.2373 12.7051 9.01766 13.1384 9.9994 13.1384C10.012 13.1384 10.0246 13.1384 10.0372 13.1384C10.9119 13.1257 11.6419 12.7434 12.1957 11.9915C12.2209 11.9533 12.2461 11.915 12.2775 11.8704C12.3027 11.8322 12.3279 11.794 12.353 11.7557C12.6111 11.3926 13.0264 11.297 13.3663 11.52C13.7061 11.7494 13.7879 12.1635 13.5739 12.5331C13.0831 13.3614 12.3971 13.954 11.5349 14.3044C11.0315 14.5147 10.5469 14.6166 10.0623 14.6166ZM9.9931 14.1706C10.4399 14.1834 10.893 14.0878 11.3776 13.8966C12.1517 13.5844 12.7621 13.0556 13.2026 12.3101C13.3033 12.1444 13.2781 11.9915 13.1334 11.9023C12.932 11.7685 12.7747 11.9405 12.7181 12.0234C12.6992 12.0552 12.674 12.0871 12.6551 12.1189C12.6237 12.1699 12.5922 12.2145 12.5544 12.2655C11.9188 13.1257 11.0755 13.5717 10.056 13.578C8.89809 13.5908 7.97928 13.0874 7.3185 12.0743C7.17376 11.8577 7.02272 11.8003 6.87168 11.9023C6.81504 11.9405 6.63884 12.0616 6.84651 12.3865C7.57652 13.5334 8.6086 14.1133 9.9931 14.1706Z" fill="#E04E39"></path>
+												<path d="M7.64572 9.58939C7.65202 10.0418 7.30589 10.405 6.86537 10.4113C6.43743 10.4177 6.07243 10.0482 6.06614 9.60851C6.05984 9.16886 6.42485 8.7993 6.85908 8.7993C7.28701 8.80567 7.64572 9.16249 7.64572 9.58939Z" fill="#E04E39"></path>
+												<path d="M6.85329 10.6343C6.59527 10.6343 6.34984 10.5324 6.16104 10.3413C5.96596 10.1501 5.85268 9.88249 5.84639 9.60851C5.84639 9.33452 5.94708 9.07329 6.14216 8.87576C6.33725 8.67824 6.58898 8.57629 6.85329 8.57629H6.85959C7.40709 8.57629 7.8602 9.03506 7.8665 9.58939C7.87279 10.1628 7.43227 10.6216 6.87217 10.6343C6.86588 10.6343 6.85959 10.6343 6.85329 10.6343ZM6.85959 9.02231C6.70855 9.02231 6.5701 9.08603 6.46312 9.19435C6.34984 9.30904 6.2932 9.44921 6.2932 9.60851C6.2932 9.76143 6.36243 9.91435 6.46941 10.029C6.57639 10.1374 6.72114 10.1947 6.86588 10.1947C7.18683 10.1883 7.43227 9.92709 7.42597 9.59576C7.42597 9.28355 7.16795 9.02231 6.85959 9.02231Z" fill="#E04E39"></path>
+												<path d="M13.9265 9.60214C13.9265 10.0418 13.5615 10.4177 13.1336 10.4113C12.6931 10.405 12.3469 10.0482 12.3469 9.59577C12.3469 9.16886 12.6993 8.80567 13.1273 8.7993C13.5552 8.79293 13.9202 9.16249 13.9265 9.60214Z" fill="#E04E39"></path>
+												<path d="M13.1399 10.6343H13.1336C12.5672 10.628 12.1267 10.1756 12.1267 9.59576C12.1267 9.04143 12.5735 8.58267 13.121 8.57629C13.1273 8.57629 13.1336 8.57629 13.1336 8.57629C13.3979 8.57629 13.6433 8.67824 13.8384 8.86939C14.0335 9.06691 14.1405 9.32178 14.1468 9.59576C14.1468 9.86975 14.0398 10.1374 13.8447 10.3285C13.6496 10.526 13.3979 10.6343 13.1399 10.6343ZM13.1336 9.02231H13.1273C12.8252 9.02868 12.5672 9.28992 12.5672 9.59576C12.5672 9.92709 12.8189 10.182 13.1336 10.1883C13.2783 10.1883 13.4168 10.131 13.5301 10.0163C13.6433 9.9016 13.7063 9.74868 13.7063 9.59576C13.7063 9.44284 13.6433 9.29629 13.5301 9.18797C13.4231 9.08603 13.2846 9.02231 13.1336 9.02231Z" fill="#E04E39"></path>
+											</svg>
+											<p class="item-prof__title">
+												Няни и сиделки
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-1"></use>
+											</svg>
+											<p class="item-prof__title">
+												Дизайнеры <br>
+												и иллюстраторы
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-2"></use>
+											</svg>
+											<p class="item-prof__title">
+												Блогеры
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-3"></use>
+											</svg>
+											<p class="item-prof__title">
+												Повара
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-4"></use>
+											</svg>
+											<p class="item-prof__title">
+												Копирайтеры <br>
+												и редакторы
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-5"></use>
+											</svg>
+											<p class="item-prof__title">
+												Косметологи
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-6"></use>
+											</svg>
+											<p class="item-prof__title">
+												Психологи
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-7"></use>
+											</svg>
+											<p class="item-prof__title">
+												Массажисты
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-8"></use>
+											</svg>
+											<p class="item-prof__title">
+												Переводчики
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-9"></use>
+											</svg>
+											<p class="item-prof__title">
+												Гиды <br>
+												и экскурсоводы
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-10"></use>
+											</svg>
+											<p class="item-prof__title">
+												Фотографы <br>
+												и видеографы
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-11"></use>
+											</svg>
+											<p class="item-prof__title">
+												Кондитеры
+											</p>
+										</article>
+										
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-13"></use>
+											</svg>
+											<p class="item-prof__title">
+												Стилисты
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-14"></use>
+											</svg>
+											<p class="item-prof__title">
+												Риэлторы
+											</p>
+										</article>
+										<div class="item-prof item-prof--clear"></div>
+										<div class="item-prof item-prof--clear"></div>
+										<div class="item-prof item-prof--clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="drop-card">
+						<div class="drop-card__header" tabindex="0">
+							<p class="drop-card__title">
+								Услуги
+							</p>
+							<svg class="icon-svg drop-card__icon">
+								<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+							</svg>
+						</div>
+						<div class="drop-card__main">
+							<div class="drop-card__content">
+								<div class="articles">
+									<div class="articles__content">
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-15"></use>
+											</svg>
+											<p class="item-prof__title">
+												Продажа продукции <br> собственного производства
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-16"></use>
+											</svg>
+											<p class="item-prof__title">
+												Сдача <br>
+												жилья в аренду
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-17"></use>
+											</svg>
+											<p class="item-prof__title">
+												Грузовые <br>
+												и пассажирские перевозки
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-18"></use>
+											</svg>
+											<p class="item-prof__title">
+												Строительство <br>
+												и отделочные работы
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-19"></use>
+											</svg>
+											<p class="item-prof__title">
+												Организация и проведение <br> мероприятий
+											</p>
+										</article>
+										<article class="item-prof item-prof--light">
+											<svg class="icon-svg item-prof__icon">
+												<use xlink:href="./img/sprites/sprite.svg#icon-prof-20"></use>
+											</svg>
+											<p class="item-prof__title">
+												Услуги по ремонту одежды <br>
+												и техники
+											</p>
+										</article>
+										<div class="item-prof item-prof--clear"></div>
+										<div class="item-prof item-prof--clear"></div>
+										<div class="item-prof item-prof--clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="text">
+						<h3>
+							Плюсы регистрации в качестве самозанятого:
+						</h3>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Простая регистрация
+								</h4>
+								<p class="factoid-column__text">
+									Не требуется собирать бумаги, платить пошлину, ехать в налоговую; зарегистрироваться
+									можно через мобильное приложение
+									«Мой налог».
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Официальный статус и официальное подтверждение доходов
+								</h4>
+								<p class="factoid-column__text">
+									Регистрация в качестве самозанятого делает заработок легальным, а также позволяет
+									подтвердить его при необходимости
+									(получение кредита, ипотеки, оформление визы и т.д.).
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Минимальная ставка налога
+								</h4>
+								<p class="factoid-column__text">
+									4% при работе с физическими лицами и 6% при работе с юридическими лицами. Ставка
+									зафиксирована в законе и не изменится
+									до 2029 года.
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Не обязательно платить взносы на пенсионное страхование
+								</h4>
+								<p class="factoid-column__text">
+									Оно осуществляется в добровольном порядке.
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Не нужно предоставлять отчётов и деклараций
+								</h4>
+								<p class="factoid-column__text">
+									Учёт доходов и расчёт налога производится автоматически в мобильном приложении «Мой
+									налог», в нём же нужно оплатить его
+									раз в месяц
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Не нужен контрольно-кассовый аппарат
+								</h4>
+								<p class="factoid-column__text">
+									Чеки также формируются в приложении «Мой налог» или в приложениях уполномоченных
+									банков, получивших аккредитацию в
+									программе для самозанятых. Передать их клиентам можно в электронном виде или
+									распечатать на простом принтере.
+								</p>
+							</article>
+							<article class="factoid-column factoid-column--dark factoid-column--small">
+								<h4 class="factoid-column__title factoid-column__title--small">
+									Можно одновременно работать по найму и быть самозанятым
+								</h4>
+								<p class="factoid-column__text">
+									При этом с зарплаты будут удерживать НДФЛ 13%, а с дополнительного дохода налог на
+									предпринимательскую деятельность вы
+									платите сами.
+								</p>
+							</article>
+						</div>
+					</div>
+					<div class="text">
+						<h3>
+							Как зарегистрироваться?
+						</h3>
+						<p>
+							Вы можете выбрать любой из вариантов:
+						</p>
+					</div>
+					<div class="card-download card-download--grey">
+						<div class="card-download__main" style="background-image: url('./img/card-download-1.png');">
+							<div class="card-download__content card-download__content--logo" style="background-image: url('./img/fns-logo.png');">
+								<p class="card-download__info">
+									скачать
+								</p>
+								<h3 class="card-download__title">
+									Бесплатное мобильное <br>
+									приложение «Мой налог»
+								</h3>
+								<div class="card-download__toolbar">
+									<a href="https://play.google.com/store/apps/details?id=com.gnivts.selfemployed&amp;hl=ru" class="card-download__btn-app">
+										<img src="./img/google-play.png" alt="Google Play">
+									</a>
+									<a href="https://itunes.apple.com/ru/app/%D0%BC%D0%BE%D0%B9-%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3/id1437518854?l=en&amp;mt=8" class="card-download__btn-app">
+										<img src="./img/apple-store.svg" alt="Google Play">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-download card-download--grey">
+						<div class="card-download__main" style="background-image: url('./img/card-download-2.png');">
+							<div class="card-download__content">
+								<p class="card-download__info">
+									через кабинет налогоплательщика
+								</p>
+								<h3 class="card-download__title">
+									«Налог на профессиональный <br>
+									доход» на сайте ФНС России
+								</h3>
+								<div class="card-download__toolbar">
+									<a href="https://npd.nalog.ru/web-app/" class="btn btn--60 card-download__btn">
+										<span>
+											Зарегистрироваться
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-download card-download--grey">
+						<div class="card-download__main" style="background-image: url('./img/card-download-3.svg');">
+							<div class="card-download__content">
+								<p class="card-download__info">
+									Уполномоченные банки
+								</p>
+								<h3 class="card-download__title">
+									Вы можете зарегистрироваться в <br>
+									любом уполномоченном банке, если <br>
+									он аккредитован в программе <br> для самозанятых
+								</h3>
+								<div class="card-download__toolbar">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-download card-download--grey">
+						<div class="card-download__main" style="background-image: url('./img/card-download-4.png');">
+							<div class="card-download__content">
+								<p class="card-download__info">
+									С помощью учетной записи
+								</p>
+								<h3 class="card-download__title">
+									Единого портала государственных <br> и муниципальных услуг
+								</h3>
+								<div class="card-download__toolbar">
+									<a href="https://www.gosuslugi.ru/" class="btn btn--60 card-download__btn">
+										<span>
+											Перейти в личный кабинет
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							Меры поддержки
+						</h3>
+						<p>
+							Центр поддержки предпринимательства информирует о завершении приема заявок на иные услуги в 2022 году.
+							Прием заявок в 2023 году на иные услуги будет осуществляться в том числе через Цифровую платформу
+							<a href="http://мсп.рф/">МСП</a> Дата открытия приема заявок будет размещена дополнительно в разделе
+							<a href="/news/">Новости</a>,
+							а также объявлена в разделе «Региональные меры поддержки» в Цифровой
+							платформе.
+						</p>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="drop-card">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Консультационная поддержка
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<article class="ill-card">
+											<div class="ill-card__content text">
+												<h4>
+													Консультации для самозанятых
+												</h4>
+												<p>
+													Бесплатные консультации для самозанятых!
+												</p>
+												<ul>
+													<li>
+														Как стать самозанятым?
+													</li>
+													<li>
+														Кому подходит налог на профессиональный доход?
+													</li>
+													<li>
+														Какие преимущества этого специального налогового режима?
+													</li>
+													<li>
+														Стоит ли переходить на него, если у Вас есть юридическое лицо?
+													</li>
+												</ul>
+												<p>
+													Ответы на эти вопросы вы можете получить на консультации у
+													квалифицированных специалистов <b>бесплатно</b>.
+												</p>
+											</div>
+											<div class="image ill-card__thumb">
+												<img class="image__pict image__pict--contain" src="./img/ill-14.svg" alt="Декоративная картинка">
+												<figcaption class="image__discript" aria-hidden="true">
+													Консультации для самозанятых
+												</figcaption>
+											</div>
+										</article>
+										<div class="block-text text">
+											<p>
+												Центр поддержки предпринимательства обеспечивает предоставление
+												консультационных услуг по вопросам ведения
+												предпринимательской деятельности для физических лиц и индивидуальных
+												предпринимателей, применяющих специальный налоговый
+												режим «Налог на профессиональный доход».
+											</p>
+											<p>
+												<b>Основанием для оказания поддержки является устное и/или
+													письменное обращение физического лица, заинтересованного в
+													начале осуществления предпринимательской деятельности, поступившее
+													по электронной почте, телефону и (или) способом
+													личного обращения на основании запроса заявителя.</b>
+											</p>
+										</div>
+										<div class="accent-block">
+											<div class="accent-block__left">
+												<h4>
+													Дни оказания консультаций анонсируются в разделе <a href="/events/">"Мероприятия"</a>
+												</h4>
+											</div>
+											<div class="accent-block__right">
+												<p>
+													Вы можете подать заявку на оказание консультации, пройдя
+													регистрацию, выбрав удобный для вас день в соответствии с
+													расписанием работы специалистов.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Обучение
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<p>
+												Основной целью Центра является реализация мероприятий, направленных на
+												популяризацию предпринимательства и начала
+												собственного дела на территории Калининградской области, а также
+												повышение квалификации сотрудников субъектов малого и
+												среднего предпринимательства, физических лиц, применяющих специальный
+												налоговый режим «Налог на профессиональный доход»,
+												и физических лиц, желающих открыть собственное дело, по вопросам
+												осуществления предпринимательской деятельности. Полный
+												перечень мероприятий вы можете посмотреть в разделе
+												<strong><a href="/events/">Мероприятия</a></strong>
+											</p>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Популяризация
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<p>
+												Популяризация продукции может быть в форматах:
+											</p>
+											<ul>
+												<li>
+													Написание и размещение статьи в онлайн и печатных СМИ;
+												</li>
+												<li>
+													Создание и размещение аудио- или видеоролика в СМИ;
+												</li>
+												<li>
+													Создание и размещение аудио- или видеоролика на рекламных площадках;
+												</li>
+												<li>
+													Создание и печать рекламной полиграфической продукции;
+												</li>
+												<li>
+													Создание и размещение наружной рекламы;
+												</li>
+												<li>
+													Создание и размещения рекламных макетов в социальных сетях и поисковых системах;
+												</li>
+												<li>
+													Создание сайта-визитки на русском языке.
+												</li>
+											</ul>
+											<div class="info-block info-block--light text">
+												<ul>
+													<li>
+														Для кого: физические лица, применяющие специальный налоговый режим «Налог на
+														профессиональный доход».
+													</li>
+													<li>
+														Стоимость: на бесплатной или частично платной основе.
+													</li>
+													<li>
+														Для получения услуги Вам необходимо направить запрос через Цифровую
+														платформу <a href="http://мсп.рф/">МСП</a> (раздел «Региональные меры
+														поддержки»).
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Организация участия в выставках
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<p>
+												Центр поддержки предпринимательства Калининградской области оказывает услуги по
+												организации участия физических лиц, применяющих специальный налоговый режим «Налог
+												на
+												профессиональный доход», в выставках на территории Российской Федерации с
+												коллективным
+												стендом (не менее 3-х участников).
+											</p>
+											<ul>
+												Организация участия в выставках включает в себя:
+												<li>
+													регистрационный взнос участника выставки;
+												</li>
+												<li>
+													аренду и застройку стендов (включая оформление и оснащение стенда, аренду
+													необходимого
+													дополнительного оборудования);
+												</li>
+												<li>
+													подготовку рекламных материалов.
+												</li>
+											</ul>
+											<p>
+												Расходы по перелету (переезду), проживанию и питанию участники выставок несут
+												самостоятельно.
+											</p>
+											<div class="info-block info-block--light text">
+												<ul>
+													<li>
+														Для кого: физические лица, применяющие специальный налоговый режим «Налог на
+														профессиональный доход».
+													</li>
+													<li>
+														Стоимость: на бесплатной или частично платной основе.
+													</li>
+													<li>
+														Для получения услуги Вам необходимо направить запрос через Цифровую
+														платформу <a href="http://мсп.рф/">МСП</a> (раздел «Региональные меры
+														поддержки»).
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Размещение на российских электронных торговых площадках
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="./img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<p>
+												Услуги по размещению физических лиц, применяющих специальный налоговый режим «Налог
+												на профессиональный доход», на российских электронных торговых площадках включают в
+												себя:
+											</p>
+											<ul>
+												<li>
+													содействие в регистрации аккаунта на российской торговой площадке (Ozon, Wildberries, AliExpress)
+												</li>
+												<li>
+													полное единоразовое поэтапное обучение представителя Получателя поддержки по работе с площадками, включая:
+												</li>
+												<li>
+													изучение политики и правил площадки;
+												</li>
+												<li>
+													размещение товаров Получателя поддержки;
+												</li>
+												<li>
+													работа с входящими заказами, отправлениями и возвратами товаров покупателей;
+												</li>
+												<li>
+													работа с отзывами и жалобами.
+												</li>
+											</ul>
+											<div class="info-block info-block--light text">
+												<ul>
+													<li>
+														Для кого: физические лица, применяющие специальный налоговый режим «Налог на профессиональный доход».
+													</li>
+													<li>
+														Стоимость: на бесплатной или частично платной основе.
+													</li>
+													<li>
+														Для получения услуги Вам необходимо направить запрос через Цифровую
+														платформу <a href="http://мсп.рф/">МСП</a> (раздел «Региональные меры
+														поддержки»).
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+							<a class="btn--block" href="https://mb-mikro.ru/program_sz/">
+								Программы кредитования для самозанятых
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--bottom">
+				<div class="container">
+					<div class="text">
+						<h4>
+							Контакты для ответов на вопросы
+						</h4>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<a href="tel:+74012994904" class="adress-line__item adress-line__item--6">
+								<svg class="icon-svg adress-line__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="20" cy="20" r="20" fill="#E04E39"></circle>
+									<path d="M22.9381 14C23.9149 14.1906 24.8125 14.6683 25.5162 15.3719C26.2199 16.0756 26.6976 16.9733 26.8881 17.95M22.9381 10C24.9674 10.2254 26.8597 11.1342 28.3044 12.577C29.749 14.0198 30.6601 15.911 30.8881 17.94M29.8881 25.92V28.92C29.8892 29.1985 29.8322 29.4742 29.7206 29.7293C29.6091 29.9845 29.4454 30.2136 29.2402 30.4019C29.035 30.5901 28.7927 30.7335 28.5289 30.8227C28.265 30.9119 27.9855 30.9451 27.7081 30.92C24.631 30.5856 21.6751 29.5341 19.0781 27.85C16.6619 26.3147 14.6135 24.2662 13.0781 21.85C11.3881 19.2412 10.3364 16.271 10.0081 13.18C9.98313 12.9035 10.016 12.6248 10.1046 12.3616C10.1932 12.0985 10.3357 11.8567 10.5229 11.6516C10.7101 11.4466 10.9379 11.2827 11.1919 11.1705C11.4459 11.0583 11.7205 11.0003 11.9981 11H14.9981C15.4834 10.9952 15.9539 11.1671 16.3219 11.4835C16.6898 11.8 16.9302 12.2394 16.9981 12.72C17.1247 13.6801 17.3596 14.6227 17.6981 15.53C17.8327 15.8879 17.8618 16.2769 17.782 16.6509C17.7023 17.0248 17.517 17.3681 17.2481 17.64L15.9781 18.91C17.4017 21.4135 19.4746 23.4864 21.9781 24.91L23.2481 23.64C23.52 23.3711 23.8633 23.1858 24.2372 23.1061C24.6112 23.0263 25.0002 23.0555 25.3581 23.19C26.2654 23.5286 27.2081 23.7634 28.1681 23.89C28.6539 23.9585 29.0975 24.2032 29.4146 24.5775C29.7318 24.9518 29.9003 25.4296 29.8881 25.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+								
+								<span>
+									+7 (4012) 994-904 <!--(доб. 935, 931, 956, 914, 907, 960, 942, 943)-->
+								</span>
+							</a>
+							<a href="mailto:cpp@mbkaliningrad.ru" class="adress-line__item adress-line__item--6">
+								<svg class="icon-svg adress-line__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="20" cy="20" r="20" fill="#E04E39"></circle>
+									<path d="M24 15.9994V20.9994C24 21.795 24.3161 22.5581 24.8787 23.1207C25.4413 23.6833 26.2044 23.9994 27 23.9994C27.7957 23.9994 28.5587 23.6833 29.1213 23.1207C29.6839 22.5581 30 21.795 30 20.9994V19.9994C29.9999 17.7424 29.2362 15.5519 27.8333 13.7839C26.4303 12.016 24.4706 10.7746 22.2726 10.2617C20.0747 9.74875 17.7679 9.99442 15.7274 10.9587C13.6868 11.9231 12.0324 13.5493 11.0333 15.5731C10.0341 17.5969 9.74898 19.8991 10.2242 22.1055C10.6994 24.3119 11.907 26.2926 13.6506 27.7256C15.3943 29.1587 17.5714 29.9597 19.8281 29.9985C22.0847 30.0373 24.2881 29.3116 26.08 27.9394M24 19.9994C24 22.2085 22.2092 23.9994 20 23.9994C17.7909 23.9994 16 22.2085 16 19.9994C16 17.7902 17.7909 15.9994 20 15.9994C22.2092 15.9994 24 17.7902 24 19.9994Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+								
+								<span>
+									cpp@mbkaliningrad.ru
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		</main>
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="container footer__container-top">
+			<button class="footer__to-top">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#to-top"></use>
+				</svg>
+			</button>
+			<div class="footer__top-columns">
+				<div class="footer__column footer__column--1">
+					<div class="footer__nav-column">
+						<div class="footer__links-column footer__links-column--1">
+							<h5 class="footer__title footer__title--small">
+								Меню
+							</h5>
+							<div class="footer__nav">
+								<a href="" class="footer__link">
+									Главная
+								</a>
+								<a href="" class="footer__link">
+									О нас
+								</a>
+								<a href="" class="footer__link">
+									Мероприятия
+								</a>
+								<a href="" class="footer__link">
+									Новости
+								</a>
+								<a href="" class="footer__link">
+									Меры поддержки
+								</a>
+							</div>
+						</div>
+						<div class="footer__links-column footer__links-column--2">
+							<h5 class="footer__title footer__title--big">
+								Меры поддержки
+							</h5>
+							<div class="footer__nav-flex">
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Льготное финансирование
+									</a>
+									<a href="" class="footer__link">
+										Консультации и обучение
+									</a>
+									<a href="" class="footer__link">
+										Поддержка экспорта
+									</a>
+									<a href="" class="footer__link">
+										Кластерное развитие
+									</a>
+									<a href="" class="footer__link">
+										Поддержка инноваций
+									</a>
+								</div>
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Предоставление поручительства
+									</a>
+									<a href="" class="footer__link">
+										Социальное предпринимательство
+									</a>
+									<a href="" class="footer__link">
+										Сельское хозяйство
+									</a>
+									<a href="" class="footer__link">
+										Программа "Восток"
+									</a>
+									<a href="" class="footer__link">
+										Повышение производительности труда
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__info none-image">
+						<div class="footer__info-column footer__info-column--66">
+							<div class="footer__logos">
+								<a href="/" class="footer__logo footer__logo--1">
+									<img src="img/logo-light.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+							</div>
+						</div>
+<!--						<div class="footer__info-column footer__info-column&#45;&#45;2">-->
+<!--							<a href="/" class="footer__logo-2">-->
+<!--								<img src="img/logo-light-2.svg" alt="Логотип">-->
+<!--							</a>-->
+<!--						</div>-->
+						<div class="footer__info-column footer__info-column--3">
+							<p class="footer__discript">
+								© Фонд Поддержки. Все права защищены  2013-2020
+								<br>
+								<br>
+								Разработано <a target="_blank" href="https://diez.io/">#diez technologies</a>
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="footer__column footer__column--2">
+					<h5 class="footer__title footer__title--big">
+						Соц.сети:
+					</h5>
+					<div class="footer__socials">
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#inst"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</div>
+					<form action="" class="search footer__search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<a href="" class="btn btn--60 footer__btn-profile">
+						<span>
+							Личный кабинет
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Блок DEMO полностью удали на проекте -->
+	<div class="demo">
+		<div class="container demo__container">
+			<div class="demo__column">
+				<a href="/0_ui-library.html" class="demo__link">
+					0.UI-kit
+				</a>
+				<a href="/" class="demo__link">
+					1.Главная
+				</a>
+				<a href="/2-page.html" class="demo__link">
+					2. О нас
+				</a>
+				<a href="/3-page.html" class="demo__link">
+					3. Мероприятия
+				</a>
+				<a href="/4-page.html" class="demo__link">
+					4. Новости
+				</a>
+				<a href="/4-1-page.html" class="demo__link">
+					4.1 Новость
+				</a>
+				<a href="/5-page.html" class="demo__link">
+					5. Документы фонда
+				</a>
+				<a href="/6-page.html" class="demo__link">
+					6. Микрокредитование
+				</a>
+				<a href="/6-1-page.html" class="demo__link">
+					6-1. Начни свое дело
+				</a>
+				<a href="/6-2-page.html" class="demo__link">
+					6-2. Социальное предприятие - Старт
+				</a>
+				<a href="/6-3-page.html" class="demo__link">
+					6-3. Социальное предприятие - Развитие
+				</a>
+				<a href="/6-4-page.html" class="demo__link">
+					6-4. Моногород
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-5. Стандарт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-6. Доверие
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-7. Старт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-8. Развитие
+				</a>
+				<a href="/7-page.html" class="demo__link">
+					7. Фонд развития промышленности
+				</a>
+				<a href="/8-page.html" class="demo__link">
+					8. Консультация и обучение
+				</a>
+				<a href="/8-1-page.html" class="demo__link">
+					8.1 Нормативные документы
+				</a>
+				<a href="/9-page.html" class="demo__link">
+					9. Центр поддержки экспорта
+				</a>
+				<a href="/9-1-page.html" class="demo__link">
+					9.1 Нормативно-правовые акты
+				</a>
+				<a href="/9-2-page.html" class="demo__link">
+					9.2 Путеводители для экспортеров
+				</a>
+				<a href="/10-page.html" class="demo__link">
+					10. Кластерное развитие
+				</a>
+				<a href="/11-page.html" class="demo__link">
+					11. Поддержка инноваций
+				</a>
+				<a href="/12-page.html" class="demo__link">
+					12. Предоставление поручительства
+				</a>
+				<a href="/12-1-page.html" class="demo__link">
+					12.1 Нормативные документы
+				</a>
+				<a href="/12-2-page.html" class="demo__link">
+					12.2 Лимиты поручительств
+				</a>
+				<a href="/12-3-page.html" class="demo__link">
+					12.3. Программа предосчтавления поручительства
+				</a>
+				<a href="/12-4-page.html" class="demo__link">
+					12.4 Отчетность
+				</a>
+				<a href="/13-page.html" class="demo__link">
+					13. Социальное предпринимательство
+				</a>
+				<a href="/14-page.html" class="demo__link">
+					14. Сельское хозяйство
+				</a>
+				<a href="/15-page.html" class="demo__link">
+					15. Программа Восток
+				</a>
+				<a href="/16-page.html" class="demo__link">
+					16. Повышение производительности труда
+				</a>
+				<a href="/17-page.html" class="demo__link">
+					17. Полезное видео
+				</a>
+				<a href="/18-page.html" class="demo__link">
+					18. Полезные книги
+				</a>
+				<a href="/none-page.html" class="demo__link">
+					18. 404
+				</a>
+				<a href="/19-page.html" class="demo__link">
+					19. Поиск
+				</a>
+			</div>
+			<div class="demo__column">
+				<a href="/20-01-page.html" class="demo__link">
+					20.01. Документы
+				</a>
+				<a href="/20-02-page.html" class="demo__link">
+					20.02. Цель центра
+				</a>
+				<a href="/20-03-page.html" class="demo__link">
+					20.03. Услуги центра
+				</a>
+				<a href="/20-04-page.html" class="demo__link">
+					20.04. Функции центра
+				</a>
+				<a href="/20-05-page.html" class="demo__link">
+					20.05. Ювелирная площадка «Элеватор»
+				</a>
+				<a href="/20-06-page.html" class="demo__link">
+					20.06. Башня Врангеля
+				</a>
+				<a href="/20-07-page.html" class="demo__link">
+					20.07. Кластер янтарной промышленности
+				</a>
+				<a href="/20-08-page.html" class="demo__link">
+					20.08. Создание индустриального парка
+				</a>
+				<a href="/20-09-page.html" class="demo__link">
+					20.09. Хаусбот, Ушаковские верфи
+				</a>
+				<a href="/20-10-page.html" class="demo__link">
+					20.10. Кластер судостроения
+				</a>
+				<a href="/20-11-page.html" class="demo__link">
+					20.11. Металлообрабатывающий кластер
+				</a>
+				<a href="/20-12-page.html" class="demo__link">
+					20.12. Умная среда
+				</a>
+				<a href="/20-13-page.html" class="demo__link">
+					20.13. Трубный завод
+				</a>
+				<a href="/20-14-page.html" class="demo__link">
+					20.14. Завод металлоконструкций
+				</a>
+				<a href="/20-15-page.html" class="demo__link">
+					20.15. Кластерное развитие
+				</a>
+				<a href="/21-page.html" class="demo__link">
+					21. Социальное предпринимательство
+				</a>
+				<a href="/24-page-index.html" class="demo__link">
+					24. Главная-Микрокредитование
+				</a>
+				<a href="/24-1-page.html" class="demo__link">
+					24-1. Для самозанятых
+				</a>
+				<a href="/24-2-page.html" class="demo__link">
+					24-2. Для субъектов МСП
+				</a>
+				<a href="/24-3-page.html" class="demo__link">
+					24-3. Для СМСП
+				</a>
+				<a href="/24-4-page.html" class="demo__link">
+					24-4. Полезная информация
+				</a>
+				<a href="/24-5-page.html" class="demo__link">
+					24-5. Контакты
+				</a>
+				<a href="/24-6-page.html" class="demo__link">
+					24-6. Начни свое дело
+				</a>
+				<a href="/24-7-page.html" class="demo__link">
+					24-7. Старт
+				</a>
+				<a href="/24-8-page.html" class="demo__link">
+					24-8. Развитие
+				</a>
+				<a href="/24-9-page.html" class="demo__link">
+					24-9. Моногород
+				</a>
+				<a href="/24-10-page.html" class="demo__link">
+					24-10. Стандарт
+				</a>
+				<a href="/24-11-page.html" class="demo__link">
+					24-11. Доверие
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-12. "Старт" еще раз
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-13. "Развитие" еще раз
+				</a>
+				<a href="/25-page.html" class="demo__link">
+					25. Услуги для самозанятых граждан
+				</a>
+				<a href="/26-page.html" class="demo__link">
+					26. Фонд развития промышленности
+				</a>
+				<a href="/27-page.html" class="demo__link">
+					27. Услуги 3D прототипирования и 3D печати
+				</a>
+				<div class="hr"></div>
+				<a href="/28-injiniring-main.html" class="demo__link">
+					Инжиниринг главная
+				</a>
+				<a href="/29-questions.html" class="demo__link">
+					Опросник
+				</a>
+				<a href="/30-grants.html" class="demo__link">
+					Гранты
+				</a>
+				<a href="/31-companies.html" class="demo__link">
+					Компании
+				</a>
+				<a href="/32-financial-help.html" class="demo__link">
+					Финансовая поддержка
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Окно мероприятия -->
+<div class="modal mfp-hide">
+	<div class="modal__content text">
+		<h4>
+			Онлайн-тренинг «Возможности маркетплейсов для малого бизнеса: на примере торговой платформы Wildberries»
+		</h4>
+		<a href="" class="btn btn--60">
+			<span>Страница мероприятия</span>
+		</a>
+		<p>
+			В кризисной ситуации, когда розничные точки закрылись практически в один день, компании почти полностью переместили свою деятельность в Интернет. И для малого бизнеса этот путь стал единственным способом выжить Однако одномоментно сделать собственный продающий сайт и привлечь туда клиентов очень сложно. Выходом для малого и среднего бизнеса стало сотрудничество с маркетплейсами. В число крупнейших из них входит торговая платформа Wildberries.
+		</p>
+		<p>
+			<b>
+				На вебинаре разберём вопросы:
+			</b>
+		</p>
+		<ul>
+			<li>
+				могут ли маркетплейсы решить проблемы, вызванные кризисом?
+			</li>
+			<li>
+				сотрудничество с Wildberries: как стать партнером крупнейшего продавца Рунета?
+			</li>
+			<li>
+				возможности торговой платформы Wildberries для управления поставками и продажами.
+			</li>
+			<li>
+				какие инструменты важно использовать для успешных продаж в онлайн-магазине?
+			</li>
+			<li>
+				на какую поддержку могут рассчитывать предприниматели.
+			</li>
+		</ul>
+		<p>
+			Ответы на эти и другие вопросы о работе с маркетплейсом Wildberries вы сможете найти, став участником онлайн-тренинга, организованного совместно с АО «Корпорацией МСП» и Wildberries. Вы сможете рассмотреть ситуацию со всех сторон. В числе спикеров будут и представитель Wildberries, и предприниматель, который с ними успешно сотрудничает, и представители инфраструктуры поддержки предпринимателей.
+		</p>
+	</div>
+</div>
+	</div>
+
+	<script>
+	// Вынес сюда ссылки для мобильного меню, чтобы было проще. Если ссылки нет, то не выводи ее
+	let mobileLinks = [
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#fb"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#inst"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#vk"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#youtube"></use></svg></a>'
+	];
+
+	let mobileContacts = [
+	'<p class="mmenu__contact-lines"><a href="tel:+74012994588">+7 (4012) 994 588</a></p>',
+	'<p class="mmenu__contact-lines"><a href="mailto:info@mbkaliningrad.ru">info@mbkaliningrad.ru</a></p>'
+	];
+</script>
+<nav id="mmenu">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="/2-page.html">О нас</a></li>
+		<li><a href="/3-page.html">Мероприятия</a></li>
+		<li><a href="/4-page.html">Новости</a></li>
+		<li><span>Меры поддержки</span>
+			<ul>
+				<li><a href="/6-page.html">Микрокредитование</a></li>
+				<li><a href="/7-page.html">Фонд развития промышленности</a></li>
+				<li><span>Консультации и обучение</span>
+					<ul>
+						<li><a href="/8-1-page.html">Нормативые документы</a></li>
+					</ul>
+				</li>
+				<li><span>Поддержка экспорта</span>
+					<ul>
+						<li><a href="/9-1-page.html">Нормативно-правовые акты</a></li>
+						<li><a href="/9-2-page.html">Путеводители для экспорта</a></li>
+					</ul>
+				</li>
+				<li><a href="/10-page.html">Кластерное развитие</a></li>
+				<li><a href="/11-page.html">Поддержка инноваций</a></li>
+				<li><a href="/12-page.html">Предоставление поручительства</a>
+					<ul>
+						<li><a href="/12-1-page.html">Нормативые документы</a></li>
+						<li><a href="/12-2-page.html">Лимиты поручительств</a></li>
+						<li><a href="/12-3-page.html">Программа предоставления поручительства</a></li>
+						<li><a href="/12-4-page.html">Отчётность</a></li>
+					</ul>
+				</li>
+				<li><a href="/13-page.html">Социальное предпринимательство</a></li>
+				<li><a href="/14-page.html">Сельское хозяйство</a></li>
+				<li><a href="/15-page.html">Программа "Восток"</a></li>
+				<li><a href="/16-page.html">Повышение производительности труда</a></li>
+			</ul>
+		</li>
+		<li><span>Полезное</span>
+			<ul>
+				<li><a href="/17-page.html">Полезные видеоматериалы</a></li>
+				<li><a href="/18-page.html">Полезные книги</a></li>
+				<li><span>Онлайн-курсы</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт"</a></li>
+						<li><a href="/">"Мой бизнес. Налоги"</a></li>
+						<li><a href="/">"120 секунд" (14-17 лет)</a></li>
+					</ul>
+				</li>
+				<li><span>Спецпроекты</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт" (создание тренировочных фирм)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav id="mmenu-m">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="24-1-page.html">Программы для самозанятых</a>
+			<ul>
+				<li><a href="24-12-page.html">Программа "Старт"</a></li>
+				<li><a href="24-13-page.html">Программа "Развитие"</a></li>
+			</ul>
+		</li>
+		<li><a href="24-2-page.html">Для субъектов МСП</a>
+			<ul>
+				<li><a href="24-6-page.html">Начни свое дело</a></li>
+				<li><a href="24-7-page.html">Социальное предприятие-Старт</a></li>
+				<li><a href="24-8-page.html">Социальное предприятие-Развитие</a></li>
+				<li><a href="24-9-page.html">Моногород</a></li>
+				<li><a href="24-10-page.html">Стандарт</a></li>
+				<li><a href="24-11-page.html">Доверие</a></li>
+			</ul>
+		</li>
+		<li><a href="24-3-page.html">Программы для СМСП</a></span></li>
+		<li><a href="24-4-page.html">Полезная информация</a></li>
+		<li><a href="24-5-page.html">Контакты</a></li>
+	</ul>
+</nav>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

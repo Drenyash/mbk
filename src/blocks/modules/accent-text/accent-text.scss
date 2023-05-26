@@ -1,0 +1,20 @@
+.accent-text {
+	border-radius: rem(5px);
+	border: 1px solid #c39367;
+	padding: rem(20px) rem(34px);
+	line-height: 1.5;
+	margin-bottom: rem(60px);
+	@include r(750) {
+		padding: rem(15px) rem(25px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.accent-text {
+			border: 1px solid $light;
+		}
+	}
+}

@@ -1,0 +1,266 @@
+.radio,
+.checkbox {
+	display: flex;
+	align-items: center;
+	&__icon {
+		border: 2px solid #f2f2f2;
+		box-sizing: border-box;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 18px;
+		width: 18px;
+		margin-right: rem(15px);
+		flex-shrink: 0;
+		&-circle {
+			width: 8px;
+			height: 8px;
+			background-color: $accent;
+			border-radius: 10px;
+			display: block;
+			opacity: 0;
+		}
+	}
+	&__field,
+	input {
+		display: block;
+		height: 10px;
+		width: 10px;
+		display: none;
+		&:checked {
+			& + .radio__icon {
+				.radio__icon-circle {
+					opacity: 1;
+				}
+			}
+			& + .checkbox__icon {
+				.checkbox__icon-circle {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__text {
+		a {
+			color: $accent;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}
+
+.input {
+	margin-bottom: rem(28px);
+	display: block;
+	width: calc(50% - 24px);
+	&--full {
+		width: 100%;
+	}
+	@include r(1200) {
+		width: 100%;
+	}
+	@include r(750) {
+		margin-bottom: rem(20px);
+	}
+	&--valid {
+		.input {
+			&__field {
+				border-color: $valid;
+				&:focus {
+					border-color: $valid;
+				}
+			}
+		}
+	}
+	&--error {
+		.input {
+			&__field {
+				border-color: $error;
+				&:focus {
+					border-color: $error;
+				}
+			}
+			&__message {
+				color: $error;
+			}
+		}
+	}
+	&__title {
+		font-weight: 300;
+		font-size: rem(16px);
+		width: 100%;
+		line-height: rem(35px);
+	}
+	&__field,
+	input,
+	textarea {
+		border: 1px solid #d1d9dd;
+		box-sizing: border-box;
+		border-radius: 5px;
+		display: block;
+		width: 100%;
+		height: 50px;
+		font-family: $font;
+		outline-color: $accent;
+		margin-bottom: rem(5px);
+		font-size: rem(18px);
+		padding-left: rem(25px);
+		padding-right: rem(25px);
+		resize: none;
+		&:focus {
+			border-color: $accent;
+		}
+		&--select {
+			display: flex;
+			align-items: center;
+		}
+		&--textarea {
+			background-color: #fbfbfb;
+			min-height: rem(100px);
+			padding: rem(25px);
+			font-size: rem(14px);
+			resize: none;
+		}
+	}
+	input:read-only {
+		background-color: #eff2f3;
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.input {
+			&__field {
+				background-color: $black;
+				border-color: $light;
+			}
+		}
+	}
+}
+
+.file {
+	margin-bottom: rem(28px);
+	display: block;
+	width: calc(50% - 24px);
+	@include r(1200) {
+		width: 100%;
+	}
+	@include r(750) {
+		margin-bottom: rem(20px);
+	}
+	&__title {
+		font-weight: 300;
+		font-size: rem(16px);
+		line-height: rem(35px);
+	}
+	&__wrapper {
+		border: 1px solid #d1d9dd;
+		box-sizing: border-box;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: rem(5px);
+	}
+	&__text {
+		flex-grow: 1;
+		min-width: 0px;
+		font-size: rem(18px);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #bdbdbd;
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+	}
+	&__field {
+		display: none;
+	}
+	&__message {
+	}
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #d1d9dd;
+		flex-shrink: 0;
+		width: 56px;
+		height: 100%;
+		svg {
+			height: rem(20px);
+			width: rem(20px);
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}
+
+#captchaBlock {
+	margin-bottom: rem(28px);
+	display: block;
+	width: calc(50% - 24px);
+	display: flex;
+	flex-wrap: wrap;
+	@include r(1200) {
+		width: 100%;
+	}
+	@include r(750) {
+		margin-bottom: rem(20px);
+	}
+	img {
+		margin-bottom: 10px;
+		display: block;
+	}
+	.reload-captcha {
+		padding: 10px 20px;
+		border: 1px solid $accent;
+		margin-left: 0px;
+		display: inline-block;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	input {
+		border: 1px solid #d1d9dd;
+		box-sizing: border-box;
+		border-radius: 5px;
+		display: block;
+		width: 100%;
+		height: 50px;
+		font-family: $font;
+		outline-color: $accent;
+		margin-bottom: rem(5px);
+		font-size: rem(18px);
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+		resize: none;
+		width: 100%;
+		@include r(1200) {
+			width: 100%;
+		}
+		&:focus {
+			border-color: $accent;
+		}
+	}
+}

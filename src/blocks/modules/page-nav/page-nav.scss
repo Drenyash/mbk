@@ -1,0 +1,26 @@
+.page-nav {
+	margin-bottom: rem(65px);
+	background: #f7f9fa;
+	border: 1px solid #ebebeb;
+	border-radius: rem(5px);
+	padding-top: rem(29px);
+	padding-bottom: rem(10px);
+	padding-left: rem(35px);
+	padding-right: rem(35px);
+	&__link {
+		text-decoration: none;
+		color: $black;
+		display: inline-block;
+		font-weight: normal;
+		margin-bottom: rem(19px);
+		margin-right: rem(38px);
+		scroll-behavior: smooth;
+		&:hover {
+			opacity: 0.7;
+		}
+		&--accent {
+			font-weight: 500;
+			color: $red;
+		}
+	}
+}

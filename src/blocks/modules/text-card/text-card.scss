@@ -1,0 +1,26 @@
+.text-card {
+	background-color: $light;
+	margin-bottom: 3rem;
+	padding: rem(30px) rem(40px) rem(40px) rem(40px);
+	a {
+		color: $accent;
+	}
+	&--dark {
+		background-color: #f7f9fa;
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.text-card {
+			border: 1px solid $light;
+			background-color: $black;
+			padding: rem(25px);
+			&--dark {
+				background-color: $black;
+			}
+		}
+	}
+}

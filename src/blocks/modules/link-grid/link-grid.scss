@@ -1,0 +1,57 @@
+.link-grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: rem(20px);
+	overflow: hidden;
+	border-radius: rem(10px);
+	padding: rem(45px);
+	min-height: rem(340px);
+	background-size: container;
+	background-position: right;
+	text-decoration: none;
+	color: inherit;
+	background-color: #f7f9fa;
+	background-repeat: no-repeat;
+	@include r(1200) {
+		width: 100%;
+	}
+	@include r(580) {
+		padding: rem(20px) rem(30px);
+		min-height: 0;
+		background-image: none !important;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+	&__title {
+		margin-bottom: rem(25px);
+		font-size: rem(24px);
+		font-weight: 500;
+		max-width: 75%;
+		@include r(580) {
+			font-size: rem(20px);
+			max-width: 100%;
+			margin-bottom: rem(10px);
+		}
+	}
+	&__main {
+		flex-grow: 1;
+		max-width: 75%;
+		margin-bottom: rem(25px);
+		@include r(580) {
+			max-width: 100%;
+			margin-bottom: rem(10px);
+		}
+	}
+	&__accent {
+		color: $red;
+		font-size: rem(24px);
+		font-weight: 500;
+		max-width: 75%;
+		@include r(580) {
+			max-width: 100%;
+			font-size: rem(20px);
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.search {
+	position: relative;
+	overflow: hidden;
+	border-radius: rem(5px);
+	width: 100%;
+	font-size: rem(14px);
+	@include r(1200) {
+		display: none;
+		visibility: hidden;
+	}
+	&__input {
+		border: none;
+		display: block;
+		width: 100%;
+		height: rem(40px);
+		padding-left: rem(17px);
+		padding-right: rem(57px);
+		font-weight: 300;
+		&::placeholder {
+			font-family: $font;
+			font-weight: 300;
+		}
+	}
+	&__btn {
+		position: absolute;
+		width: rem(40px);
+		border: none;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		background-color: $light;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+	}
+}

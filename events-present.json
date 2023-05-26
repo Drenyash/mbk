@@ -1,0 +1,41 @@
+[
+	{
+		"id": 2,
+		"title": "Третье мероприятие",
+		"start": "2020-06-05",
+		"end": "2020-06-05",
+		"extendedProps": "",
+		"eventConstraint": "",
+		"eventOverlap": "",
+		"eventAllow": "",
+		"eventClassNames": "",
+		"url": "./4-1-page.html",
+		"eventContent": "<div class='text'><h3>Заголовок третьего мероприятия</h3><p>Большой текст-описание третьего мероприятия</p></div>"
+	},
+	{
+		"id": 3,
+		"title": "Четвертое мероприятие",
+		"start": "2020-06-15",
+		"end": "2020-06-20",
+		"extendedProps": "",
+		"eventConstraint": "",
+		"eventOverlap": "",
+		"eventAllow": "",
+		"eventClassNames": "",
+		"url": "./4-1-page.html",
+		"eventContent": "<div class='text'><h3>Заголовок четвертого мероприятия</h3><p>Большой текст-описание первого мероприятия</p></div>"
+	},
+	{
+		"id": 4,
+		"title": "Пятое мероприятие",
+		"start": "2020-06-01",
+		"end": "2020-06-03",
+		"extendedProps": "",
+		"eventConstraint": "",
+		"eventOverlap": "",
+		"eventAllow": "",
+		"eventClassNames": "",
+		"url": "./4-1-page.html",
+		"eventContent": "<div class='text'><h3>Заголовок пятого мероприятия</h3><p>Большой текст-описание второго мероприятия</p></div>"
+	}
+]

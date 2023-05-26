@@ -1,0 +1,59 @@
+.card-marker {
+    border-radius: rem(12px);
+    padding: rem(40px);
+    display: flex;
+    gap: rem(20px);
+    @include r(1200) {
+        padding: rem(25px);
+        flex-direction: column;
+    }
+    &--skinny {
+        padding: 0;
+        @include r(1200) {
+            padding: rem(0px);
+        }
+    }
+    &--light {
+        background-color: $light;
+    }
+    &__icon {
+        height: rem(34px);
+        width: rem(34px);
+        flex-shrink: 0;
+        fill: $red;
+    }
+    &__content {
+        flex-grow: 1;
+        &--no-padding {
+            & > p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.body {
+    &--light {
+        .card-marker {
+        }
+    }
+    &--dark {
+        .card-marker {
+            border: 1px solid $light;
+            background-color: $black;
+            color: $light;
+            &--skinny {
+                border: none;
+            }
+            &__icon {
+                fill: $light;
+            }
+            &__content {
+                p {
+                    color: $light;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>3. Мероприятия</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+<body class="body body--light">
+<div class="page">
+	@@include("../blocks/modules/panel/panel.html")
+	@@include("../blocks/modules/header/header.html")
+	<main class="content page__content">
+		<section class="section">
+			<div class="container ui__container">
+				<nav class="breadcrumbs">
+					<a href="/" class="breadcrumbs__link">
+						Главная
+					</a>
+					<svg class="icon-svg breadcrumbs__arrow">
+						<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+					</svg>
+					<span class="breadcrumbs__link breadcrumbs__link--static">
+							Мероприятия
+						</span>
+				</nav>
+				<h2 class="title title--line">
+					<span class="title__text">Мероприятия</span>
+				</h2>
+			</div>
+		</section>
+		<section class="section section--dark">
+			<div class="container">
+				<div class="calendar">
+					<form class="calendar__header">
+						<div class="select">
+							<p class="select__title">
+								Сортировать мероприятия
+							</p>
+							<select name="event-type" class="select__field select__field--select">
+								<option value="">Все мероприятия</option>
+								<option value="298">
+									Бизнес-миссии
+								</option>
+								<option value="299">
+									Выставки
+								</option>
+								<option value="300">
+									Конференции
+								</option>
+								<option value="301">
+									Круглые столы
+								</option>
+								<option value="302">
+									Семинары
+								</option>
+								<option value="303">
+									Тренинги
+								</option>
+								<option value="304">
+									Форумы
+								</option>
+								<option value="17058">
+									Консультации
+								</option>
+							
+							</select>
+						</div>
+						<div class="select">
+							<p class="select__title">
+								Выберите дату
+							</p>
+							<input name="calendar-type" id="calendar-select" data-position="bottom right"
+								   class="select__field select__field--input" placeholder="26.05.2023">
+						</div>
+					</form>
+					<div class="calendar__content">
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Вебинар "Построение бизнес-модели стартапа"
+							</h4>
+							<time class="calendar-cart__time">
+								2 и 4 сентября, 17:30-19:45
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Необходимые меры за 4 месяца до обязательной маркировки товаров легкой промышленности
+							</h4>
+							<time class="calendar-cart__time">
+								10 сентября, 11:00
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Вебинар "Customer Development. Инструмент по проверке гипотез о своем клиенте"
+							</h4>
+							<time class="calendar-cart__time">
+								11 сентября, 17:30-19:45
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Онлайн-семинар «Новые меры финансовой поддержки экспорта»
+							</h4>
+							<time class="calendar-cart__time">
+								10 сентября, 11:00
+							</time>
+							<p class="calendar-cart__type">
+								Семинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Вебинар "Построение бизнес-модели стартапа"
+							</h4>
+							<time class="calendar-cart__time">
+								2 и 4 сентября, 17:30-19:45
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Необходимые меры за 4 месяца до обязательной маркировки товаров легкой промышленности
+							</h4>
+							<time class="calendar-cart__time">
+								10 сентября, 11:00
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Вебинар "Построение бизнес-модели стартапа"
+							</h4>
+							<time class="calendar-cart__time">
+								2 и 4 сентября, 17:30-19:45
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<a href="" class="calendar-cart">
+							<img class="calendar-cart__thumb" src="https://via.placeholder.com/1200x1200.png"
+								 alt="Название мероприятия">
+							<h4 class="calendar-cart__title">
+								Необходимые меры за 4 месяца до обязательной маркировки товаров легкой промышленности
+							</h4>
+							<time class="calendar-cart__time">
+								10 сентября, 11:00
+							</time>
+							<p class="calendar-cart__type">
+								Вебинар
+							</p>
+						</a>
+						<div class="calendar-cart calendar-cart--clear"></div>
+						<div class="calendar-cart calendar-cart--clear"></div>
+						<div class="calendar-cart calendar-cart--clear"></div>
+					</div>
+					<div class="calendar__toolbar">
+						<a href="" class="articles__btn btn btn--60">
+							<span>
+								Загрузить еще
+							</span>
+							<svg class="icon-svg none-image">
+								<use xlink:href="./img/sprites/sprite.svg#load"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include("../blocks/modules/footer/footer.html")
+</div>
+
+@@include("../blocks/modules/m-menu/m-menu.html")
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

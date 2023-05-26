@@ -1,0 +1,23 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/rem";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "base/layout";
+@import "base/text";
+@import "base/form";
+@import "libs/calendar";
+@import "libs/jquery.fancybox.min";
+@import "libs/swiper.min";
+@import "libs/magnific-popup";
+@import "libs/timepicker";
+@import "libs/choices";
+@import "../blocks/modules";
+@import "base/margins";
+@import "base/paddings";
+
+@include r(1200) {
+
+}

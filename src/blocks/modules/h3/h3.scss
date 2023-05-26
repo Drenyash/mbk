@@ -1,0 +1,14 @@
+.h3 {
+	margin-bottom: rem(60px);
+	font-weight: 500;
+	font-size: rem(36px);
+	line-height: rem(42px);
+	&--center {
+		text-align: center;
+	}
+	@include r(1200) {
+		font-size: 26px;
+		margin-bottom: 2rem;
+		line-height: 1.3;
+	}
+}

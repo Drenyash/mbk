@@ -1,0 +1,22 @@
+.block-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: rem(60px) rem(40px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: rem(380px);
+}
+
+.block-icon {
+  display: flex;
+  gap: rem(20px);
+
+  &__icon {
+    flex-shrink: 0;
+    display: block;
+    width: rem(50px);
+    height: rem(50px);
+  }
+}

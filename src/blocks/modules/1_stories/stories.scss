@@ -1,0 +1,90 @@
+.stories {
+	padding-top: rem(100px);
+	padding-bottom: rem(100px);
+	@include r(1200) {
+		display: none;
+		visibility: hidden;
+	}
+	&__title {
+		margin-bottom: rem(50px);
+	}
+	&__articles {
+		display: block;
+		margin-bottom: rem(50px);
+	}
+	&__article {
+		display: flex;
+		justify-content: space-between;
+		&:nth-child(2n) {
+			.stories__article-column--right {
+				order: -1;
+			}
+			.stories__tag {
+				left: auto;
+				right: rem(25px);
+			}
+		}
+		&-column {
+			width: 50%;
+			min-height: rem(500px);
+			&--left {
+				position: relative;
+			}
+			&--right {
+				padding: rem(40px) rem(30px);
+			}
+		}
+		&-name {
+			font-weight: 500;
+			font-size: rem(24px);
+			line-height: rem(28px);
+			margin-bottom: rem(20px);
+		}
+		&-text {
+			p {
+				margin-bottom: rem(16px);
+			}
+		}
+	}
+	&__thumb {
+		height: 100%;
+	}
+	&__tag {
+		background-color: $red;
+		color: $light;
+		border-radius: rem(50px);
+		padding: rem(11px) rem(31px);
+		position: absolute;
+		top: rem(25px);
+		left: rem(25px);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: rem(14px);
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__control {
+		text-align: center;
+	}
+	&__btn {
+		width: rem(218px);
+	}
+}
+
+.body {
+	&--light {
+		.stories {
+			&__articles {
+				background-color: #F7F9FA;
+			}
+		}
+	}
+	&--dark {
+		.stories {
+			&__articles {
+				background-color: $black;
+			}
+		}
+	}
+}

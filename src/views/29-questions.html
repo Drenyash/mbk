@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>29. Вопросник по потребностям</title>
+	@@include("../blocks/modules/head/head.html")
+</head>
+
+<body class="body body--light">
+	<div class="page">
+		@@include("../blocks/modules/panel/panel.html")
+		@@include("../blocks/modules/header/header.html")
+		<main class="content page__content">
+			<section class="section pb-60">
+				<div class="container">
+					<nav class="breadcrumbs">
+						<a href="./" class="breadcrumbs__link">
+							Микрофинансирование
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<a href="./" class="breadcrumbs__link">
+							Меры поддержки
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<a href="./" class="breadcrumbs__link">
+							Инжиниринг
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Вопросник по потребностям
+						</span>
+					</nav>
+					<div class="toolbar toolbar--between mb-20">
+						<h2 class="title mb-0 mbm-0 pb-0 pbm-0">
+							<span class="title__text title__text--small">Вопросник по потребностям</span>
+							<span class="title__tag">
+								сокращенный
+							</span>
+						</h2>
+						<span class="text text--20">
+							19 вопросов
+						</span>
+					</div>
+					<div class="text">
+						<p>
+							Сокращённый (для первичного знакомства с потребностью)
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="questionare" data-questionare>
+				<div class="section section--dark pt-40 ptm-25 pb-40 pbm-25">
+					<div class="container">
+						<div class="pagination-points" data-questionare-pagination></div>
+					</div>
+				</div>
+				<div class="section pt-60 pb-100">
+					<form class="container" data-questionare-form="/url/">
+						<div data-questionare-step="0" hidden>
+							<div class="text">
+								<h4>
+									Описание потребности / задачи
+								</h4>
+								<p>
+									Общее описание, история возникновения потребности.
+								</p>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="questionare__btn btn btn--50 btn--input" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="1" hidden>
+							<div class="text mb-60">
+								<h4>
+									Ключевые слова (тэги)
+								</h4>
+								<p>
+									Слова и словосочетания, наиболее полно характеризующие потребность.
+								</p>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Ключевые параметры требуемого решения (продукта или технологии)
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Ограничения по стоимости готового решения
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40">
+								<span class="input__title">
+									Требования к сертификации
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--50 btn--input questionare__btn" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="2" hidden>
+							<div class="text mb-60">
+								<h4>
+									Условия проекта
+								</h4>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Ограничения по срокам реализации проекта
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Особые требования и ограничения по исполнителям
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40">
+								<span class="input__title">
+									Прочие существенные ограничения
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--50 btn--input questionare__btn" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="3" hidden>
+							<div class="text mb-60">
+								<h4>
+									Известные аналоги
+								</h4>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Российские
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Зарубежные
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40">
+								<span class="input__title">
+									Сравнение требуемого решения с аналогами
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--50 btn--input questionare__btn" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="4" hidden>
+							<div class="text mb-60">
+								<h4>
+									История самостоятельной проработки вопроса
+								</h4>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									История (если существует) взаимодействия с исполнителями
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Достигнутые результаты и ограничения
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40">
+								<span class="input__title">
+									Потенциальные исполнители
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40">
+								<span class="input__title">
+									Используемые ранее зарубежные аналоги
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--50 btn--input questionare__btn" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="5" hidden>
+							<div class="text mb-60">
+								<h4>
+									Рынок
+								</h4>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Конечные пользователи
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Объём рынка
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--50 btn--input questionare__btn" data-questionare-button="next">
+									<span>Далее</span>
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#btn-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="6" hidden>
+							<div class="text mb-60">
+								<h4>
+									Контакты
+								</h4>
+							</div>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Заказчик проекта (общие вопросы)
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-25">
+								<span class="input__title">
+									Инициатор запроса (технические вопросы)
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<label class="input input--full mb-40 mbm-35">
+								<span class="input__title">
+									Потенциальные исполнители
+								</span>
+								<textarea type="text" class="input__field input__field--textarea" placeholder="Мой ответ"></textarea>
+							</label>
+							<div class="toolbar toolbar--gap toolbar--end toolbar--mob-center questionare__toolbar">
+								<label class="block-agreement block-agreement--mob-full mb-35">
+									<input type="checkbox" class="block-agreement__input" checked data-questionare-agreement>
+									<span class="block-agreement__marker">
+										<span class="block-agreement__icon"></span>
+									</span>
+									<span class="block-agreement__text">
+										Даю согласие на <a href="">Обработку персональных данных</a>
+									</span>
+								</label>
+								<button class="btn btn--50 btn--input btn--back questionare__btn" data-questionare-button="prev">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#icon-arrow-left"></use>
+									</svg>
+									<span>Назад</span>
+								</button>
+								<button class="btn btn--disabled btn--50 btn--input questionare__btn" data-questionare-button="submit">
+									<span>Отправить</span>
+								</button>
+							</div>
+						</div>
+						<div data-questionare-step="7">
+							<div class="block-form-submitted">
+								<svg class="block-form-submitted__icon">
+									<use xlink:href="img/sprites/sprite.svg#icon-form-submitted"></use>
+								</svg>
+								<p class="block-form-submitted__text">
+									Ваша анкета отправлена
+								</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		@@include("../blocks/modules/footer/footer.html")
+	</div>
+
+	@@include("../blocks/modules/m-menu/m-menu.html")
+
+	<script src="js/main.js"></script>
+	<script src="js/vendor.js"></script>
+</body>
+
+</html>

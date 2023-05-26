@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>9. Центр поддержки экспорта</title>
+		<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="body body--light">
+	<div class="page">
+		<section class="panel">
+	<div class="container panel__container">
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-image"><span>Выключить изображения</span></button>
+		<button class="btn btn--50 btn--gray-light panel__btn" id="toggle-theme"><span>Контрастный режим</span></button>
+	</div>
+</section>
+		<header class="header">
+	<div class="header__topline">
+		<div class="container header__topline-container">
+			<div class="header__topline-left">
+				<a href="" class="header__link open-panel">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#eye"></use>
+					</svg>
+					<span>
+						Режим для слабовидящих
+					</span>
+				</a>
+				<a href="tel:+74012994588" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#call"></use>
+					</svg>
+					<span>
+						+7 (4012) 994 588
+					</span>
+				</a>
+				<a href="mailto:info@mbkaliningrad.ru" class="header__link mobile-hide">
+					<svg class="icon-svg none-image">
+						<use xlink:href="img/sprites/sprite.svg#mail"></use>
+					</svg>
+					<span>
+						info@mbkaliningrad.ru
+					</span>
+				</a>
+			</div>
+			<div class="header__topline-right">
+				<form action="" class="search header__search mobile-hide">
+					<input type="text" class="search__input" placeholder="Поиск по сайту">
+					<button class="search__btn">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</form>
+				<form class="language-swap">
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_RUS" checked>
+						<span class="language-swap__text">Рус</span>
+					</label>
+					<label class="language-swap__item">
+						<input type="radio" name="language" value="LANGUAGE_ENG">
+						<span class="language-swap__text">Eng</span>
+					</label>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div class="header__downline">
+		<div class="container header__downline-container">
+			<a class="header__logo" href="/">
+				<img src="img/logo.svg"  alt="Логотип фирмы">
+			</a>
+			<nav class="header__menu mobile-hide">
+				<a href="/" class="header__menu-link header__menu-link--active">
+					Новости
+				</a>
+				<a href="/" class="header__menu-link">
+					Мероприятия
+				</a>
+			</nav>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-1">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#break-menu"></use>
+				</svg>
+				<span>Меры поддержки</span>
+			</a>
+			<a href="" class="btn btn--50 header__btn mobile-hide" id="header__btn-2">
+				<svg class="icon-svg none-image">
+					<use xlink:href="img/sprites/sprite.svg#lattice"></use>
+				</svg>
+				<span>Полезное</span>
+			</a>
+			<a href="#mmenu" class="header__mob-menu">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#menu"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--support">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-1"></use>
+							</svg>
+						</div>
+						<p class="drop-nav__text">
+							Микрокредитование
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-2"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Фонд развития промышленности
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-3"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Консультации и обучение
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-4"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка экспорта
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-5"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Кластерное развитие
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-6"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Поддержка инноваций
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-7"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Предоставление поручительства
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-8"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Социальное предпринимательство
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-9"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Сельское хозяйство
+						</p>
+					</a>
+					<!-- <a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-10"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа "Восток"
+						</p>
+					</a> -->
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-11"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Повышение производительности труда
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-19"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Центр креативных индустрий
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-20"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Программа на поддержание рынка труда
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="drop-nav drop-nav--help">
+		<div class="container drop-nav__container">
+			<div class="drop-nav__columns">
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-12"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные видеоматериалы
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Онлайн курсы
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-13"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-14"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Налоги"
+						</p>
+					</a>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-15"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"120 секунд" (14-17 лет)
+						</p>
+					</a>
+				</div>
+				<div class="drop-nav__column">
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-16"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Полезные книги
+						</p>
+					</a>
+					<p class="drop-nav__discript">
+						Спецпроекты
+					</p>
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-17"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							"Мой бизнес. Старт" (создание тренировочных фирм)
+						</p>
+					</a>
+
+					<a href="" class="drop-nav__link" tabindex="0">
+						<div class="drop-nav__thumb none-image">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#menu-18"></use>
+							</svg>
+
+						</div>
+						<p class="drop-nav__text">
+							Клуб ВЭД
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="content page__content">
+			<section class="section">
+				<div class="container ui__container">
+					<nav class="breadcrumbs">
+						<a href="/" class="breadcrumbs__link">
+							Главная
+						</a>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Меры поддержки
+						</span>
+						<svg class="icon-svg breadcrumbs__arrow">
+							<use xlink:href="img/sprites/sprite.svg#breadcrumbs__arrow"></use>
+						</svg>
+						<span class="breadcrumbs__link breadcrumbs__link--static">
+							Центр поддержки экспорта
+						</span>
+					</nav>
+					<h2 class="title title--line">
+						<span class="title__text">О Центре поддержки экспорта</span>
+						<a href="" class="btn btn--60 btn--doc title__btn">
+							<span>
+								Документы Фонда
+							</span>
+						</a>
+					</h2>
+					<article class="title-card hide-bg" style="background-image: url('http://placehold.it/1200x900');">
+						<div class="title-card__wrapper">
+							<div class="title-card__content">
+								<h3 class="title-card__title">
+									Центр координации поддержки экспортно ориентированных субъектов малого и среднего предпринимательства
+								</h3>
+								<div class="title-card__text">
+									<p>
+										является структурным подразделением Фонда «Центр поддержки предпринимательства Калининградской области (микрокредитная компания)»
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+					<div class="block-text text">
+						<h4>
+							Основные функции Центра:
+						</h4>
+						<ul>
+							<li>
+								Участие в определении приоритетных направлений поддержки экспортной деятельности субъектов малого и среднего предпринимательства Калининградской области, в том числе в разработке и реализации мероприятий региональной программы поддержки экспорта;
+							</li>
+							<li>
+								Предоставление услуг Центра действующим экспортерам и субъектам предпринимательства, планирующим осуществлять экспортную деятельность в Калининградской области;
+							</li>
+							<li>
+								Популяризация экспортной деятельности в Калининградской области, в том числе за счет средств массовой информации, включая телевидение, радио, печать, наружную рекламу, интернет и др., продвижение информации об услугах Центра в средствах массовой информации;
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<article class="ill-card">
+						<div class="ill-card__content text">
+							<h4>
+								Цель центра
+							</h4>
+							<p>
+								Центр координации поддержки экспортно ориентированных субъектов малого и среднего предпринимательства создан с целью стимулирования и вовлечения малых и средних предприятий Калининградской области во внешнеэкономическую деятельность, оказания информационно-аналитической, консультационной и организационной поддержки внешнеэкономической деятельность субъектов малого и среднего предпринимательства Калининградской области, а также содействия их выходу на международные рынки товаров, услуг и технологий, повышению конкурентоспособности и эффективности деятельности.
+							</p>
+						</div>
+						<div class="image ill-card__thumb">
+							<img class="image__pict image__pict--contain" src="img/ill-11.svg" alt="Декоративная картинка">
+							<figcaption class="image__discript" aria-hidden="true">
+								Декоративная картинка
+							</figcaption>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="articles">
+						<div class="articles__content">
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Консультации по вопросам экспорта
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Консультации по вопросам экспорта
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области проводит индивидуальные консультации по вопросам экспортной деятельности. Консультации оказывают высококвалифицированные специалисты с богатым опытом работы в сфере ВЭД. Для решения Ваших вопросов Центр может привлекать узкопрофильных консультантов по вопросам таможенного оформления экспортных поставок, оформления необходимой документации, присвоения кодов ТН ВЭД, банковского сопровождения валютных сделок, организации логистики и многим другим.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно (не более 3 консультаций для одного субъекта предпринимательства).
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Переводы и подготовка маркетинговых материалов
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Переводы и подготовка маркетинговых материалов
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по подготовке и переводу маркетинговых и презентационных материалов
+											</p>
+											<ul>
+												<li>
+													Перевод на иностранные языки текста договора, рекламного буклета, сайта, каталога, упаковки и прочих материалов. Услуги по переводу оказывают профессиональные переводческие компании. Список языков доступен по запросу.
+												</li>
+												<li>
+													Подготовка маркетинговых материалов и презентации Вашей компании или продукта, создание макетов рекламной продукции, каталогов и прочих материалов с привлечением профессиональных дизайнеров, фотографов, операторов.
+												</li>
+											</ul>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Интернет-сайты
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Интернет-сайты
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по созданию на иностранном языке или модернизации интернет-сайтов (создание иноязычной версии существующего интернет-сайта). Услуга оказывается посредством привлечения компаний, специализирующихся на разработке интернет-сайтов и на основании соглашения, заключенного между Фондом «Центр поддержки предпринимательства Калининградской области (микрокредитная компания)» и субъектом предпринимательства.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется на условиях софинансирования.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb">
+														<svg class="icon-svg none-image">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Патентные и маркетинговые исследования
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Патентные и маркетинговые исследования
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по организации и проведению патентных и маркетинговых исследований иностранных рынков.
+											</p>
+											<ul>
+												<li>
+													Патентные исследования – исследования технического уровня объектов хозяйственной деятельности, их патентоспособности, патентной чистоты, конкурентоспособности. Проведение патентных исследований выстраивается с опорой на анализ рынка продукции, которая является объектом патентных исследований.
+												</li>
+												<li>
+													Патентные исследования – исследования технического уровня объектов хозяйственной деятельности, их патентоспособности, патентной чистоты, конкурентоспособности. Проведение патентных исследований выстраивается с опорой на анализ рынка продукции, которая является объектом патентных исследований.
+												</li>
+											</ul>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется на условиях софинансирования.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Сертификация, стандартизация, разрешения
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Сертификация, стандартизация, разрешения
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по содействию в приведении продукции субъектов малого и среднего предпринимательств в соответствие с требованиями, необходимыми для экспорта товаров (работ, услуг) на иностранные рынки: сертификация, стандартизация, получение соответствующих разрешений.
+
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется на условиях софинансирования и включает в себя услуги по проведению испытаний и выполнению иных обязательных требований сертификационных организаций для подтверждения соответствия продукции следующим стандартам (например):
+											</p>
+											<ul>
+												<li>
+													Технического регламента Таможенного Союза (ТР ТС) (в случае обращения экспортера за получением сертификата соответствия ТР ТМ после заключения экспортного контракта с иностранным покупателем из стран Таможенного Союза);
+												</li>
+												<li>
+													Стандартам FSC (Forest Stewardship council);
+												</li>
+												<li>
+													По обязательной маркировке CE (Conformité Européenne);
+												</li>
+												<li>
+													Системам управления пищевой безопасности HACCP (Hazard Analysis and Critical Control Point);
+												</li>
+												<li>
+													Европейским стандартам принятым Европейским Комитетом по Стандартизации European Committee for Standartization);
+												</li>
+												<li>
+													По обязательной маркировке CCC (China Compulsory Certification);
+												</li>
+												<li>
+													Сертификат CCIC (China Certification & Inspection Group) и AQSIQ (General Administration of Quality Supervision, Inspection and Quarantine);
+												</li>
+												<li>
+													Сертификат DNV GL Group (Det Norske Veritas и Germanischer Lloyd) и др.
+												</li>
+											</ul>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Содействие предоставляется в получении любого сертификата, который необходим субъекту предпринимательства с целью продажи на территории другой страны, а именно:
+											</p>
+											<ul>
+												<li>
+													В законодательстве иностранного государства должно быть закреплено, что импортируемая продукция должна быть сертифицирована данным образом;
+												</li>
+												<li>
+													Рассматриваемая сертификация – это требование иностранного контрагента, прописанное в экспортном контракте.
+												</li>
+											</ul>
+											<p>
+												Процедуры добровольной сертификации, а также получения Сертификата о происхождении товара СТ-1 и Паспорта безопасности (SDS) софинансированию не подлежат.
+											</p>
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Размещение на международных электронных торговых площадках
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Размещение на международных электронных торговых площадках
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по размещению субъекта предпринимательства на международных электронных торговых площадках, в том числе:
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по размещению субъекта предпринимательства на международных электронных торговых площадках, в том числе:
+											</p>
+											<ul>
+												<li>
+													Содействие в регистрации аккаунта субъекта малого и среднего предпринимательства на международной торговой площадке (таких, как Alibaba.com, eBay.com, Etsy.com, Bonanza.com, Tmall.com, JD.com, Rakuten.com, Amazon.com и другие)
+												</li>
+												<li>
+													Ежемесячное продвижение продукции субъекта малого и среднего предпринимательства на международной электронной площадке.
+												</li>
+											</ul>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Поиск иностранного партнера
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Поиск иностранного партнера
+											</h4>
+											<p>
+												Центр поддержки предпринимательства Калининградской области оказывает услуги по поиску и подбору иностранного партнера для субъекта предпринимательства, в том числе:
+											</p>
+											<ul>
+												<li>
+													Поиск потенциальных покупателей продукции субъекта предпринимательства за рубеж;
+												</li>
+												<li>
+													Налаживание связи с потенциальными иностранными партнерами;
+												</li>
+												<li>
+													Содействие в проведении деловых переговоров;
+												</li>
+												<li>
+													Экспертиза экспортного контракта;
+												</li>
+												<li>
+													Консультирование по логистическим и таможенным вопросам.
+												</li>
+											</ul>
+											<p>
+												Для поиска иностранных партнеров Центр поддержки экспорта может привлекать российские и иностранных коммерческие компании, специализирующиеся на продвижении российской продукции на рынки иностранных государств, иностранные отраслевые ассоциации и союзы, предпринимательские объединения и государственные организации, торгово-промышленные палаты и Торговые представительства Российской Федерации за рубежом.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Бизнес-миссии
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Бизнес-миссии
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает для субъектов предпринимательства Калининградской области услуги по организации и проведению международных, межрегиональных и реверсных бизнес-миссий.
+											</p>
+											<p>
+												<b>Международные бизнес-миссии</b> – коллективная поездка представителей не менее 3 (трех) действующих экспортеров или субъектов предпринимательства, планирующих осуществлять экспортную деятельность в иностранные государства с предварительной маркетинговой и организационной подготовкой, включающей анализ условий выхода на определенный сегмент иностранного рынка, определение потенциальных интересантов, при необходимости экспонирование и показ товаров/услуг/технологий с целью их продвижения, определение степени заинтересованности в сотрудничестве и получение отклика, подготовку необходимых презентационных и рекламных материалов, и проведением двусторонних переговоров.
+											</p>
+											<p>
+												<b>Организация международной бизнес-миссии включает в себя:</b>
+											</p>
+											<ul>
+												<li>
+													Аренду помещения для переговоров 
+												</li>
+												<li>
+													Техническое и лингвистическое сопровождение переговоров, в том числе организацию последовательного перевода для участников бизнес-миссии 
+												</li>
+												<li>
+													Перевозку участников автомобильным транспортом (кроме такси) и (или) железнодорожным транспортом от места прибытия в иностранное государство до места размещения и от места размещения к месту проведения мероприятия 
+												</li>
+												<li>
+													Подготовку презентационных материалов в электронном виде для каждого участника международной бизнес миссии 
+												</li>
+											</ul>
+											<p>
+												Расходы по перелету (переезду), проживанию и питанию участники международных бизнес-миссий несут самостоятельно.
+											</p>
+											<div class="hr"></div>
+											<p>
+												<b>Межрегиональные бизнес-миссии</b> – коллективная поездка представителей не менее 3 (трех) действующих экспортеров или субъектов предпринимательства, планирующих осуществлять экспортную деятельность в другие субъекты Российской Федерации с предварительной организационной подготовкой, включающей определение потенциальных интересантов, при необходимости экспонирование и показ товаров (работ, услуг) с целью их продвижения, определение степени заинтересованности в сотрудничестве и получение обратного отклика, подготовку необходимых презентационных и рекламных материалов, и проведением двусторонних деловых переговоров. Межрегиональная бизнес-миссия организуется в случае прибытия делегации иностранных предпринимателей в другой субъект Российской Федерации.
+											</p>
+											<p>
+												<b>Организация международной бизнес-миссии включает в себя: </b>
+											</p>
+											<ul>
+												<li>
+													Подготовку презентационных материалов в электронном виде для каждого участника межрегиональной бизнес-миссии; 
+												</li>
+												<li>
+													Лингвистическое сопровождение переговоров, в том числе организацию последовательного перевода для участников бизнес-миссии.
+												</li>
+											</ul>
+											<p>
+												<b>Реверсные бизнес-миссии</b> (приемы иностранных делегаций) – прием делегации, состоящий из иностранных субъектов предпринимательства на территории Калининградской области с целью организации встреч и переговоров между региональными субъектами предпринимательства и потенциальными иностранными покупателями их товаров (работ, услуг). 
+											</p>
+											<p>
+												<b>Организация международной бизнес-миссии включает в себя:</b>
+											</p>
+											<ul>
+												<li>
+													Аренду помещения для переговоров 
+												</li>
+												<li>
+													Техническое и лингвистическое сопровождение переговоров, в том числе организацию последовательного перевода для участников бизнес-миссии;
+												</li>
+												<li>
+													Подготовку презентационных материалов в электронном виде для субъектов малого и среднего предпринимательства, зарегистрированных на переговоры с потенциальными иностранными покупателями их товаров (работ, услуг); 
+												</li>
+												<li>
+													Кейтеринговые услуги
+												</li>
+												<li>
+													Оплату расходов на проживание представителей иностранных субъектов предпринимательства на территории Калининградской области; 
+												</li>
+												<li>
+													Оплату расходов на проезд иностранных партнеров к месту проведения переговоров, включая перелет из страны пребывания в Российскую Федерацию, проезд к месту размещения и от места размещения к месту проведения переговоров.
+												</li>
+											</ul>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно не чаще одного раза в течение календарного года. 
+											</p>
+											<p>
+												Уточнить план бизнес-миссий, организуемых Центром поддержки экспорта Калининградской области на текущий календарный год можно в разделе Мероприятия. 
+											</p>
+											<a href="" class="btn btn--gray-light btn--60">
+												<span>
+													Перейти в раздел Мероприятия
+												</span>
+											</a>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+											<p>
+												Кроме того, можно ознакомиться с планом мероприятий АО "Российский экспортный центр"
+											</p>
+											<a href="" class="btn btn--gray-light btn--60">
+												<span>
+													Ознакомиться с планом
+												</span>
+											</a>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Организация участия в выставках
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Организация участия в выставках
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает услуги по организации участия субъектов предпринимательства Калининградской области в международных выставках в России и за рубежом. В рамках данной услуги субъект предпринимательства может подать заявку как на участие в коллективном стенде экспортеров Калининградской области, так и на организацию индивидуального стенда на международной выставке.
+											</p>
+											<p>
+												Организация участия в международных выставках включает в себя:
+											</p>
+											<ul>
+												<li>
+													Регистрационный взнос участника международной выставки
+												</li>
+												<li>
+													Аренду коллективного или индивидуального стенда из расчета не более 6 квадратных метров на 1 (одного) субъекта предпринимательства;
+												</li>
+												<li>
+													Застройку коллективного или индивидуального стенда, в том числе включая витрины, стеллажи, не более 3 телевизионных экранов, печать графики и оклейку стенда и другое; 
+												</li>
+												<li>
+													Услуги дизайнеров, видеомонтажеров и других технических специалистов;
+												</li>
+												<li>
+													Перевозку выставочных образцов;
+												</li>
+												<li>
+													Техническое и лингвистическое сопровождение переговоров в рамках выставочно-ярмарочного мероприятия, в том числе организацию последовательного перевода для участников, из расчета 1 переводчик для 2 субъектов предпринимательства;
+												</li>
+												<li>
+													Аренду переговорного комплекса в рамках выставочно-ярмарочного мероприятия для проведения переговоров;
+												</li>
+												<li>
+													Перевозка участников автомобильным транспортом (кроме такси) и (или) железнодорожным транспортом от места прибытия в иностранное государство до места размещения и от места размещения к месту проведения мероприятия.
+												</li>
+											</ul>
+											<p>
+												Расходы по перелету (переезду), проживанию и питанию участники международных бизнес-миссий несут самостоятельно.
+											</p>
+											<p>
+												Уточнить план международных выставок, на которых Центром поддержки экспорта Калининградской области в текущем календарном году будут организованы коллективные стенды экспортеров Калининградской области, можно в разделе Мероприятия.
+											</p>
+											<a href="" class="btn btn--gray-light btn--60">
+												<span>
+													Перейти в раздел Мероприятия
+												</span>
+											</a>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+											<p>
+												Кроме того, можно ознакомиться с планом мероприятий АО "Российский экспортный центр"
+											</p>
+											<a href="" class="btn btn--gray-light btn--60">
+												<span>
+													Ознакомиться с планом
+												</span>
+											</a>
+											<p>
+												Для поиска иностранных партнеров Центр поддержки экспорта может привлекать российские и иностранных коммерческие компании, специализирующиеся на продвижении российской продукции на рынки иностранных государств, иностранные отраслевые ассоциации и союзы, предпринимательские объединения и государственные организации, торгово-промышленные палаты и Торговые представительства Российской Федерации за рубежом.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Защита интеллектуальной собственности
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Обеспечение защиты интеллектуальной собственности за пределами территории РФ, в том числе получение патентов на результаты интеллектуальной деятельности
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает содействие в правовой охране за рубежом объектов интеллектуальной собственности, а именно содействие субъекту МСП в получении комплекса работ, осуществляемых в целях регистрации на внешних рынках объектов интеллектуальной собственности (изобретений, полезных моделей, промышленных образцов, товарных знаков, именований мест происхождения товара).
+												Услуга оказывается при наличии защищенного товарного знака, действующего на территории Российской Федерации.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется на условиях софинансирования.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Формирование коммерческого предложения
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Формирование коммерческого предложения
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает содействие субъектам предпринимательства в формировании коммерческого предложения под целевые рынки и категории товаров (работ, услуг).
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Экспертиза и сопровождение экспортного контракта
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content">
+										<div class="block-text text">
+											<h4>
+												Экспертиза и сопровождение экспортного контракта
+											</h4>
+											<p>
+												Центр поддержки экспорта Калининградской области оказывает содействие субъектам предпринимательства в подготовке и экспертизе экспортного контракта.
+											</p>
+											<p>
+												Для субъектов малого и среднего предпринимательства Калининградской области услуга предоставляется бесплатно.
+											</p>
+										</div>
+										<div class="articles">
+											<div class="articles__content">
+												<a href="" class="link-block hide-bg">
+													<div class="link-block__thumb none-image">
+														<svg class="icon-svg">
+															<use xlink:href="img/sprites/sprite.svg#link-card-2"></use>
+														</svg>
+													</div>
+													<p class="link-block__title">
+														Проверить сведения о своей организации в Едином реестре субъектов МСП
+													</p>
+													<div class="link-block__btn btn btn--60">
+														<span>
+															Перейти
+														</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="block-text text">
+											<p>
+												Для получения услуги Вам необходимо направить запрос, кликнув на "Подать заявку", либо связаться по электронной почте <a href="mailto:export@mbkaliningrad.ru">export@mbkaliningrad.ru</a>
+											</p>
+											<p>
+												Порядок предоставления данной услуги Вы можете уточнить по телефону <a href="">+7 (4012) 994-588</a>
+											</p>
+											<p>
+												Центр поддержки экспорта Калининградской области информирует заявителя о возможности или невозможности получения услуги (с указанием причин, по которым услуга не может быть предоставлена) в течение 5 (пяти) рабочих дней с момента поступления Вашего запроса.
+											</p>
+											<a href="" class="btn btn--60">
+												<span>
+													Подать заявку на услугу
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							В помощь экспортеру
+						</h3>
+						<h4>
+							Экспорт Калининградской области
+						</h4>
+						<p>
+							Калининградская область является самым западным регионом Российской Федерации, полностью отделённым от остальной территории страны сухопутными границами иностранных государств и международными морскими водами.
+						</p>
+						<p>
+							На севере и востоке на протяжении 280,5 км регион граничит с Литовской Республикой, на юге на протяжении 231,98 км — с Республикой Польша, на западе область омывает на протяжении более 183 км Балтийское море. Максимальная протяженность области с востока на запад составляет 205 км, с севера на юг – 108 км. От Калининграда до польской границы всего 35 км, до литовской – 70 км. Ближайший областной центр России — Псков расположен в 800 км, от Калининграда до Москвы – 1289 км.
+						</p>
+						<p>
+							До многих европейских столиц расстояния сравнительно небольшие:
+						</p>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<article class="circle-card">
+								<div class="progress circle-card__icon" data-percentage="23">
+									<span class="progress-left">
+										<span class="progress-bar"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar"></span>
+									</span>
+									<div class="progress-value">
+										<p class="progress-text">
+											350 <br>
+											км
+										</p>
+									</div>
+								</div>
+								<p class="circle-card__text">
+									до Вильнюса
+								</p>
+							</article>
+							<article class="circle-card">
+								<div class="progress circle-card__icon" data-percentage="78">
+									<span class="progress-left">
+										<span class="progress-bar"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar"></span>
+									</span>
+									<div class="progress-value">
+										<p class="progress-text">
+											400 <br>
+											км
+										</p>
+									</div>
+								</div>
+								<p class="circle-card__text">
+									до Варшавы
+								</p>
+							</article>
+							<article class="circle-card">
+								<div class="progress circle-card__icon" data-percentage="43">
+									<span class="progress-left">
+										<span class="progress-bar"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar"></span>
+									</span>
+									<div class="progress-value">
+										<p class="progress-text">
+											600 <br>
+											км
+										</p>
+									</div>
+								</div>
+								<p class="circle-card__text">
+									до Берлина
+								</p>
+							</article>
+							<article class="circle-card">
+								<div class="progress circle-card__icon" data-percentage="10">
+									<span class="progress-left">
+										<span class="progress-bar"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar"></span>
+									</span>
+									<div class="progress-value">
+										<p class="progress-text">
+											650 <br>
+											км
+										</p>
+									</div>
+								</div>
+								<p class="circle-card__text">
+									до Стокгольма
+								</p>
+							</article>
+							<article class="circle-card">
+								<div class="progress circle-card__icon" data-percentage="83">
+									<span class="progress-left">
+										<span class="progress-bar"></span>
+									</span>
+									<span class="progress-right">
+										<span class="progress-bar"></span>
+									</span>
+									<div class="progress-value">
+										<p class="progress-text">
+											680 <br>
+											км
+										</p>
+									</div>
+								</div>
+								<p class="circle-card__text">
+									до Копенгагена
+								</p>
+							</article>
+							<div class="circle-card--clear"></div>
+						</div>
+					</div>
+					<div class="block-text text">
+						<p>
+							Административный центр — Калининград (бывший Кенигсберг — основан в 1255 году). Площадь Калининградской области — 15,1 тыс. км. Она является одной из самых маленьких территорий в России, но по плотности населения (63 человека на один квадратный километр) среди краев и областей она занимает третье место и уступает только Краснодарскому краю и Тульской области.  Самые длинные реки: Преголя – 123 км, Неман – 115 км (по территории области). Самое крупное озеро Виштынецкое – 18 кв.км. Наибольшая высота над уровнем моря – Виштынецкая возвышенность – 242 м.
+						</p>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<a href="" target="_blank" class="link-card link-card--light link-card--6">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Реестр экспортеров Калининградской области
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+
+							<a href="" target="_blank" class="link-card link-card--light link-card--6">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Нормативно-правовые акты
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+
+							<a href="" target="_blank" class="link-card link-card--light link-card--6">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Каталог экспортеров Калининградской области
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+
+							<a href="" target="_blank" class="link-card link-card--light link-card--6">
+								<div class="link-card__left">
+									<p class="link-card__text">
+										Путеводители для экспортера
+									</p>
+								</div>
+								<div class="link-card__right">
+									<svg class="icon-svg none-image">
+										<use xlink:href="img/sprites/sprite.svg#link-card"></use>
+									</svg>
+									<span class="link-card__discript">
+										Скачать
+									</span>
+								</div>
+							</a>
+
+							<div class="link-card link-card--6 link-card--clear"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="articles">
+						<div class="articles__content">
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Особо экономическая зона
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Преимущества особо экономической зоны
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Резиденты ОЭЗ в Калининградской области 
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Тестовая площадка для вхождения на Российский рынок
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Близость европейских рынков
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Доступность Балтийских и Атлантических  морских путей
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Значительный туристско-рекреационный потенциал
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Растущий потенциал транспортной системы
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Поддержка инвесторов со стороны регионального правительства 
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Стабильная среда для принятия долгосрочных решений
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Министерство экономического развития, промышленности и торговли Калиниградской области 
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="drop-card drop-card--dark">
+								<div class="drop-card__header" tabindex="0">
+									<p class="drop-card__title">
+										Министерство экономического развития, промышленности и торговли Калиниградской области
+									</p>
+									<svg class="icon-svg drop-card__icon">
+										<use xlink:href="img/sprites/sprite.svg#drop-arrow"></use>
+									</svg>
+								</div>
+								<div class="drop-card__main">
+									<div class="drop-card__content text">
+										<p>
+											Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области. 
+										</p>
+										<p>
+											<strong>>Фонд «Центр поддержки предпринимательства Калининградской области»</strong> (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области. Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+										</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="block-text text">
+						<p>
+							Министерство экономического развития, промышленности и торговли Калининградской области – это орган исполнительной власти Калининградской области, который осуществляет функции по проведению государственной политики и нормативному правовому регулированию в сфере реформирования государственного сектора экономики, анализа и прогнозирования социально-экономического развития Калининградской области, имущественных и земельных отношений, вопросов владения, пользования и распоряжения объектами, находящимися в государственной собственности Калининградской области, приватизации государственного имущества, промышленности, предпринимательства, потребительского рынка, инвестиционной и инновационной деятельности, развития конкуренции и государственно-частного партнерства, совершенствования государственного управления, повышения качества и доступности государственных услуг, участия в пределах своей компетенции в реализации на территории Калининградской области государственных программ Российской Федерации и государственных программ Калининградской области.
+						</p>
+						<p>
+							Фонд «Центр поддержки предпринимательства Калининградской области» (микрокредитная компания) является составной частью инфраструктуры Правительства Калининградской области в части поддержки предпринимательства в Калининградской области.
+						</p>
+						<p>
+							Деятельность Фонда координируется Министерством экономического развития, промышленности и торговли Калининградской области, которое формирует и осуществляет государственную политику по поддержке и развитию малого предпринимательства на территории Калининградской области.
+						</p>
+						<h6>
+							Министр экономического развития, промышленности и торговли Калининградской области - Кусков Дмитрий Александрович
+						</h6>
+						<p>
+							<strong>Адрес:</strong> 236007, ул. Дм. Донского, 1 
+						</p>
+						<p>
+							<strong>Приемная:</strong> каб. 428, телефон приемной 599-337
+						</p>
+						<p>
+							<strong>E-mail:</strong> <a href="mailto:minprom@gov39.ru ">minprom@gov39.ru </a> 
+						</p>
+						<p>
+							С региональными мерами поддержки можно ознакомиться на сайте Министерства экономического развития, промышленности и торговли Калининградской области
+
+						</p>
+						<p>
+							<strong>Источник:</strong> <a href="minprom.gov39.ru"> minprom.gov39.ru</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<div class="block-text text">
+						<h3>
+							Новости
+						</h3>
+					</div>
+					<div class="articles">
+						<div class="articles__content">
+							<a href="" class="hide-bg article article--4" style="background-image: url('http://placehold.it/1200x900');">
+								<div class="article__content">
+									<div class="article__tags">
+										<div class="article__tag">
+											Имя тега
+										</div>
+										<div class="article__tag article__tag--hot">
+											<svg class="icon-svg">
+												<use xlink:href="img/sprites/sprite.svg#hot"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="article__control">
+										<time>09:12</time> | <time>17 февраля</time>
+									</div>
+									<h3 class="article__title">
+										Бизнес-миссия в Индию
+									</h3>
+									<!-- Обрежь по количеству символов, чтобы на 4-5 строк в узкой новости -->
+									<p class="article__text">
+										Центра поддержки экспорта Калининградской области приглашает принять участие в центре поддержки экспорта Калининградской области приглашает принять участие в
+									</p>
+								</div>
+
+							</a>
+							<a href="" class="hide-bg article article--8" style="background-image: url('http://placehold.it/1200x900');">
+								<div class="article__content">
+									<div class="article__control">
+										<time>09:12</time> | <time>17 февраля</time>
+									</div>
+									<h3 class="article__title">
+										Открыт прием заявок на конкурс РФРИТ среди проектов в сфере IT
+									</h3>
+									<p class="article__text">
+										Центра поддержки экспорта Калининградской области приглашает принять участие в центре поддержки экспорта Калининградской области приглашает принять участие в
+									</p>
+								</div>
+
+							</a>
+							<a href="" class="hide-bg article article--8" style="background-image: url('http://placehold.it/1200x900');">
+								<div class="article__content">
+									<div class="article__control">
+										<time>09:12</time> | <time>17 февраля</time>
+									</div>
+									<h3 class="article__title">
+										«МетролЭкспо-2020»
+									</h3>
+									<p class="article__text">
+										Центра поддержки экспорта Калининградской области приглашает принять участие в центре поддержки экспорта Калининградской области приглашает принять участие в
+									</p>
+								</div>
+
+							</a>
+							<a href="" class="hide-bg article article--4" style="background-image: url('http://placehold.it/1200x900');">
+								<div class="article__content">
+									<div class="article__control">
+										<time>09:12</time> | <time>17 февраля</time>
+									</div>
+									<h3 class="article__title">
+										Калининградцев приглашают принять участие в выборе талисмана Всероссийской переписи – 2020
+									</h3>
+									<p class="article__text">
+										Центра поддержки экспорта Калининградской области приглашает принять участие в центре поддержки экспорта Калининградской области приглашает принять участие в
+									</p>
+								</div>
+							</a>
+						</div>
+						<div class="article__control">
+							<a href="" class="btn btn--60 articles__btn">
+								<span>
+									Все новости
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container front-events__container">
+					<div class="block-text text">
+						<h3>
+							Мероприятия
+						</h3>
+					</div>
+					<div class="front-events__tabs tabs">
+						<div class="tabs__nav">
+							<a href="#" class="tabs__link tabs__link--active">
+								Все
+							</a>
+							<div class="tabs__sep"></div>
+							<a href="#" class="tabs__link">
+								Бизнес-миссии
+							</a>
+							<div class="tabs__sep"></div>
+							<a href="#" class="tabs__link">
+								Обучение
+							</a>
+							<div class="tabs__sep"></div>
+							<a href="#" class="tabs__link">
+								Выставки
+							</a>	
+						</div>
+						<select class="tabs__dropdown">
+							<option value="">Все</option>
+							<option value="">Бизнес-миссии</option>
+							<option value="">Обучение</option>
+							<option value="">Выставки</option>
+						</select>
+						<div class="tabs__btns">
+							<a href="" class="tabs__btn tabs__btn--active tabs__btn--mounth">
+								<svg viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.9976 3.81563C22.8785 3.82284 22.7594 3.83486 22.6403 3.83486C17.7909 3.83486 12.939 3.83486 8.08963 3.83486C7.64723 3.83486 7.64723 3.83486 7.64723 3.39971C7.64723 2.38276 7.65452 1.3658 7.64237 0.348846C7.63507 0.077177 7.72744 0.000244141 7.99726 0.000244141C12.9074 0.00745659 17.8176 0.00505244 22.7278 0.00505244C22.8177 0.00505244 22.9052 0.0170732 22.9951 0.0242856C22.9976 1.28887 22.9976 2.55345 22.9976 3.81563Z"/>
+									<path d="M22.9976 11.3983C22.8785 11.4055 22.7594 11.4176 22.6402 11.4176C17.7908 11.4176 12.939 11.4176 8.08962 11.4176C7.64722 11.4176 7.64722 11.4176 7.64722 10.9824C7.64722 9.96545 7.65451 8.94849 7.64236 7.93154C7.63749 7.65746 7.72986 7.58053 8.00211 7.58053C12.9123 7.58774 17.8224 7.58534 22.7326 7.58534C22.8226 7.58534 22.9101 7.59736 23 7.60457C22.9976 8.87156 22.9976 10.1337 22.9976 11.3983Z"/>
+									<path d="M22.9976 18.9786C22.8785 18.9858 22.7594 18.9978 22.6402 18.9978C17.7908 18.9978 12.939 18.9978 8.08962 18.9978C7.64722 18.9978 7.64722 18.9978 7.64722 18.5627C7.64722 17.5457 7.65451 16.5288 7.64236 15.5118C7.63749 15.2377 7.72986 15.1608 8.00211 15.1608C12.9123 15.168 17.8224 15.1656 22.7326 15.1656C22.8226 15.1656 22.9101 15.1776 23 15.1849C22.9976 16.4518 22.9976 17.7164 22.9976 18.9786Z"/>
+									<path d="M0 0.0268601C1.20567 0.0196476 2.41376 0.0148393 3.61943 0.00522271C3.78229 0.00522271 3.85278 0.0701348 3.85278 0.233617C3.85035 1.35876 3.85035 2.4839 3.85278 3.60904C3.85278 3.77253 3.78229 3.83744 3.61943 3.83744C2.41376 3.82782 1.20567 3.82301 0 3.8158C0 2.55362 0 1.28904 0 0.0268601Z"/>
+									<path d="M0 7.60698C1.20567 7.59977 2.41376 7.59496 3.61943 7.58534C3.78229 7.58534 3.85278 7.65025 3.85278 7.81374C3.85035 8.93888 3.85035 10.064 3.85278 11.1892C3.85278 11.3526 3.78229 11.4176 3.61943 11.4176C2.41376 11.4103 1.20567 11.4055 0 11.3983C0 10.1337 0 8.87156 0 7.60698Z"/>
+									<path d="M0 15.1897C1.20567 15.1825 2.41376 15.1776 3.61943 15.168C3.78229 15.168 3.85278 15.2329 3.85278 15.3964C3.85035 16.5216 3.85035 17.6467 3.85278 18.7719C3.85278 18.9353 3.78229 19.0002 3.61943 19.0002C2.41376 18.9906 1.20567 18.9858 0 18.9786C0 17.7164 0 16.4518 0 15.1897Z"/>
+								</svg>
+							</a>
+							<a href="" class="tabs__btn tabs__btn--week">
+								<svg viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 0.024099C1.47059 0.0168847 2.94118 0.00967047 4.41176 5.14328e-05C4.61108 -0.00235333 4.69616 0.0794085 4.69616 0.279003C4.69373 1.64972 4.69373 3.02283 4.69616 4.39355C4.69616 4.59314 4.61108 4.6725 4.41176 4.6725C2.94118 4.66047 1.47059 4.65326 0 4.64605"/>
+									<path d="M0 6.84175C1.47059 6.83453 2.94118 6.82732 4.41176 6.8177C4.61108 6.8153 4.69616 6.89706 4.69616 7.09665C4.69373 8.46736 4.69373 9.84048 4.69616 11.2112C4.69616 11.4108 4.61108 11.4901 4.41176 11.4901C2.94118 11.4781 1.47059 11.4709 0 11.4637"/>
+									<path d="M0 14.3037C1.47059 14.2965 2.94118 14.2893 4.41176 14.2797C4.61108 14.2773 4.69616 14.359 4.69616 14.5586C4.69373 15.9293 4.69373 17.3025 4.69616 18.6732C4.69616 18.8728 4.61108 18.9521 4.41176 18.9521C2.94118 18.9377 1.47059 18.9329 0 18.9233"/>
+									<path d="M7.65193 0.0242637C9.12251 0.0170494 10.5931 0.00983511 12.0637 0.000216074C12.263 -0.00218868 12.3481 0.0795731 12.3481 0.279168C12.3457 1.64988 12.3457 3.023 12.3481 4.39371C12.3481 4.59331 12.263 4.67266 12.0637 4.67266C10.5931 4.66304 9.12251 4.65583 7.65193 4.64861C7.65193 3.10476 7.65193 1.56571 7.65193 0.0242637Z"/>
+									<path d="M7.65193 6.84175C9.12251 6.83453 10.5931 6.82732 12.0637 6.8177C12.263 6.8153 12.3481 6.89706 12.3481 7.09665C12.3457 8.46736 12.3457 9.84048 12.3481 11.2112C12.3481 11.4108 12.263 11.4901 12.0637 11.4901C10.5931 11.4805 9.12251 11.4733 7.65193 11.4661C7.65193 9.92224 7.65193 8.3832 7.65193 6.84175Z"/>
+									<path d="M7.65193 14.3037C9.12251 14.2965 10.5931 14.2893 12.0637 14.2797C12.263 14.2773 12.3481 14.359 12.3481 14.5586C12.3457 15.9293 12.3457 17.3025 12.3481 18.6732C12.3481 18.8728 12.263 18.9521 12.0637 18.9521C10.5931 18.9425 9.12251 18.9353 7.65193 18.9281C7.65193 17.3842 7.65193 15.8428 7.65193 14.3037Z"/>
+									<path d="M15.3038 0.0242637C16.7744 0.0170494 18.245 0.00983511 19.7156 0.000216074C19.9149 -0.00218868 20 0.0795731 20 0.279168C19.9976 1.64988 19.9976 3.023 20 4.39371C20 4.59331 19.9149 4.67266 19.7156 4.67266C18.245 4.66304 16.7744 4.65583 15.3038 4.64861C15.3038 3.10476 15.3038 1.56571 15.3038 0.0242637Z"/>
+									<path d="M15.3038 6.84175C16.7744 6.83453 18.245 6.82732 19.7156 6.8177C19.9149 6.8153 20 6.89706 20 7.09665C19.9976 8.46736 19.9976 9.84048 20 11.2112C20 11.4108 19.9149 11.4901 19.7156 11.4901C18.245 11.4805 16.7744 11.4733 15.3038 11.4661C15.3038 9.92224 15.3038 8.3832 15.3038 6.84175Z"/>
+									<path d="M15.3038 14.3037C16.7744 14.2965 18.245 14.2893 19.7156 14.2797C19.9149 14.2773 20 14.359 20 14.5586C19.9976 15.9293 19.9976 17.3025 20 18.6732C20 18.8728 19.9149 18.9521 19.7156 18.9521C18.245 18.9425 16.7744 18.9353 15.3038 18.9281C15.3038 17.3842 15.3038 15.8428 15.3038 14.3037Z"/>
+									<path d="M15.3038 0.0218567C16.5095 0.0146424 17.7151 0.00983291 18.9232 0.000213879C19.0861 0.000213879 19.1565 0.0651424 19.1565 0.228666C19.1541 1.35409 19.1541 2.47952 19.1565 3.60495C19.1565 3.76847 19.0861 3.8334 18.9232 3.8334C17.7176 3.82378 16.5095 3.81897 15.3038 3.81176C15.3038 2.54926 15.3038 1.28436 15.3038 0.0218567Z"/>
+									<path d="M15.3038 7.60406C16.5095 7.59685 17.7176 7.59204 18.9232 7.58242C19.0861 7.58242 19.1565 7.64735 19.1565 7.81087C19.1541 8.9363 19.1541 10.0617 19.1565 11.1872C19.1565 11.3507 19.0861 11.4156 18.9232 11.4156C17.7176 11.406 16.5095 11.4012 15.3038 11.394C15.3038 10.1315 15.3038 8.86897 15.3038 7.60406Z"/>
+									<path d="M15.3038 15.1887C16.5095 15.1814 17.7176 15.1766 18.9232 15.167C19.0861 15.167 19.1565 15.2319 19.1565 15.3955C19.1541 16.5209 19.1541 17.6463 19.1565 18.7718C19.1565 18.9353 19.0861 19.0002 18.9232 19.0002C17.7176 18.9906 16.5095 18.9858 15.3038 18.9786C15.3038 17.7161 15.3038 16.4512 15.3038 15.1887Z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="front-events__calendares">
+						<div class="calendar"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="container">
+					<h2 class="title title--center">
+						<span class="title__text">Контакты</span>
+					</h2>
+					<div class="contacts">
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+						<article class="contact-card">
+							<div class="image contact-card__thumb">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/200x900" alt="Имя Фамилия">
+								<figcaption class="image__discript" aria-hidden="true">
+									Буров Роман Владимирович
+								</figcaption>
+							</div>
+							<h4 class="contact-card__name">
+								Буров <br> Роман Владимирович 
+							</h4>
+							<div class="contact-card__links">
+								<a href="tel:+74012994588" class="contact-card__link">
+									+7 (4012) 994-588 (доб. 923)
+								</a>
+								<a href="mailto:burov@mbkaliningrad.ru" class="contact-card__link">
+									burov@mbkaliningrad.ru
+								</a>
+							</div>
+							<p class="contact-card__discript">
+								Начальник отдела <br> "Центр микрофинансирования"
+							</p>
+						</article>
+
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="partners">
+					<div class="container partners__container">
+						<h3 class="h3 h3--center">
+							Полезные ссылки
+						</h3>
+						<div class="partners__articles">
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/1900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x1600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/900x900" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<a href="" class="image partners__article">
+								<img class="image__pict image__pict--contain" src="http://placehold.it/300x600" alt="Логотип фирмы-партнера">
+								<figcaption class="image__discript" aria-hidden="true">
+									Логотип фирмы-партнера
+								</figcaption>
+							</a>
+							<div class="partners__article partners__article--clear"></div>
+							<div class="partners__article partners__article--clear"></div>
+							<div class="partners__article partners__article--clear"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--dark">
+				<div class="form-section">
+	<div class="container form-section__container">
+		<form action="post" class="form">
+			<h4 class="form__head-text">
+				Обращение на предоставление льгот для развития промышленности
+			</h4>
+			<div class="form__radios" role="radiogroup">
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" checked value="Юр.лицо или ИП" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Юр.лицо или ИП
+					</p>
+				</label>
+				<label class="form__radio radio" tabindex="0">
+					<input type="radio" class="radio__field" value="Физическое лицо" name="form-radio">
+					<div class="radio__icon"><div class="radio__icon-circle"></div></div>
+					<p class="radio__text">
+						Физическое лицо
+					</p>
+				</label>
+			</div>
+			<div class="form__fields">
+
+				<label class="input">
+					<p class="input__title">
+						Услуги
+					</p>
+					<select id="" class="select inputselect">
+						<option value="1">Один</option>
+						<option value="2">Два</option>
+						<option value="3">Три</option>
+					</select>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--valid">
+					<p class="input__title">
+						Имя/Фамилия*
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input input--error">
+					<p class="input__title">
+						Email
+					</p>
+					<input type="email" class="input__field">
+					<div class="input__message">
+						Сообщение поля
+					</div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Ваш комментарий
+					</p>
+					<input type="text" class="input__field" readonly>
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Название организации
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="input">
+					<p class="input__title">
+						Телефон
+					</p>
+					<input type="text" class="input__field">
+					<div class="input__message"></div>
+				</label>
+
+				<label class="file" tabindex="0">
+					<p class="file__title">
+						Документы
+					</p>
+					<div class="file__wrapper" >
+						<div class="file__text">
+							png, jpg, pdf
+						</div>
+						<div class="file__icon">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#file-icon"></use>
+							</svg>
+						</div>
+					</div>
+					<input class="file__field" type="file" name="photo" required multiple title="Загрузите один или несколько документов">
+					<div class="file__message"></div>
+				</label>
+			</div>
+			<div class="form__control">
+				<button class="form__btn btn btn--60">
+					<span>Отправить</span>
+				</button>
+
+				<label class="checkbox form__accept" tabindex="0">
+					<input type="checkbox" class="checkbox__field" checked>
+					<div class="checkbox__icon"><div class="checkbox__icon-circle"></div></div>
+					<p class="checkbox__text">
+						Я соглашаюсь с условиями и даю согласие на <a href="/privacy.html">обработку персональных данных</a>
+					</p>
+				</label>
+			</div>
+			<div class="form__message">
+				<svg class="icon-svg form__message-icon">
+					<use xlink:href="img/sprites/sprite.svg#check"></use>
+				</svg>
+				<p class="form__message-title">
+					Ваша заявка отправлена
+				</p>
+				<p class="form__message-discript">
+					Мы свяжемся с вами в ближайшее время
+				</p>
+			</div>
+		</form>
+	</div>
+</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__top">
+		<div class="container footer__container-top">
+			<button class="footer__to-top">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#to-top"></use>
+				</svg>
+			</button>
+			<div class="footer__top-columns">
+				<div class="footer__column footer__column--1">
+					<div class="footer__nav-column">
+						<div class="footer__links-column footer__links-column--1">
+							<h5 class="footer__title footer__title--small">
+								Меню
+							</h5>
+							<div class="footer__nav">
+								<a href="" class="footer__link">
+									Главная
+								</a>
+								<a href="" class="footer__link">
+									О нас
+								</a>
+								<a href="" class="footer__link">
+									Мероприятия
+								</a>
+								<a href="" class="footer__link">
+									Новости
+								</a>
+								<a href="" class="footer__link">
+									Меры поддержки
+								</a>
+							</div>
+						</div>
+						<div class="footer__links-column footer__links-column--2">
+							<h5 class="footer__title footer__title--big">
+								Меры поддержки
+							</h5>
+							<div class="footer__nav-flex">
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Льготное финансирование
+									</a>
+									<a href="" class="footer__link">
+										Консультации и обучение
+									</a>
+									<a href="" class="footer__link">
+										Поддержка экспорта
+									</a>
+									<a href="" class="footer__link">
+										Кластерное развитие
+									</a>
+									<a href="" class="footer__link">
+										Поддержка инноваций
+									</a>
+								</div>
+								<div class="footer__nav footer__nav--50">
+									<a href="" class="footer__link">
+										Предоставление поручительства
+									</a>
+									<a href="" class="footer__link">
+										Социальное предпринимательство
+									</a>
+									<a href="" class="footer__link">
+										Сельское хозяйство
+									</a>
+									<a href="" class="footer__link">
+										Программа "Восток"
+									</a>
+									<a href="" class="footer__link">
+										Повышение производительности труда
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__info none-image">
+						<div class="footer__info-column footer__info-column--66">
+							<div class="footer__logos">
+								<a href="/" class="footer__logo footer__logo--1">
+									<img src="img/logo-light.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+								<a href="/" class="footer__logo footer__logo--2">
+									<img src="img/logo-light-2.svg" alt="Логотип">
+								</a>
+							</div>
+						</div>
+<!--						<div class="footer__info-column footer__info-column&#45;&#45;2">-->
+<!--							<a href="/" class="footer__logo-2">-->
+<!--								<img src="img/logo-light-2.svg" alt="Логотип">-->
+<!--							</a>-->
+<!--						</div>-->
+						<div class="footer__info-column footer__info-column--3">
+							<p class="footer__discript">
+								© Фонд Поддержки. Все права защищены  2013-2020
+								<br>
+								<br>
+								Разработано <a target="_blank" href="https://diez.io/">#diez technologies</a>
+							</p>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="footer__column footer__column--2">
+					<h5 class="footer__title footer__title--big">
+						Соц.сети:
+					</h5>
+					<div class="footer__socials">
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#fb"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#inst"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#vk"></use>
+							</svg>
+						</a>
+						<a href="" class="footer__social-link">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#youtube"></use>
+							</svg>
+						</a>
+					</div>
+					<form action="" class="search footer__search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__btn">
+							<svg class="icon-svg">
+								<use xlink:href="img/sprites/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+					<a href="" class="btn btn--60 footer__btn-profile">
+						<span>
+							Личный кабинет
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Блок DEMO полностью удали на проекте -->
+	<div class="demo">
+		<div class="container demo__container">
+			<div class="demo__column">
+				<a href="/0_ui-library.html" class="demo__link">
+					0.UI-kit
+				</a>
+				<a href="/" class="demo__link">
+					1.Главная
+				</a>
+				<a href="/2-page.html" class="demo__link">
+					2. О нас
+				</a>
+				<a href="/3-page.html" class="demo__link">
+					3. Мероприятия
+				</a>
+				<a href="/4-page.html" class="demo__link">
+					4. Новости
+				</a>
+				<a href="/4-1-page.html" class="demo__link">
+					4.1 Новость
+				</a>
+				<a href="/5-page.html" class="demo__link">
+					5. Документы фонда
+				</a>
+				<a href="/6-page.html" class="demo__link">
+					6. Микрокредитование
+				</a>
+				<a href="/6-1-page.html" class="demo__link">
+					6-1. Начни свое дело
+				</a>
+				<a href="/6-2-page.html" class="demo__link">
+					6-2. Социальное предприятие - Старт
+				</a>
+				<a href="/6-3-page.html" class="demo__link">
+					6-3. Социальное предприятие - Развитие
+				</a>
+				<a href="/6-4-page.html" class="demo__link">
+					6-4. Моногород
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-5. Стандарт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-6. Доверие
+				</a>
+				<a href="/6-5-page.html" class="demo__link">
+					6-7. Старт
+				</a>
+				<a href="/6-6-page.html" class="demo__link">
+					6-8. Развитие
+				</a>
+				<a href="/7-page.html" class="demo__link">
+					7. Фонд развития промышленности
+				</a>
+				<a href="/8-page.html" class="demo__link">
+					8. Консультация и обучение
+				</a>
+				<a href="/8-1-page.html" class="demo__link">
+					8.1 Нормативные документы
+				</a>
+				<a href="/9-page.html" class="demo__link">
+					9. Центр поддержки экспорта
+				</a>
+				<a href="/9-1-page.html" class="demo__link">
+					9.1 Нормативно-правовые акты
+				</a>
+				<a href="/9-2-page.html" class="demo__link">
+					9.2 Путеводители для экспортеров
+				</a>
+				<a href="/10-page.html" class="demo__link">
+					10. Кластерное развитие
+				</a>
+				<a href="/11-page.html" class="demo__link">
+					11. Поддержка инноваций
+				</a>
+				<a href="/12-page.html" class="demo__link">
+					12. Предоставление поручительства
+				</a>
+				<a href="/12-1-page.html" class="demo__link">
+					12.1 Нормативные документы
+				</a>
+				<a href="/12-2-page.html" class="demo__link">
+					12.2 Лимиты поручительств
+				</a>
+				<a href="/12-3-page.html" class="demo__link">
+					12.3. Программа предосчтавления поручительства
+				</a>
+				<a href="/12-4-page.html" class="demo__link">
+					12.4 Отчетность
+				</a>
+				<a href="/13-page.html" class="demo__link">
+					13. Социальное предпринимательство
+				</a>
+				<a href="/14-page.html" class="demo__link">
+					14. Сельское хозяйство
+				</a>
+				<a href="/15-page.html" class="demo__link">
+					15. Программа Восток
+				</a>
+				<a href="/16-page.html" class="demo__link">
+					16. Повышение производительности труда
+				</a>
+				<a href="/17-page.html" class="demo__link">
+					17. Полезное видео
+				</a>
+				<a href="/18-page.html" class="demo__link">
+					18. Полезные книги
+				</a>
+				<a href="/none-page.html" class="demo__link">
+					18. 404
+				</a>
+				<a href="/19-page.html" class="demo__link">
+					19. Поиск
+				</a>
+			</div>
+			<div class="demo__column">
+				<a href="/20-01-page.html" class="demo__link">
+					20.01. Документы
+				</a>
+				<a href="/20-02-page.html" class="demo__link">
+					20.02. Цель центра
+				</a>
+				<a href="/20-03-page.html" class="demo__link">
+					20.03. Услуги центра
+				</a>
+				<a href="/20-04-page.html" class="demo__link">
+					20.04. Функции центра
+				</a>
+				<a href="/20-05-page.html" class="demo__link">
+					20.05. Ювелирная площадка «Элеватор»
+				</a>
+				<a href="/20-06-page.html" class="demo__link">
+					20.06. Башня Врангеля
+				</a>
+				<a href="/20-07-page.html" class="demo__link">
+					20.07. Кластер янтарной промышленности
+				</a>
+				<a href="/20-08-page.html" class="demo__link">
+					20.08. Создание индустриального парка
+				</a>
+				<a href="/20-09-page.html" class="demo__link">
+					20.09. Хаусбот, Ушаковские верфи
+				</a>
+				<a href="/20-10-page.html" class="demo__link">
+					20.10. Кластер судостроения
+				</a>
+				<a href="/20-11-page.html" class="demo__link">
+					20.11. Металлообрабатывающий кластер
+				</a>
+				<a href="/20-12-page.html" class="demo__link">
+					20.12. Умная среда
+				</a>
+				<a href="/20-13-page.html" class="demo__link">
+					20.13. Трубный завод
+				</a>
+				<a href="/20-14-page.html" class="demo__link">
+					20.14. Завод металлоконструкций
+				</a>
+				<a href="/20-15-page.html" class="demo__link">
+					20.15. Кластерное развитие
+				</a>
+				<a href="/21-page.html" class="demo__link">
+					21. Социальное предпринимательство
+				</a>
+				<a href="/24-page-index.html" class="demo__link">
+					24. Главная-Микрокредитование
+				</a>
+				<a href="/24-1-page.html" class="demo__link">
+					24-1. Для самозанятых
+				</a>
+				<a href="/24-2-page.html" class="demo__link">
+					24-2. Для субъектов МСП
+				</a>
+				<a href="/24-3-page.html" class="demo__link">
+					24-3. Для СМСП
+				</a>
+				<a href="/24-4-page.html" class="demo__link">
+					24-4. Полезная информация
+				</a>
+				<a href="/24-5-page.html" class="demo__link">
+					24-5. Контакты
+				</a>
+				<a href="/24-6-page.html" class="demo__link">
+					24-6. Начни свое дело
+				</a>
+				<a href="/24-7-page.html" class="demo__link">
+					24-7. Старт
+				</a>
+				<a href="/24-8-page.html" class="demo__link">
+					24-8. Развитие
+				</a>
+				<a href="/24-9-page.html" class="demo__link">
+					24-9. Моногород
+				</a>
+				<a href="/24-10-page.html" class="demo__link">
+					24-10. Стандарт
+				</a>
+				<a href="/24-11-page.html" class="demo__link">
+					24-11. Доверие
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-12. "Старт" еще раз
+				</a>
+				<a href="/24-13-page.html" class="demo__link">
+					24-13. "Развитие" еще раз
+				</a>
+				<a href="/25-page.html" class="demo__link">
+					25. Услуги для самозанятых граждан
+				</a>
+				<a href="/26-page.html" class="demo__link">
+					26. Фонд развития промышленности
+				</a>
+				<a href="/27-page.html" class="demo__link">
+					27. Услуги 3D прототипирования и 3D печати
+				</a>
+				<div class="hr"></div>
+				<a href="/28-injiniring-main.html" class="demo__link">
+					Инжиниринг главная
+				</a>
+				<a href="/29-questions.html" class="demo__link">
+					Опросник
+				</a>
+				<a href="/30-grants.html" class="demo__link">
+					Гранты
+				</a>
+				<a href="/31-companies.html" class="demo__link">
+					Компании
+				</a>
+				<a href="/32-financial-help.html" class="demo__link">
+					Финансовая поддержка
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Окно мероприятия -->
+<div class="modal mfp-hide">
+	<div class="modal__content text">
+		<h4>
+			Онлайн-тренинг «Возможности маркетплейсов для малого бизнеса: на примере торговой платформы Wildberries»
+		</h4>
+		<a href="" class="btn btn--60">
+			<span>Страница мероприятия</span>
+		</a>
+		<p>
+			В кризисной ситуации, когда розничные точки закрылись практически в один день, компании почти полностью переместили свою деятельность в Интернет. И для малого бизнеса этот путь стал единственным способом выжить Однако одномоментно сделать собственный продающий сайт и привлечь туда клиентов очень сложно. Выходом для малого и среднего бизнеса стало сотрудничество с маркетплейсами. В число крупнейших из них входит торговая платформа Wildberries.
+		</p>
+		<p>
+			<b>
+				На вебинаре разберём вопросы:
+			</b>
+		</p>
+		<ul>
+			<li>
+				могут ли маркетплейсы решить проблемы, вызванные кризисом?
+			</li>
+			<li>
+				сотрудничество с Wildberries: как стать партнером крупнейшего продавца Рунета?
+			</li>
+			<li>
+				возможности торговой платформы Wildberries для управления поставками и продажами.
+			</li>
+			<li>
+				какие инструменты важно использовать для успешных продаж в онлайн-магазине?
+			</li>
+			<li>
+				на какую поддержку могут рассчитывать предприниматели.
+			</li>
+		</ul>
+		<p>
+			Ответы на эти и другие вопросы о работе с маркетплейсом Wildberries вы сможете найти, став участником онлайн-тренинга, организованного совместно с АО «Корпорацией МСП» и Wildberries. Вы сможете рассмотреть ситуацию со всех сторон. В числе спикеров будут и представитель Wildberries, и предприниматель, который с ними успешно сотрудничает, и представители инфраструктуры поддержки предпринимателей.
+		</p>
+	</div>
+</div>
+	</div>
+
+	<script>
+	// Вынес сюда ссылки для мобильного меню, чтобы было проще. Если ссылки нет, то не выводи ее
+	let mobileLinks = [
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#fb"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#inst"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#vk"></use></svg></a>',
+	'<a href="" class="menu-link"><svg class="icon-svg none-image"><use xlink:href="img/sprites/sprite.svg#youtube"></use></svg></a>'
+	];
+
+	let mobileContacts = [
+	'<p class="mmenu__contact-lines"><a href="tel:+74012994588">+7 (4012) 994 588</a></p>',
+	'<p class="mmenu__contact-lines"><a href="mailto:info@mbkaliningrad.ru">info@mbkaliningrad.ru</a></p>'
+	];
+</script>
+<nav id="mmenu">
+	<ul>
+		<li><a href="/">Главная</a></li>
+		<li><a href="/2-page.html">О нас</a></li>
+		<li><a href="/3-page.html">Мероприятия</a></li>
+		<li><a href="/4-page.html">Новости</a></li>
+		<li><span>Меры поддержки</span>
+			<ul>
+				<li><a href="/6-page.html">Микрокредитование</a></li>
+				<li><a href="/7-page.html">Фонд развития промышленности</a></li>
+				<li><span>Консультации и обучение</span>
+					<ul>
+						<li><a href="/8-1-page.html">Нормативые документы</a></li>
+					</ul>
+				</li>
+				<li><span>Поддержка экспорта</span>
+					<ul>
+						<li><a href="/9-1-page.html">Нормативно-правовые акты</a></li>
+						<li><a href="/9-2-page.html">Путеводители для экспорта</a></li>
+					</ul>
+				</li>
+				<li><a href="/10-page.html">Кластерное развитие</a></li>
+				<li><a href="/11-page.html">Поддержка инноваций</a></li>
+				<li><a href="/12-page.html">Предоставление поручительства</a>
+					<ul>
+						<li><a href="/12-1-page.html">Нормативые документы</a></li>
+						<li><a href="/12-2-page.html">Лимиты поручительств</a></li>
+						<li><a href="/12-3-page.html">Программа предоставления поручительства</a></li>
+						<li><a href="/12-4-page.html">Отчётность</a></li>
+					</ul>
+				</li>
+				<li><a href="/13-page.html">Социальное предпринимательство</a></li>
+				<li><a href="/14-page.html">Сельское хозяйство</a></li>
+				<li><a href="/15-page.html">Программа "Восток"</a></li>
+				<li><a href="/16-page.html">Повышение производительности труда</a></li>
+			</ul>
+		</li>
+		<li><span>Полезное</span>
+			<ul>
+				<li><a href="/17-page.html">Полезные видеоматериалы</a></li>
+				<li><a href="/18-page.html">Полезные книги</a></li>
+				<li><span>Онлайн-курсы</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт"</a></li>
+						<li><a href="/">"Мой бизнес. Налоги"</a></li>
+						<li><a href="/">"120 секунд" (14-17 лет)</a></li>
+					</ul>
+				</li>
+				<li><span>Спецпроекты</span>
+					<ul>
+						<li><a href="/">"Мой бизнес. Старт" (создание тренировочных фирм)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<nav id="mmenu-m">
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="24-1-page.html">Программы для самозанятых</a>
+			<ul>
+				<li><a href="24-12-page.html">Программа "Старт"</a></li>
+				<li><a href="24-13-page.html">Программа "Развитие"</a></li>
+			</ul>
+		</li>
+		<li><a href="24-2-page.html">Для субъектов МСП</a>
+			<ul>
+				<li><a href="24-6-page.html">Начни свое дело</a></li>
+				<li><a href="24-7-page.html">Социальное предприятие-Старт</a></li>
+				<li><a href="24-8-page.html">Социальное предприятие-Развитие</a></li>
+				<li><a href="24-9-page.html">Моногород</a></li>
+				<li><a href="24-10-page.html">Стандарт</a></li>
+				<li><a href="24-11-page.html">Доверие</a></li>
+			</ul>
+		</li>
+		<li><a href="24-3-page.html">Программы для СМСП</a></span></li>
+		<li><a href="24-4-page.html">Полезная информация</a></li>
+		<li><a href="24-5-page.html">Контакты</a></li>
+	</ul>
+</nav>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

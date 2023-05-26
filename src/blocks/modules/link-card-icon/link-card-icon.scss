@@ -1,0 +1,136 @@
+.link-card-icon {
+    display: block;
+    background-color: $light;
+    text-decoration: none;
+    border-radius: rem(12px);
+    padding: rem(35px);
+    color: #58595b;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: rem(360px);
+    @include r(1200) {
+        min-height: 0;
+        padding: rem(10px);
+        // margin-bottom: rem(30px);
+    }
+    &:hover,
+    &:focus {
+        background-color: $red;
+        color: $light;
+        @include r(1200) {
+            // opacity: 0.7;
+            // background-color: $light;
+            // color: #58595b;
+        }
+        .link-card-icon {
+            &__path {
+                &--hover-light {
+                    fill: $light;
+                }
+                &--hover-pink {
+                    fill: #f36b57;
+                }
+                &--hover-red {
+                    fill: $red;
+                }
+            }
+        }
+    }
+    &--light {
+        background-color: $light;
+    }
+    &__icon {
+        display: block;
+        width: rem(60px);
+        height: rem(60px);
+        fill: none;
+        margin-bottom: rem(30px);
+        @include r(1200) {
+            margin-bottom: rem(15px);
+        }
+    }
+    &__path {
+        transition: 0.3s fill;
+        &--light {
+            fill: #fff7f7;
+        }
+        &--red {
+            fill: $red;
+        }
+    }
+    &__title {
+        margin-bottom: rem(30px);
+        flex-grow: 1;
+    }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-text {
+        }
+        &-icon {
+            display: block;
+            width: rem(34px);
+            height: rem(34px);
+            fill: $light;
+        }
+    }
+}
+
+.body {
+    &--light {
+    }
+    &--dark {
+        .link-card-icon {
+            background-color: $black;
+            color: $light;
+            border: 1px solid $light;
+            &:hover,
+            &:focus {
+                background-color: $black;
+                color: $light;
+                opacity: 0.8;
+                .link-card-icon {
+                    &__path {
+                        &--hover-light {
+                            fill: $light;
+                        }
+                        &--hover-pink {
+                            fill: #f36b57;
+                        }
+                        &--hover-red {
+                            fill: $red;
+                        }
+                    }
+                }
+            }
+            &--light {
+                background-color: $black;
+            }
+            &__icon {
+                fill: none;
+            }
+            &__path {
+                transition: 0.3s fill;
+                &--light {
+                    fill: $black;
+                }
+                &--red {
+                    fill: $light;
+                }
+            }
+            &__title {
+            }
+            &__footer {
+                &-icon {
+                    display: block;
+                    width: rem(34px);
+                    height: rem(34px);
+                    fill: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.link-line {
+	border-radius: rem(5px);
+	padding: rem(33px) rem(52px) rem(33px) rem(37px);
+	display: flex;
+	width: 100%;
+	margin-bottom: rem(40px);
+	align-items: center;
+	@include r(1200) {
+		flex-direction: column;
+		text-align: center;
+		padding: rem(45px) rem(30px);
+	}
+	&--dark {
+		background-color: #ecf0f2;
+	}
+	&__text {
+		padding-right: rem(45px);
+		@include r(1200) {
+			padding-right: 0;
+			margin-bottom: rem(15px);
+		}
+		a {
+			font-weight: 500;
+			color: $red;
+		}
+	}
+	&__btn {
+		flex-shrink: 0;
+		padding-left: rem(30px);
+		padding-right: rem(30px);
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.link-line {
+			background-color: $black;
+			color: $light;
+			border: rem(2px) solid $light;
+		}
+	}
+}

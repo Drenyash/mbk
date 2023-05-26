@@ -1,0 +1,53 @@
+.button-toolbar {
+    width: rem(38px);
+    height: rem(38px);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: 0.3s opacity;
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+    &:hover,
+    &:active {
+        .button-toolbar {
+            &__icon {
+                fill: $red;
+            }
+        }
+    }
+    &__icon {
+        display: block;
+        width: rem(22px);
+        height: rem(12px);
+        fill: $black;
+        transition: 0.3s fill;
+    }
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.button-toolbar {
+            &:hover,
+            &:active {
+                .button-toolbar {
+                    &__icon {
+                        fill: $light;
+                    }
+                }
+            }
+            &__icon {
+                fill: $light;
+                transition: 0.3s fill;
+            }
+        }
+	}
+}

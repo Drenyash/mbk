@@ -1,0 +1,48 @@
+.adress-card {
+	background: #f7f9fa;
+	border-radius: rem(5px);
+	padding: rem(50px);
+	width: calc(33% - 10px);
+	margin-bottom: rem(20px);
+	font-size: rem(14px);
+	@include r(1200) {
+		width: 100%;
+		padding: rem(25px);
+	}
+	&--light {
+		background-color: $light;
+	}
+	&--clear {
+		margin-bottom: 0;
+		height: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+	&__title {
+		color: $accent;
+		margin-bottom: rem(9px);
+	}
+	&__text {
+		margin-bottom: rem(26px);
+	}
+	a {
+		text-decoration: none;
+		color: $black;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.adress-card {
+			background-color: $black;
+		}
+		a {
+			color: $light;
+		}
+	}
+}

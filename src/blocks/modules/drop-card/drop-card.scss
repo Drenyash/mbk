@@ -1,0 +1,94 @@
+.drop-card {
+	margin-bottom: rem(20px);
+	width: 100%;
+	&--accent {
+		.drop-card__header {
+			background-color: $red;
+			color: $light;
+			border: none;
+		}
+		.drop-card__icon {
+			stroke: $light;
+		}
+	}
+	&--dark {
+		.drop-card__header {
+			background-color: #f7f9fa;
+		}
+	}
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: rem(40px) rem(50px);
+		border: 1px solid #d1d9dd;
+		box-sizing: border-box;
+		border-radius: rem(5px);
+		cursor: pointer;
+		background-color: $light;
+		transition: 0.3s opacity;
+		@include r(1200) {
+			padding: rem(25px);
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__main {
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.3s all;
+		visibility: hidden;
+	}
+	&__content {
+		padding-top: rem(35px);
+		padding-bottom: rem(40px);
+	}
+	&__title {
+		font-weight: 500;
+		font-size: rem(18px);
+	}
+	&__icon {
+		transform: rotate(-180deg);
+		margin-left: rem(30px);
+		flex-shrink: 0;
+		fill: $black;
+		stroke: $black;
+	}
+	&--open {
+		.drop-card__icon {
+			transform: rotate(0deg);
+		}
+		.drop-card__main {
+			max-height: 10000px;
+			visibility: visible;
+		}
+	}
+}
+
+.body {
+	&--light {
+	}
+	&--dark {
+		.drop-card {
+			&--accent {
+				.drop-card__header {
+					border: 1px solid $light;
+					border-radius: rem(5px);
+				}
+			}
+			&--dark {
+				.drop-card__header {
+					background-color: $black;
+				}
+			}
+			&__header {
+				background-color: $black;
+			}
+			&__icon {
+				fill: $light;
+				stroke: $light;
+			}
+		}
+	}
+}
